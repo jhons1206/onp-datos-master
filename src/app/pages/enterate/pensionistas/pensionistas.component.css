@@ -197,6 +197,11 @@ p {
 .map-region {
     text-align: center;
 }
+ 
+.map-region .cls-1:hover {
+	fill: #FF6D6A;
+	cursor: pointer;
+}
 
 .map-region > svg {
     display: none;
