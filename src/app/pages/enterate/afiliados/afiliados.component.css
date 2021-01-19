@@ -200,7 +200,8 @@ p {
 
 .map-region .cls-1:hover {
 	fill: #FF6D6A;
-	cursor: pointer;
+    cursor: pointer;
+    transition: all 0.5s;
 }
 
 .map-region > svg {
