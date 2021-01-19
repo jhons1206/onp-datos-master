@@ -1,0 +1,168 @@
+<nav
+  id="onp-header"
+  class="navbar navbar-expand-lg navbar-light onp-header onp-bg-tertiary"
+>
+  <div class="container-fluid onp-navbar">
+    <a class="navbar-brand onp-logo-content" [routerLink]="'/Inicio'">
+      <img
+        class="onp-brand"
+        src="../../../assets/images/SVG/onp_logo_original.svg"
+        alt=""
+      />
+      <img
+        class="onp-brand-logo-m"
+        src="../../assets/images/logo_footer.svg"
+        alt=""
+      />
+    </a>
+    <!-- <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button> -->
+    <div class="m-menuicon" onclick="toggleMenu()">
+      <img src="../../assets/images/m-menu.svg" alt="" />
+    </div>
+    <div
+      class="collapse navbar-collapse onp-menu-content"
+      id="navbarSupportedContent"
+    >
+      <div class="onp-indicator"></div>
+      <ul class="navbar-nav onp-navmenu">
+        <li
+          class="nav-item menu-item"
+          onmouseover="headerPreSelect1()"
+          onmouseout="headerOut1()"
+          onclick="headerSelected1()"
+        >
+          <a
+            class="nav-link onp-navitem onp-color-secondary"
+            [routerLink]="'/Inicio'"
+            [routerLinkActive]="'active'"
+            id="item1"
+            >Inicio</a
+          >
+        </li>
+        <li
+          class="nav-link nav-item menu-item"
+          onmouseover="headerPreSelect2()"
+          onmouseout="headerOut2()"
+          onclick="headerSelected2()"
+        >
+          <a
+            class="nav-link onp-navitem onp-color-secondary"
+            [routerLink]="'/Enterate'"
+            [routerLinkActive]="'active'"
+            id="item2"
+            >ONP Fácil</a
+          >
+        </li>
+        <li
+          class="nav-item menu-item"
+          onmouseover="headerPreSelect3()"
+          onmouseout="headerOut3()"
+          onclick="headerSelected3()"
+        >
+          <a
+            class="nav-link onp-navitem onp-color-secondary"
+            [routerLink]="'/DatosAbiertos'"
+            [routerLinkActive]="'active'"
+            id="item3"
+            >Datos abiertos</a
+          >
+        </li>
+        <li
+          class="nav-item menu-item"
+          onmouseover="headerPreSelect4()"
+          onmouseout="headerOut4()"
+          onclick="headerSelected4()"
+        >
+          <a
+            class="nav-link onp-navitem onp-color-secondary"
+            [routerLink]="'/Publicaciones'"
+            [routerLinkActive]="'active'"
+            id="item4"
+            >Publicaciones</a
+          >
+        </li>
+      </ul>
+    </div>
+    <div class="menu-item onp-external-item">
+      <a
+        class="onp-navitem onp-external-link"
+        href="https://onpvirtual.pe"
+        target="_blank"
+        >ONP Virtual</a
+      >
+    </div>
+  </div>
+  <div class="m-menu">
+    <ul class="m-menulist">
+      <li class="menu-item">
+        <a
+          class="menu-link"
+          [routerLink]="'/Inicio'"
+          [routerLinkActive]="'active'"
+          >Inicio</a
+        >
+      </li>
+      <li class="menu-item">
+        <a
+          class="menu-link"
+          [routerLink]="'/Enterate'"
+          [routerLinkActive]="'active'"
+          >ONP Fácil</a
+        >
+      </li>
+      <li class="menu-item">
+        <a
+          class="menu-link"
+          [routerLink]="'/DatosAbiertos'"
+          [routerLinkActive]="'active'"
+          >Datos abiertos</a
+        >
+      </li>
+      <li class="menu-item">
+        <a
+          class="menu-link"
+          [routerLink]="'/Publicaciones'"
+          [routerLinkActive]="'active'"
+          >Publicaciones</a
+        >
+      </li>
+    </ul>
+    <a
+      class="menu-link m-link-external"
+      href="https://onpvirtual.pe"
+      target="_blank"
+      >ONP Virtual
+    </a>
+    <div class="m-menuicon-close text-center" onclick="toggleMenu()">
+      <img src="../../assets/images/close_menu.png" alt="" />
+    </div>
+  </div>
+</nav>
+
+<!-- <nav class="header onp-bg-tertiary">
+    <div class="onp-navbar">
+        <img class="onp-brand onp-header-img" src="../../assets/images/header-logo.svg" alt="">
+        <div class="onp-navmenu">
+            <form class=" onp-navitem onp-searchform">
+                <button class="onp-searchicon" type="submit"><img class="onp-rotate" src="../../assets/images/search.svg" ></button>
+                <input class="onp-searchbar" type="text" name="search">
+            </form>
+
+            <a class=" onp-navitem onp-customtext onp-color-secondary" routerLink="/Inicio" routerLinkActive="active">Inicio</a>
+            <a class=" onp-navitem onp-customtext onp-color-secondary" routerLink="/Enterate" routerLinkActive="active">Entérate ONP</a>
+            <a class=" onp-navitem onp-customtext onp-color-secondary" routerLink="/DatosAbiertos" routerLinkActive="active">Datos abiertos</a>
+            <a class=" onp-navitem onp-customtext onp-color-secondary" routerLink="/Publicaciones" routerLinkActive="active">Publicaciones</a>
+            <a class=" onp-navitem onp-navzonaprensa onp-color-primary" routerLink="/ZonaPrensa" routerLinkActive="active"><img src="../../assets/images/zona_prensa.svg">Zona prensa</a>
+        </div>
+    </div>
+</nav> -->

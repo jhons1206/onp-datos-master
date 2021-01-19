@@ -1,0 +1,83 @@
+/* You can add global styles to this file, and also import other style files */
+/* >>>>>>>>>>> Custom Properties <<<<<<<<<<<< */
+:root {
+  --first-color: #FF6D6A;
+  --first-alpha-color:rgba(255, 109, 106, 0.75);
+  --second-color: #141B4D;
+  --second-alpha-color: rgba(20, 27, 77, 0.75);
+  --third-color: #6F868F;
+  --third-alpha-color: rgba(111, 134, 143, 0.75);
+  --four-color: rgb(255, 184, 28);
+  --five-color: #6F9BA4;
+  --gray-light-color: #EDEDED;
+  --gray-color: #808080;
+  --white-color: #ffffff;
+  --black-color: #000000;
+  --link-color: rgb(255, 184, 28);
+  --title-color: var(--second-color);
+  --text-color: #222222;
+  --white-alpha-color: rgba(255, 255, 255, 0.5);
+  --black-alpha-color: rgba(0, 0, 0, 0.5);
+  --font: 'Helvetica', sans-serif;
+  --max-width: 1024px;
+  --border-radius-progressbar: 1.875rem;
+  --padding-bar-graphic: 2.2rem;
+}
+
+/* >>>>>>>>>>>>>>> Reset <<<<<<<<<<<<<<< */
+html,
+body {
+  box-sizing: border-box;
+  font-family: var(--font);
+  font-size: 16px;
+  overflow-x: hidden;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.onp-bg-primary {
+  background-color: rgb(20, 27, 77);
+}
+
+.onp-color-primary {
+  color: rgb(20, 27, 77);
+  font-weight: bold;
+}
+
+.onp-color-secondary {
+  color: rgb(111, 155, 154);
+}
+
+.onp-color-tertiary {
+  color: #ffffff;
+}
+
+.onp-bg-secondary {
+  background-color: rgb(255, 252, 230);
+}
+
+.onp-bg-tertiary {
+  background-color: #ffffff;
+}
+
+.onp-bg-quaternary {
+  background-color: rgb(142, 144, 137);
+}
+
+.onp-bg-coral {
+  background-color: rgb(255, 109, 106);
+}
+
+.onp-bg-amarillo {
+  background-color: rgb(255, 184, 28);
+}
+
+.onp-bg-acero {
+  background-color: rgb(111, 155, 164);
+}
+
+.onp-bg-size {
+  position: relative;
+}

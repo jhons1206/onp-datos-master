@@ -1,0 +1,448 @@
+/* /// CSS Architecture ONP Project /// */
+
+/* >>>>>>>>>>> Custom Properties <<<<<<<<<<<< */
+/* Definidas de forma global en styles.css */
+
+/* >>>>>>>>>>>>>>> Reset <<<<<<<<<<<<<<< */
+a {
+    color: var(--link-color);
+    transition: all 0.5s ease-out;
+}
+
+a:hover {
+    opacity: 0.75;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+h3 {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+h4 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+h5 {
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+h6 {
+    font-size: 0.7rem;
+    margin: 0;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* >>>>>>>>>>>>>>> Components <<<<<<<<<<<<<<<< */
+
+/* *********** -> Graphic Bar *********** */
+.bar-graphic {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    background-color: var(--gray-light-color);
+    text-align: center;
+    padding: 0.8rem 0.7rem 0;
+    position: relative;
+}
+
+.bar-graphic::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    left: 0;
+    border-bottom: thin solid var(--second-color);
+}
+
+.v-bar {
+    width: 20vw;
+    height: var(--height-bar);
+    background-color: var(--bg-bar);
+}
+
+.percent-bar {
+    font-weight: bold;
+    color: var(--second-color);
+    font-size: 1.2rem;
+    margin-bottom: 0;
+}
+
+.desc-bar-graphic {
+    display: flex; 
+    justify-content: space-between; 
+    text-align: center;
+    padding: 0.25rem 0.7rem 0;
+}
+
+.desc-bar-graphic p {
+    color: var(--second-color);
+    font-size: 0.7rem;
+    font-weight: 700;
+    margin-bottom: 0;
+    background-color: #fff;
+    width: 20vw;
+}
+
+/* *********** -> Hero Image *********** */
+.hero-image {
+    background-image: var(--hero-image);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: var(--hero-attachment);
+}
+
+.hero-image-opacity {
+    align-items: center;
+    background-color: var(--hero-opacity-color) ;
+    display: flex;
+    justify-content: center;
+    min-height: 12vh;
+    text-align: center;
+    width: 100%;
+}
+
+.hero-image-title {
+    color: var(--hero-text-color);
+    font-size: 5.5vw;
+}
+
+/* *********** -> Progressbar *********** */
+.indicators-progres-bar {
+    display: flex;
+}
+
+.progres-bar {
+    padding: 0.2rem 0;
+    font-weight: 600;
+    color: var(--white-color);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.first-bar {
+    width: var(--width-first-bar);
+    background-color:var(--four-color);
+    border-top-left-radius: var(--border-radius-progressbar);
+    border-bottom-left-radius: var(--border-radius-progressbar);
+}
+
+.second-bar {
+    width: var(--width-second-bar); 
+    background-color: var(--five-color);
+    border-top-right-radius: var(--border-radius-progressbar);
+    border-bottom-right-radius: var(--border-radius-progressbar);
+}
+
+/* >>>>>>>>>>>>>>> Utilities <<<<<<<<<<<<<<<< */
+.section {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: var(--max-width);
+}
+
+.section-title {
+    padding: 0.6rem 0;
+    color: var(--title-color);
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.spacing-y {
+    padding: 1rem 0;
+}
+
+.pt-0 {
+    padding-top: 0;
+}
+
+.pb-0 {
+    padding-bottom: 0;
+}
+
+.bl-0 {
+    border-left: 0;
+}
+
+.br-0 {
+    border-right: 0;
+}
+
+/* >>>>>>>>>>>>>>> Site Styles <<<<<<<<<<<<<<<< */
+.pensioners {
+    padding: 0 2rem 3rem;
+}
+
+.map-region {
+    text-align: center;
+}
+
+.map-region > svg {
+    display: none;
+}
+
+.map-region select {
+    border: thin solid var(--second-color);
+    border-radius: 0.6rem;
+    width: 70%;
+    padding: 0.188rem 0.188rem 0.25rem;
+}
+
+.total-pensioners {
+    text-align: center;
+    border-bottom: thin solid var(--second-color);
+}
+
+.total-pensioners > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.total-pensioners h3 {
+    color: var(--second-color);
+    font-size: 1.1rem;
+    padding-bottom: 0.75rem;
+}
+
+.total-indicator {
+    font-size: 11vw;
+    font-weight: bold;
+    color: var(--second-color);
+}
+
+.total-pensioners img {
+    width: 26vw;
+    height: auto;
+    padding-right: 1rem;
+}
+
+.indicator-details {
+    clear: both;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+.indicator-details img {
+    width: 2rem;
+    height: 2rem;
+}
+
+.indicator-details p {
+    margin-bottom: 0.25rem;
+    color: var(--second-color);
+}
+
+.indicator-description {
+    width: var(--width-indicator-description);
+}
+
+.age-distribution {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+.age-distribution .section-title {
+    grid-column: span 2;
+}
+
+.item-age {
+    background-color: var(--gray-light-color);
+    border-left: thin solid var(--second-color);
+    border-right: thin solid var(--second-color);
+    padding: 1rem;
+    margin-bottom: 0.25rem;
+    text-align: center;
+}
+
+.item-age:nth-child(even) {
+    border-right: 0;
+}
+
+.percent-age {
+    color: var(--third-color);
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.item-age p {
+    color: var(--second-color);
+    font-size: 0.8rem;
+    margin-bottom: 0;
+}
+
+.indicator-pensioners,
+.beneficiaries {
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+
+    .hero-image-title {
+        font-size: 4.5vw;
+    }
+
+    .total-pensioners .total-indicator {
+        font-size: 3.4rem;
+    }
+
+    .total-pensioners img {
+        width: 7rem;
+    }
+
+    .total-indicator {
+        font-size: 5vw;
+    }
+}
+
+@media screen and (min-width: 1024px) { 
+
+    .hero-image-opacity {
+        min-height: 22vh;
+    }
+    
+    .hero-image-title {
+        font-size: 2.5vw;
+    }
+
+    .pensioners {
+        padding: 4rem 2rem;
+        display: grid;
+        grid-template-columns: 40% 60%;
+    }
+
+    .map-region {
+        padding: 0 1.5rem 0 0;
+    }
+
+    .map-region > svg {
+        display: block;
+    }
+
+    .map-region .section-title {
+        padding-top: 2rem;
+    }
+
+    .pensioners-details {
+        padding: 0 2rem;
+    }
+
+    .total-pensioners .total-indicator {
+        font-size: 3.5rem;
+    }
+
+    .total-pensioners img {
+        width: 28%;
+    }
+
+    .total-pensioners h3 {
+        display: none;
+    }
+
+    .total-pensioners .total-indicator::before {
+        content: 'A nivel nacional';
+        display: block;
+        font-size: 1.2rem;
+        font-weight: 500;
+    }
+
+    .total-indicator {
+        font-size: 3vw;
+    }
+
+    .indicators-progres-bar {
+        position: relative;
+    }
+
+    .indicator-details img {
+        display: none;
+    }
+
+    .first-bar::before {
+        content: '';
+        background-image: var(--image-progres-bar);
+        background-size: cover;
+        width: 3rem;
+        height: 3rem;
+        position: absolute;
+        left: -1.5rem;
+        bottom: var(--bottom-image-position);
+    }
+
+    .second-bar::after {
+        content: '';
+        background-image: var(--image-progres-bar);
+        background-size: cover;
+        width: 3rem;
+        height: 3rem;
+        position: absolute;
+        right: -1.5rem;
+        bottom: var(--bottom-image-position);
+    }
+
+    .age-distribution {
+        display: grid;
+        grid-template-columns: repeat(4, 25%);
+    }
+
+    .age-distribution .section-title {
+        grid-column: span 4;
+    }
+
+    .item-age {
+        padding-top: 0.3rem;
+        padding-bottom: 0.7rem;
+    }
+
+    .item-age p {
+        padding: 0 1rem;
+        line-height: 1.2;
+        color: var(--black-color);
+    }
+
+    .item-age:nth-child(3n) {
+        border-right: 0;
+    }
+
+    .bar-graphic {
+        padding: 1rem var(--padding-bar-graphic) 0;
+    }
+
+    .v-bar {
+        width: 7vw;
+        height: var(--height-bar);
+        background-color: var(--bg-bar);
+    }
+
+    .desc-bar-graphic {
+        padding: 0 var(--padding-bar-graphic);
+    }
+
+    .desc-bar-graphic p {
+        width: 7vw;
+    }
+}

@@ -1,0 +1,263 @@
+<div class="onp-banner">
+  <div class="onp-banner1">
+    <div class="banner-text">
+      <p class="text">
+        Conoce cómo<br />
+        administramos el Sistema <br />
+        Nacional de Pensiones
+      </p>
+    </div>
+  </div>
+  <div class="onp-banner2">
+    <div class="banner-text">
+      <p class="text">
+        Entérate más sobre<br />
+        la propuesta de reforma<br />
+        del Sistema Previsional
+      </p>
+    </div>
+  </div>
+  <div class="container-banner-text-m text-m-uno">
+    <p id="text-b-uno" class="text-b-uno">
+      Conoce cómo administramos el Sistema
+    </p>
+    <p id="text-b-dos" class="text-b-dos">Nacional de Pensiones</p>
+  </div>
+  <!-- <div class="container-banner-text-m text-m-dos">
+    <p class="text-b-uno">Entérate más obre la propuesta de</p>
+    <p class="text-b-dos">reforma del Sistema Previsional</p>
+  </div> -->
+  <div class="banner-control">
+    <a class="control1 banner-selected" onclick="showImage1()"></a>
+    <a class="control2 banner-unselected" onclick="showImage2()"></a>
+  </div>
+</div>
+
+<div class="onp-inicio-submenu">
+  <a
+    class="onp-submenu-card onp-bg-acero text-center"
+    [routerLink]="['/Enterate']"
+  >
+    <div class="card-content">
+      <img
+        class="card-img2"
+        src="../../../assets/images/SVG/opn-inicio-corneta.svg"
+        alt=""
+      />
+      <div class="card-title">
+        <h2 class="h2-onp">ONP Fácil</h2>
+      </div>
+    </div>
+    <div class="card-trig" onmouseover="showCard1()" onmouseout="hideCard1()">
+      <!-- <img
+        class="imgcard_1"
+        src="../../../assets/images/submenu_iconbg.svg"
+        alt=""
+        id="imgcard1"
+      /> -->
+      <div class="card-title-back text-center" id="datacard1">
+        <h2>ONP Fácil</h2>
+        <p>
+          Conoce de manera sencilla cuáles son nuestros encargos y cómo los
+          realizamos.
+        </p>
+      </div>
+    </div>
+    <div class="card-content-select" id="enterateCard">
+      <img
+        src="../../../assets/images/submenu_iconbg.svg"
+        alt=""
+        style="visibility: hidden"
+      />
+      <div class="card-title-back text-center">
+        <h2>ONP Fácil</h2>
+        <p>
+          Conoce de manera sencilla<br />
+          cuáles son nuestros encargos <br />
+          y cómo los realizamos.
+        </p>
+      </div>
+    </div>
+    <div class="card-backselect"></div>
+  </a>
+  <a
+    class="onp-submenu-card onp-bg-acero text-center"
+    [routerLink]="['/DatosAbiertos']"
+  >
+    <div class="card-content">
+      <img
+        class="card-img2"
+        src="../../../assets/images/SVG/opn-inicio-search.svg"
+        alt=""
+        style="margin-bottom: 0.35rem"
+      />
+      <div class="card-title">
+        <h2 class="h2-datos">Datos abiertos</h2>
+      </div>
+    </div>
+    <div
+      class="card-trig trig-img"
+      onmouseover="showCard2()"
+      onmouseout="hideCard2()"
+    >
+      <!-- <img
+        class="card-img2"
+        src="../../../assets/images/submenu2_iconbg.svg"
+        alt=""
+        id="imgcard2"
+      /> -->
+      <div class="card-title-back text-center" id="datacard2">
+        <h2>Datos abiertos</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+      </div>
+    </div>
+    <div class="card-content-select" id="enterateCard2">
+      <img
+        class="card-img2"
+        src="../../../assets/images/submenu2_iconbg.svg"
+        alt=""
+        style="visibility: hidden"
+      />
+      <div class="card-title-back text-center">
+        <h2>Datos abiertos</h2>
+        <p>
+          Consulta las bases de datos <br />
+          e información estadística.
+        </p>
+      </div>
+    </div>
+    <div class="card-backselect"></div>
+  </a>
+  <a
+    class="onp-submenu-card onp-bg-acero text-center"
+    [routerLink]="['/Publicaciones']"
+  >
+    <div class="card-content">
+      <img
+        class="card-img3"
+        src="../../../assets/images/SVG/opn-inicio-carpeta.svg"
+        alt=""
+        style="margin-bottom: 0.45rem"
+      />
+      <div class="card-title">
+        <h2 class="h2-publicaciones">Publicaciones</h2>
+      </div>
+    </div>
+    <div class="card-trig" onmouseover="showCard3()" onmouseout="hideCard3()">
+      <!-- <img
+        class="card-img3"
+        src="../../../assets/images/submenu3_iconbg.svg"
+        alt=""
+        id="imgcard3"
+      /> -->
+      <div class="card-title-back text-center" id="datacard3">
+        <h2>Publicaciones</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+      </div>
+    </div>
+    <div
+      class="card-content-select"
+      id="enterateCard3"
+      style="margin-top: -1.3rem"
+    >
+      <img
+        class="card-img3"
+        src="../../../assets/images/submenu3_iconbg.svg"
+        alt=""
+        style="visibility: hidden"
+      />
+      <div class="card-title-back text-center" style="margin-bottom: 1.5rem">
+        <h2>Publicaciones</h2>
+        <p>
+          Revisa la información relacionada <br />
+          al Sistema de Pensiones.
+        </p>
+      </div>
+    </div>
+    <div class="card-backselect"></div>
+  </a>
+</div>
+<div class="onp-separator">
+  <hr />
+</div>
+<div class="onp-info-content">
+  <h2 class="onp-info-title onp-color-primary">¿De qué nos encargamos?</h2>
+  <p class="onp-info-body">
+    Somos la Oficina de Normalización Previsional y administramos el Sistema
+    Nacional de Pensiones, los Regímenes Pesqueros y brindamos pensión del
+    Seguro Complementario de Trabajo de Riesgo, más conocido como el SCTR.
+    Además, gestionamos por encargo, pagos y pensiones de otras instituciones
+    del Estado.
+  </p>
+  <div class="onp-carrusel2">
+    <div class="letter_img1">
+      <img src="../../../assets/images/letter1.png" alt="" />
+      <img
+        class="sombra1"
+        src="../../../assets/images/sombra1.png"
+        alt=""
+        id="somb1"
+      />
+      <div class="img-selected1" onmouseover="showletter1()"></div>
+    </div>
+    <div class="letter_img2" onmouseover="showletter2()">
+      <img src="../../../assets/images/letter2.png" alt="" />
+      <img
+        class="sombra2"
+        src="../../../assets/images/sombra1.png"
+        alt=""
+        id="somb2"
+      />
+    </div>
+    <div class="letter_img3" onmouseover="showletter3()">
+      <img src="../../../assets/images/letter3.png" alt="" />
+      <img
+        class="sombra3"
+        src="../../../assets/images/sombra3.png"
+        alt=""
+        id="somb3"
+      />
+    </div>
+    <div class="letter_img4" onmouseover="showletter4()">
+      <img src="../../../assets/images/letter4.png" alt="" />
+      <img
+        class="sombra4"
+        src="../../../assets/images/sombra4.png"
+        alt=""
+        id="somb4"
+      />
+    </div>
+  </div>
+  <div class="title-info">
+    <h2 class="onp-info-title2 onp-color-primary subtitle" id="title1">
+      Sistema Nacional de Pensiones
+    </h2>
+    <h2
+      class="onp-info-title2 onp-color-primary subtitle"
+      id="title2"
+      style="visibility: hidden"
+    >
+      SCTR Pensión
+    </h2>
+    <h2
+      class="onp-info-title2 onp-color-primary subtitle"
+      id="title3"
+      style="visibility: hidden"
+    >
+      Regímenes Pesquero
+    </h2>
+    <h2
+      class="onp-info-title2 onp-color-primary subtitle"
+      id="title4"
+      style="visibility: hidden"
+    >
+      Pagos por encargo
+    </h2>
+  </div>
+  <div class="data-info">
+    <p id="subinfo" class="onp-info-body subinfo">
+      Conoce los conceptos, ventajas y beneficios del Sistema Nacional de
+      Pensiones de forma clara y sencilla.
+    </p>
+  </div>
+</div>

@@ -1,0 +1,19 @@
+.onp-background {
+    position: relative;
+    background: url('../../../assets/images/banner_zonap.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+}
+
+.onp-content {
+    position: relative;
+    background: url('../../../assets/images/bck_content.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+}

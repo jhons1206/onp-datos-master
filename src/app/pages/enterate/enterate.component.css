@@ -1,0 +1,1716 @@
+.onp-background {
+  position: relative;
+  background: url("../../../assets/images/onp-facil-bn-100.jpg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 120%;
+  height: 62vh;
+  display: flex;
+  flex-direction: row;
+  border-radius: 0 0 50% 50%;
+  left: -10%;
+  z-index: 0;
+  margin-top: 4.6rem;
+}
+
+.onp-banner {
+  position: relative;
+  /* background-color: #ffffff; */
+  height: 40%;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  top: 17%;
+  left: 21.9%;
+  padding-top: 3%;
+  padding-bottom: 2%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.onp-banner .onp-title {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 25px;
+  font-size: 1.5rem;
+  font-weight: 500 !important;
+  position: absolute;
+  left: 15%;
+  top: 10%;
+}
+
+.onp-banner > .onp-body {
+  margin-bottom: 0;
+  margin-top: 7%;
+  line-height: 15px;
+  font-weight: 350;
+  text-align: justify;
+}
+
+.onp-submenu {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  width: 50%;
+}
+
+.onp-submenu-header {
+  position: -webkit-sticky;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  z-index: 5;
+  width: 100%;
+  box-shadow: 0px 1px 10px #888888;
+}
+
+.onp-submenu-header .onp-submenu .onp-submenu-item {
+  flex: 0 1 15%;
+  text-align: center;
+}
+
+.onp-submenu-header .onp-submenu .onp-submenu-item span {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-bottom: 0;
+  font-size: 0.85rem;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.onp-submenu-header .onp-submenu .onp-submenu-item span:hover {
+  color: rgb(255, 184, 28);
+}
+
+.onp-content {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5%;
+  padding-left: 14%;
+  padding-right: 14%;
+  padding-bottom: 5%;
+}
+
+.onp-content > img {
+  width: 25%;
+  margin-right: 5%;
+}
+
+.onp-content > p {
+  font-size: 1.5rem;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+}
+
+.card-container .onp-card-user-container {
+  display: flex;
+  position: relative;
+  width: 50%;
+  justify-content: center;
+}
+
+.onp-card-user-container .onp-card-user {
+  align-items: center;
+  border-radius: 200px 200px 200px 200px;
+  -webkit-border-radius: 200px 200px 200px 200px;
+  -moz-border-radius: 200px 200px 200px 200px;
+  display: flex;
+  justify-content: space-between;
+  height: 85%;
+  margin: 1rem;
+  position: relative;
+  top: -60%;
+  width: 80%;
+}
+
+.card-user {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.onp-card-user-container .onp-card-user:hover img {
+  transform: scale(1.2);
+}
+
+.onp-card-user .onp-card-user-img {
+  width: 40%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.onp-card-user .onp-card-user-text {
+  font-size: 0.78rem;
+  color: white;
+  margin-right: 10px;
+  margin-top: 1px;
+  margin-bottom: 0 !important;
+}
+
+.onp-text-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-content: center;
+}
+
+.onp-text-center > span {
+  color: rgb(20, 27, 77);
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.onp-text-center > p {
+  color: rgb(20, 27, 77);
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.onp-icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
+.onp-icon-container .ng-carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+
+.gallery .chevron.left {
+  opacity: 1 !important;
+}
+
+.owl-carousel {
+  width: 60% !important;
+}
+
+.gallery .gallery-inner {
+  align-items: center !important;
+  align-content: center !important;
+}
+
+.onp-icon-container .ng-carousel .onp-list-icon {
+  /* list-style: none;
+  width: 25%;
+  font-size: 0.5rem;
+  text-align: center; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.onp-icon-container .ng-carousel .onp-list-icon > img {
+  pointer-events: none;
+  /* margin-bottom: 1rem; */
+}
+
+.onp-icon-container .ng-carousel .onp-list-icon > span {
+  text-align: center;
+  width: 70%;
+  line-height: 1;
+}
+
+.onp-section-info {
+  background: url("../../../assets/images/onp-facil-section-bg_1.jpg") no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 52vh;
+  /* margin: 3rem auto; */
+  position: relative;
+  width: 100vw;
+}
+
+.onp-section-info > img {
+  height: 110%;
+  width: 22%;
+  position: absolute;
+  top: -10%;
+  left: 23%;
+  z-index: 2;
+}
+
+.onp-section-info-text-container {
+  position: absolute;
+  left: 45%;
+  top: 23%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.onp-section-info-text-container p {
+  margin-top: 10px;
+}
+
+.onp-section-info-text-container > span {
+  font-size: 0.85rem;
+  margin-left: -0.5rem;
+  /* margin-bottom: 10px; */
+}
+
+.onp-section-info-text-container > h5 {
+  margin-bottom: -0.5rem !important;
+  margin-right: 2rem !important;
+}
+
+.onp-section-info .onp-rombo-info {
+  background-color: rgb(20, 27, 77);
+  -webkit-border-radius: 200px 200px 200px 200px;
+  -moz-border-radius: 200px 200px 200px 200px;
+  border-radius: 200px 200px 200px 200px;
+  width: 70vh;
+  height: 18vh;
+  position: absolute;
+  z-index: 0;
+  left: -10%;
+  top: 160%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.onp-section-info .onp-rombo-info .onp-rombo-info-text {
+  color: white;
+  font-size: 0.85rem;
+  width: 80%;
+  margin-top: 8%;
+}
+
+.onp-rombo-info-button {
+  position: relative;
+  top: -4%;
+  background-color: rgb(255, 109, 106);
+  -webkit-border-radius: 25px 25px 25px 25px;
+  -moz-border-radius: 25px 25px 25px 25px;
+  border-radius: 25px 25px 25px 25px;
+  width: 21%;
+  color: white;
+  text-decoration: none;
+  padding: 0.2rem 1.25rem 0.45rem 1.25rem;
+  font-size: 1.3rem;
+}
+
+.onp-section-info-dos {
+  background: url("../../../assets/images/onp-facil-section-bg_2..jpg")
+    no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 55vh;
+  /* margin-top: 2rem; */
+  position: relative;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.onp-section-info-dos:hover {
+  filter: opacity(0.9);
+}
+
+.onp-info-dos span {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.onp-section-info-dos .onp-info-dos-text {
+  color: white;
+  font-size: 1rem;
+  margin-top: 1.2rem;
+}
+
+.onp-info-button {
+  background-color: rgb(255, 109, 106);
+  -webkit-border-radius: 25px 25px 25px 25px;
+  -moz-border-radius: 25px 25px 25px 25px;
+  border-radius: 25px 25px 25px 25px;
+  width: 26%;
+  color: white;
+  text-decoration: none;
+  padding: 0.2rem 1.55rem 0.45rem 1.53rem;
+  font-size: 1.3rem;
+  position: relative;
+  font-weight: 700;
+}
+
+.onp-info-button {
+  border-color: rgba(20, 27, 77, 1);
+  color: #fff;
+  background-image: -webkit-linear-gradient(
+    100deg,
+    rgba(20, 27, 77, 1) 50%,
+    transparent 50%
+  );
+  background-image: linear-gradient(
+    100deg,
+    rgba(20, 27, 77, 1) 50%,
+    transparent 50%
+  );
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 1s ease-in-out;
+  transition: background 1s ease-in-out;
+}
+.onp-info-button:hover {
+  background-position: 0;
+}
+
+.onp-info-button-dos {
+  background-color: rgb(255, 109, 106);
+  -webkit-border-radius: 25px 25px 25px 25px;
+  -moz-border-radius: 25px 25px 25px 25px;
+  border-radius: 25px 25px 25px 25px;
+  width: 25%;
+  color: white;
+  text-decoration: none;
+  padding: 0.3rem 2.2rem 0.6rem 2.3rem;
+  font-size: 1.3rem;
+  position: relative;
+  font-weight: 700;
+}
+
+.onp-info-button-dos {
+  border-color: rgba(20, 27, 77, 1);
+  color: #fff;
+  background-image: -webkit-linear-gradient(
+    100deg,
+    rgba(20, 27, 77, 1) 50%,
+    transparent 50%
+  );
+  background-image: linear-gradient(
+    100deg,
+    rgba(20, 27, 77, 1) 50%,
+    transparent 50%
+  );
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 1s ease-in-out;
+  transition: background 1s ease-in-out;
+}
+.onp-info-button-dos:hover {
+  background-position: 0;
+}
+
+/*** Inicio seccion 3***/
+
+.onp-section-info-tres {
+  background: url("../../../assets/images/opn-facil-section-3.jpg") no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 86vh;
+  /* margin-bottom: 2rem auto; */
+  position: relative;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* .onp-section-info-tres:hover {
+  filter: opacity(0.9);
+} */
+
+.onp-info-tres {
+  position: absolute;
+  left: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  top: 20%;
+}
+
+.onp-info-tres span {
+  font-size: 1.5rem;
+}
+
+.onp-info-tres .onp-info-tres-text {
+  font-size: 1.05rem;
+  margin-top: 0.9rem;
+  font-weight: 400;
+  line-height: 20px;
+  color: rgb(20, 27, 77);
+}
+
+.onp-info-tres .onp-info-tres-span {
+  font-size: 0.9rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: rgb(20, 27, 77);
+}
+
+.onp-info-cuatro {
+  position: absolute;
+  left: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  top: 20%;
+}
+
+.onp-info-cuatro span {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+  color: white;
+  font-weight: 700;
+}
+
+.onp-info-cuatro p {
+  margin-bottom: 1rem;
+  color: white;
+  font-size: 1.3rem;
+}
+
+/**** Inicio Seccion TABS ****/
+.onp-section-tabs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1rem;
+  margin-bottom: -2rem;
+  width: 100%;
+  position: relative;
+}
+
+.nav-tab-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(20, 27, 77);
+  height: 25vh;
+  width: 120%;
+  -moz-border-radius: 50% 50% 0 0;
+  -webkit-border-radius: 50% 50% 0 0;
+  border-radius: 50% 50% 0 0;
+  padding-bottom: 0;
+  position: absolute;
+  top: -35%;
+}
+
+.nav-tab-container h5 {
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.nav.nav-tabs {
+  background-color: rgb(20, 27, 77);
+  width: 45%;
+  margin-top: 0.5rem;
+  margin-bottom: -2.4rem;
+  padding: 1rem auto !important;
+  border: 0 !important;
+}
+
+.nav-tabs .nav-item {
+  flex: 1 0 25%;
+  text-align: center;
+  padding-left: 1.2rem;
+}
+
+.nav-tabs .nav-link {
+  -webkit-border-radius: 45px 45px 0px 0px !important;
+  -moz-border-radius: 45px 45px 0px 0px !important;
+  border-radius: 45px 45px 0px 0px !important;
+  color: white !important;
+  padding: 0.5rem 2rem !important;
+  height: 100%;
+  margin: auto 0.2rem;
+  display: flex;
+  align-items: center;
+}
+
+.nav-tabs .nav-link.active {
+  background-color: rgb(255, 255, 255) !important;
+  color: rgb(20, 27, 77) !important;
+}
+
+.nav-tabs .nav-link:hover {
+  border: none !important;
+}
+
+.tab-content {
+  margin: 5rem auto;
+  padding: 3rem auto !important;
+  width: 100%;
+}
+
+.tab-pane {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin-left: 7rem;
+}
+
+.onp-section-tabs-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 75%;
+  position: relative;
+}
+
+.onp-section-tabs-content img {
+  margin-right: 3rem;
+  border-radius: 50%;
+}
+
+.onp-section-tabs-content-text p {
+  text-align: justify;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.onp-section-tabs-content-text a {
+  background-color: rgb(255, 109, 106);
+  -webkit-border-radius: 25px 25px 25px 25px;
+  -moz-border-radius: 25px 25px 25px 25px;
+  border-radius: 25px 25px 25px 25px;
+  width: 26%;
+  color: white;
+  text-decoration: none;
+  padding: 0.3rem 1.55rem 0.55rem 1.53rem;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.onp-section-tabs-content-text a {
+  border-color: rgba(20, 27, 77, 1);
+  color: #fff;
+  background-image: -webkit-linear-gradient(
+    100deg,
+    rgba(20, 27, 77, 1) 50%,
+    transparent 50%
+  );
+  background-image: linear-gradient(
+    100deg,
+    rgba(20, 27, 77, 1) 50%,
+    transparent 50%
+  );
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 1s ease-in-out;
+  transition: background 1s ease-in-out;
+}
+.onp-section-tabs-content-text a:hover {
+  background-position: 0;
+}
+
+#pills-orfandad,
+#pills-ascendencia,
+#pills-defuncion {
+  display: none;
+}
+
+/**** Fin Seccion TABS ****/
+
+/*** Inicio seccion Cuatro ***/
+.onp-section-info-cuatro {
+  background: url("../../../assets/images/onp-facil-section-bene-bg.jpg")
+    no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 49vh;
+  margin-top: 3rem;
+  margin-bottom: 6rem;
+  position: relative;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.onp-section-info-cuatro:hover {
+  filter: opacity(0.9);
+}
+
+.onp-section-info-cuatro .onp-section-cuatro-list-container {
+  -webkit-border-radius: 35px 35px 35px 35px;
+  -moz-border-radius: 35px 35px 35px 35px;
+  border-radius: 35px 35px 35px 35px;
+  box-shadow: 0px 1px 10px #888888;
+  position: absolute;
+  width: 51vw;
+  background-color: white;
+  height: 100%;
+  top: 70%;
+}
+
+.onp-section-info-cuatro
+  .onp-section-cuatro-list-container
+  .onp-list-icon-cuatro {
+  display: flex;
+  justify-content: space-around;
+  width: 50vw;
+  margin-top: 2em;
+}
+
+.onp-section-info-cuatro
+  .onp-section-cuatro-list-container
+  .onp-list-icon-cuatro
+  > div {
+  list-style: none;
+  width: 25%;
+}
+
+.onp-section-info-cuatro
+  .onp-section-cuatro-list-container
+  .onp-list-icon-cuatro
+  .onp-list-item-cuatro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.onp-list-item-cuatro span {
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  text-align: center;
+  line-height: 15px;
+}
+
+.onp-list-item-cuatro img {
+  width: 50%;
+}
+
+.onp-list-item-cuatro .onp-list-bonos {
+  margin-top: 1.7rem;
+}
+
+/* .onp-list-item-cuatro img:hover {
+  filter: opacity(0.5);
+} */
+
+.onp-list-item-cuatro > p {
+  width: 100%;
+  font-size: 0.85rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.onp-list-item-cuatro .onp-list-p {
+  margin-top: 1rem;
+  line-height: 17px;
+}
+
+.onp-list-item-cuatro .onp-list-p:nth-child(2) {
+  margin-top: 1.3rem;
+  line-height: 17px;
+}
+
+.onp-info-cuatro-button {
+  background-color: rgb(255, 109, 106);
+  -webkit-border-radius: 25px 25px 25px 25px;
+  -moz-border-radius: 25px 25px 25px 25px;
+  border-radius: 25px 25px 25px 25px;
+  position: absolute;
+  left: 44%;
+  top: 95%;
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  padding: 0.35rem 1.15rem 0.55rem 1.15rem;
+  font-weight: 800;
+}
+
+.onp-info-cuatro-button {
+  border-color: rgba(20, 27, 77, 1);
+  color: #fff;
+  background-image: -webkit-linear-gradient(
+    100deg,
+    rgba(20, 27, 77, 1) 50%,
+    transparent 50%
+  );
+  background-image: linear-gradient(
+    100deg,
+    rgba(20, 27, 77, 1) 50%,
+    transparent 50%
+  );
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 1s ease-in-out;
+  transition: background 1s ease-in-out;
+}
+.onp-info-cuatro-button:hover {
+  background-position: 0;
+}
+
+/*** Inicio seccion Cinco ***/
+.onp-section-info-cinco {
+  background: url("../../../assets/images/opn-facil-section-4.jpg") no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 52vh;
+  margin-top: 25%;
+  position: relative;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 39.8%;
+}
+
+.onp-info-cinco {
+  position: absolute;
+  width: 30vw;
+  top: 20%;
+  left: 50%;
+}
+
+.onp-info-cinco span {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.onp-info-cinco p {
+  color: white;
+  font-size: 0.85rem;
+  margin-top: 1rem;
+  margin-bottom: 2em;
+  font-weight: 300;
+}
+
+.onp-info-cinco .onp-info-cinco-button {
+  background-color: rgb(255, 109, 106);
+  -webkit-border-radius: 25px 25px 25px 25px;
+  -moz-border-radius: 25px 25px 25px 25px;
+  border-radius: 25px 25px 25px 25px;
+  width: 100%;
+  color: white;
+  text-decoration: none;
+  padding: 0.35rem 1.15rem 0.55rem 1.15rem;
+  font-size: 1rem;
+  margin-top: 1rem;
+  font-weight: 700;
+}
+
+.onp-info-cinco .onp-info-cinco-button {
+  border-color: rgba(20, 27, 77, 1);
+  color: #fff;
+  background-image: -webkit-linear-gradient(
+    100deg,
+    rgba(20, 27, 77, 1) 50%,
+    transparent 50%
+  );
+  background-image: linear-gradient(
+    100deg,
+    rgba(20, 27, 77, 1) 50%,
+    transparent 50%
+  );
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 1s ease-in-out;
+  transition: background 1s ease-in-out;
+}
+
+.onp-info-cinco .onp-info-cinco-button:hover {
+  background-position: 0;
+  border: 0;
+}
+/*** Inicio seccion Seis ***/
+.onp-section-info-seis-container {
+}
+.onp-section-info-seis {
+  background: url("../../../assets/images/opn-facil-cifras-bg.jpg") no-repeat;
+  background-size: cover;
+  background-position: top;
+  height: 65vh;
+  position: absolute;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: 87%;
+  z-index: 0;
+  margin-bottom: 2rem;
+}
+
+.onp-info-seis {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+
+.onp-info-seis span {
+  font-size: 1.5rem;
+  position: absolute;
+  top: 20%;
+  font-weight: bold;
+}
+
+.onp-info-seis .onp-info-seis-card-container {
+  display: flex;
+  justify-content: space-around;
+  width: 52vw;
+  margin-top: 1rem;
+}
+
+.onp-info-seis-card-container .card-uno-container {
+  position: relative;
+  height: 100%;
+  background-color: white;
+  flex: 1 0 30%;
+  height: 25vh;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 15px 15px 15px 15px;
+  overflow: hidden;
+  margin: 0.5rem;
+}
+
+.onp-info-seis-card-container .card-uno-container p {
+  position: relative;
+  top: -70%;
+  width: 50%;
+  font-weight: bold;
+  left: 2%;
+  font-size: 0.9rem;
+}
+
+.onp-info-seis-card-container .card-uno-container:nth-child(1) p {
+  left: -5%;
+}
+
+.onp-info-seis .onp-info-seis-card-container .onp-info-seis-card {
+  position: relative;
+  height: 100%;
+  background-color: white;
+  flex: 1 0 30%;
+}
+
+.onp-info-seis .onp-info-seis-card-container .onp-info-seis-card:hover {
+  -webkit-transform: scale(1.12);
+  transform: scale(1.12);
+}
+
+.onp-info-seis .onp-info-seis-card-container .onp-info-seis-card p {
+  position: absolute;
+  left: 5%;
+  top: 38%;
+  font-size: 0.8rem;
+  width: 40%;
+  font-weight: 600;
+  color: rgb(20, 27, 77);
+}
+
+.onp-info-seis .onp-info-seis-card-container .onp-info-seis-card.card-uno {
+  background: url("../../../assets/images/SVG/onp-section-seis-card-uno.svg")
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* position: relative; */
+  height: 25vh;
+  /* -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 15px 15px 15px 15px; */
+}
+
+.onp-info-seis .onp-info-seis-card-container .onp-info-seis-card.card-dos {
+  background: url("../../../assets/images/SVG/onp-section-seis-card-dos.svg")
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 25vh;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.onp-info-seis .onp-info-seis-card-container .onp-info-seis-card.card-tres {
+  background: url("../../../assets/images/SVG/onp-section-seis-card-tres.svg")
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 25vh;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.onp-list-bene {
+  margin-top: 0.35rem;
+}
+
+@media screen and (min-width: 1024px) {
+  /* insert styles here */
+}
+
+@media screen and (min-width: 1366px) {
+  .card-container .onp-card-user-container {
+    width: 58%;
+  }
+  .onp-card-user-container .onp-card-user {
+    width: 100%;
+  }
+  .onp-card-user .onp-card-user-text {
+    font-size: 0.9rem;
+    color: white;
+    margin-right: 10px;
+    margin-left: 5px;
+    margin-top: 1px;
+    margin-bottom: 0 !important;
+  }
+  .gallery-inner:nth-child(1) {
+    margin-top: -1rem !important;
+  }
+  .onp-rombo-info-button {
+    padding: 0.2rem 1.25rem 0.45rem 1.25rem;
+    font-size: 1.5rem;
+  }
+  .onp-info-tres {
+    left: 45%;
+    top: 20%;
+  }
+
+  .onp-info-cuatro {
+    left: 30%;
+  }
+  .onp-info-cuatro-button {
+    padding: 0.5rem 1.15rem 0.8rem 1.15rem;
+    font-size: 1rem;
+  }
+  .onp-info-cinco .onp-info-cinco-button {
+    padding: 0.5rem 1.15rem 0.8rem 1.15rem;
+    font-size: 1rem;
+  }
+  .nav.nav-tabs {
+    margin-bottom: -3.2rem;
+  }
+  .tab-content {
+    margin: 3.5rem auto;
+  }
+  .onp-list-item-cuatro .onp-list-p {
+    margin-top: 0.2rem;
+    font-weight: 400;
+  }
+
+  .onp-list-img,
+  .onp-list-bonos {
+    margin-top: 1.9rem;
+  }
+  .onp-list-img-bene {
+    margin-top: 1.2rem;
+  }
+
+  .onp-list-bene-span {
+    margin-top: 0;
+  }
+
+  .onp-list-bene {
+    margin-top: -0.5rem;
+  }
+
+  .onp-info-cinco {
+    position: absolute;
+    width: 27vw;
+    top: 20%;
+    left: 47.5%;
+  }
+  .onp-info-cinco span {
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    font-weight: bold;
+  }
+  .onp-info-cinco p {
+    color: white;
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 2em;
+    font-weight: 300;
+    line-height: 22px;
+  }
+  .onp-info-seis span {
+    font-size: 1.7rem;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .onp-banner .onp-title {
+    font-size: 2.5rem;
+    line-height: 45px;
+  }
+  .card-container .onp-card-user-container {
+    width: 50%;
+    margin-bottom: -3rem;
+  }
+  .onp-card-user-container .onp-card-user {
+    width: 95%;
+  }
+  .onp-card-user .onp-card-user-text {
+    font-size: 1.05rem;
+    color: white;
+    margin-right: 15px;
+    margin-left: 5px;
+    margin-top: 1px;
+    margin-bottom: 0 !important;
+    line-height: 30px;
+  }
+  .onp-text-center > span {
+    font-size: 1.5rem;
+  }
+
+  .onp-text-center > p {
+    font-size: 1.7rem;
+  }
+  .onp-icon-container .ng-carousel {
+    width: 55%;
+  }
+  .onp-section-info {
+    margin: 2.5rem auto;
+    width: 100vw;
+  }
+  .onp-section-info-text-container {
+    position: absolute;
+    left: 44%;
+    top: 15%;
+    text-align: center;
+  }
+  .onp-section-info-text-container > span {
+    font-size: 1.4rem;
+  }
+
+  .onp-section-info-text-container > h5 {
+    font-size: 1.6rem;
+  }
+
+  .onp-section-info .onp-rombo-info {
+    background-color: rgb(20, 27, 77);
+    -webkit-border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    border-radius: 200px 200px 200px 200px;
+    width: 67vh;
+    height: 18vh;
+    position: absolute;
+    z-index: 0;
+    left: -5%;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .onp-section-info .onp-rombo-info .onp-rombo-info-text {
+    font-size: 1.2rem;
+  }
+  /* .gallery-inner:nth-child(1) {
+    margin-top: -1rem !important;
+  } */
+  .onp-rombo-info .onp-info-button {
+    padding: 0.2rem 1.25rem 0.45rem 1.25rem;
+    font-size: 1.5rem;
+    top: 0%;
+  }
+
+  .onp-info-dos .onp-info-dos-text {
+    font-size: 1.5rem;
+    line-height: 30px;
+  }
+
+  .onp-section-info-tres {
+    height: 70vh;
+    /* margin-bottom: 2rem auto; */
+    position: relative;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .onp-info-tres span {
+    font-size: 2rem;
+  }
+
+  .onp-info-tres .onp-info-tres-text {
+    font-size: 1.5rem;
+    line-height: 30px;
+  }
+
+  .onp-info-tres .onp-info-tres-span {
+    font-size: 1.7rem;
+  }
+
+  .onp-info-tres .onp-info-button {
+    font-size: 1.5rem;
+  }
+
+  .nav-tab-container {
+    height: 20vh;
+    width: 120%;
+    -moz-border-radius: 50% 50% 0 0;
+    -webkit-border-radius: 50% 50% 0 0;
+    border-radius: 50% 50% 0 0;
+    padding-bottom: 0;
+    position: absolute;
+    top: -35%;
+  }
+
+  .nav-tab-container h5 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .nav.nav-tabs {
+    background-color: rgb(20, 27, 77);
+    width: 45%;
+    margin-top: 0.5rem;
+    margin-bottom: -4.9rem;
+    padding: 1.5rem auto !important;
+    border: 0 !important;
+  }
+
+  .nav-tabs .nav-item {
+    flex: 1 0 25%;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .tab-content {
+    margin: 8rem auto;
+    padding: 3rem auto !important;
+    width: 100%;
+  }
+
+  .onp-section-tabs-content .onp-section-tabs-content-text h4 {
+    font-size: 2rem;
+  }
+
+  .onp-section-tabs-content .onp-section-tabs-content-text p {
+    font-size: 1.5rem;
+    color: rgb(20, 27, 77);
+  }
+
+  .onp-section-tabs-content .onp-section-tabs-content-text a {
+    font-size: 1.5rem;
+  }
+
+  .onp-info-cuatro {
+    margin-top: 0;
+  }
+  .onp-info-cuatro span {
+    font-size: 2rem;
+  }
+  .onp-info-cuatro p {
+    font-size: 1.5rem;
+  }
+  .onp-section-info-cuatro .onp-section-cuatro-list-container {
+    width: 53vw;
+    background-color: white;
+    height: 80%;
+    top: 80%;
+  }
+  .onp-section-info-cuatro
+    .onp-section-cuatro-list-container
+    .onp-list-icon-cuatro {
+    display: flex;
+    justify-content: space-around;
+    width: 55vw;
+    margin-top: 4em;
+  }
+  .onp-list-item-cuatro span {
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+    text-align: center;
+    line-height: 15px;
+  }
+
+  .onp-list-item-cuatro img {
+    width: 50%;
+  }
+
+  .onp-list-item-cuatro .onp-list-bonos {
+    margin-top: 2rem;
+  }
+
+  .onp-list-item-cuatro .onp-list-bonos-span {
+    margin-top: 1rem;
+  }
+
+  .onp-list-item-cuatro .onp-list-bene {
+    margin-top: 1.9rem;
+  }
+
+  .onp-list-item-cuatro .onp-list-p {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+  }
+
+  .onp-info-cuatro-button {
+    padding: 0.5rem 1.15rem 0.8rem 1.15rem;
+    font-size: 1.3rem;
+  }
+
+  .onp-section-info-cinco {
+    margin-top: 25%;
+    margin-bottom: 40%;
+  }
+
+  .onp-info-cinco span {
+    font-size: 1.7rem;
+  }
+
+  .onp-info-cinco p {
+    font-size: 1.4rem;
+  }
+
+  .onp-info-cinco .onp-info-cinco-button {
+    padding: 0.5rem 1.15rem 0.8rem 1.15rem;
+    font-size: 1.4rem;
+  }
+
+  .onp-info-seis span {
+    font-size: 1.7rem;
+  }
+
+  .onp-info-seis .onp-info-seis-card-container {
+    width: 55vw;
+  }
+
+  .onp-info-seis .onp-info-seis-card-container .onp-info-seis-card.card-uno {
+    height: 20vh;
+    -webkit-border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
+    border-radius: 15px 15px 15px 15px;
+  }
+
+  .onp-info-seis .onp-info-seis-card-container .onp-info-seis-card.card-dos {
+    height: 20vh;
+    -webkit-border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
+    border-radius: 15px 15px 15px 15px;
+  }
+
+  .onp-info-seis .onp-info-seis-card-container .onp-info-seis-card.card-tres {
+    height: 20vh;
+    -webkit-border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
+    border-radius: 15px 15px 15px 15px;
+  }
+
+  .onp-info-seis .onp-info-seis-card-container .onp-info-seis-card p {
+    position: absolute;
+    left: 0%;
+    top: 30%;
+    font-size: 1.3rem;
+    width: 50%;
+    font-weight: 600;
+  }
+  .onp-section-info-cuatro .onp-section-cuatro-list-container {
+    width: 52.5vw;
+    background-color: white;
+    height: 100%;
+    top: 80%;
+  }
+
+  .onp-section-info-cuatro
+    .onp-section-cuatro-list-container
+    .onp-list-icon-cuatro {
+    width: 53vw;
+    margin-top: 4em;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  /* insert styles here */
+  .onp-banner .onp-title {
+    font-size: 2.5rem;
+    line-height: 45px;
+  }
+  .card-container .onp-card-user-container {
+    width: 50%;
+    margin-bottom: -3rem;
+  }
+  .onp-card-user-container .onp-card-user {
+    width: 95%;
+  }
+  .onp-card-user .onp-card-user-text {
+    font-size: 1.05rem;
+    color: white;
+    margin-right: 15px;
+    margin-left: 5px;
+    margin-top: 1px;
+    margin-bottom: 0 !important;
+    line-height: 30px;
+  }
+  .onp-text-center > span {
+    font-size: 1.5rem;
+  }
+
+  .onp-text-center > p {
+    font-size: 1.7rem;
+  }
+  .onp-icon-container .ng-carousel {
+    width: 55%;
+  }
+  .onp-section-info {
+    margin: 2.5rem auto;
+    width: 100vw;
+  }
+  .onp-section-info-text-container {
+    position: absolute;
+    left: 44%;
+    top: 15%;
+    text-align: center;
+  }
+  .onp-section-info-text-container > span {
+    font-size: 1.4rem;
+  }
+
+  .onp-section-info-text-container > h5 {
+    font-size: 1.6rem;
+  }
+
+  .onp-section-info .onp-rombo-info {
+    background-color: rgb(20, 27, 77);
+    -webkit-border-radius: 200px 200px 200px 200px;
+    -moz-border-radius: 200px 200px 200px 200px;
+    border-radius: 200px 200px 200px 200px;
+    width: 67vh;
+    height: 18vh;
+    position: absolute;
+    z-index: 0;
+    left: -5%;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .onp-section-info .onp-rombo-info .onp-rombo-info-text {
+    font-size: 1.2rem;
+  }
+  /* .gallery-inner:nth-child(1) {
+    margin-top: -1rem !important;
+  } */
+  .onp-rombo-info .onp-info-button {
+    padding: 0.2rem 1.25rem 0.45rem 1.25rem;
+    font-size: 1.5rem;
+    top: 0%;
+  }
+
+  .onp-info-dos .onp-info-dos-text {
+    font-size: 1.5rem;
+    line-height: 30px;
+  }
+
+  .onp-section-info-tres {
+    height: 70vh;
+    /* margin-bottom: 2rem auto; */
+    position: relative;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .onp-info-tres span {
+    font-size: 2rem;
+  }
+
+  .onp-info-tres .onp-info-tres-text {
+    font-size: 1.5rem;
+    line-height: 30px;
+  }
+
+  .onp-info-tres .onp-info-tres-span {
+    font-size: 1.7rem;
+  }
+
+  .onp-info-tres .onp-info-button {
+    font-size: 1.5rem;
+  }
+
+  .nav-tab-container {
+    height: 20vh;
+    width: 120%;
+    -moz-border-radius: 50% 50% 0 0;
+    -webkit-border-radius: 50% 50% 0 0;
+    border-radius: 50% 50% 0 0;
+    padding-bottom: 0;
+    position: absolute;
+    top: -35%;
+  }
+
+  .nav-tab-container h5 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .nav.nav-tabs {
+    background-color: rgb(20, 27, 77);
+    width: 45%;
+    margin-top: 0.5rem;
+    margin-bottom: -4.9rem;
+    padding: 1.5rem auto !important;
+    border: 0 !important;
+  }
+
+  .nav-tabs .nav-item {
+    flex: 1 0 25%;
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
+  .tab-content {
+    margin: 8rem auto;
+    padding: 3rem auto !important;
+    width: 100%;
+  }
+
+  .onp-section-tabs-content .onp-section-tabs-content-text h4 {
+    font-size: 2rem;
+  }
+
+  .onp-section-tabs-content .onp-section-tabs-content-text p {
+    font-size: 1.5rem;
+  }
+
+  .onp-section-tabs-content .onp-section-tabs-content-text a {
+    font-size: 1.5rem;
+  }
+
+  .onp-info-cuatro {
+    margin-top: 0;
+  }
+  .onp-info-cuatro span {
+    font-size: 2rem;
+  }
+  .onp-info-cuatro p {
+    font-size: 1.5rem;
+  }
+  .onp-section-info-cuatro .onp-section-cuatro-list-container {
+    width: 53vw;
+    background-color: white;
+    height: 80%;
+    top: 80%;
+  }
+  .onp-section-info-cuatro
+    .onp-section-cuatro-list-container
+    .onp-list-icon-cuatro {
+    display: flex;
+    justify-content: space-around;
+    width: 55vw;
+    margin-top: 4em;
+  }
+  .onp-list-item-cuatro span {
+    font-size: 1.3rem;
+    margin-top: 0.5rem;
+    text-align: center;
+    line-height: 15px;
+  }
+
+  .onp-list-item-cuatro img {
+    width: 50%;
+  }
+
+  .onp-list-item-cuatro .onp-list-bonos {
+    margin-top: 2rem;
+  }
+
+  .onp-list-item-cuatro .onp-list-bonos-span {
+    margin-top: 1rem;
+  }
+
+  .onp-list-item-cuatro .onp-list-bene {
+    margin-top: 1.9rem;
+  }
+
+  .onp-list-item-cuatro .onp-list-p {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+  }
+
+  .onp-info-cuatro-button {
+    padding: 0.5rem 1.15rem 0.8rem 1.15rem;
+    font-size: 1.3rem;
+  }
+
+  .onp-section-info-cinco {
+    margin-top: 25%;
+    margin-bottom: 38%;
+  }
+
+  .onp-info-cinco span {
+    font-size: 1.9rem;
+  }
+
+  .onp-info-cinco p {
+    font-size: 1.6rem;
+  }
+
+  .onp-info-cinco .onp-info-cinco-button {
+    padding: 0.5rem 1.15rem 0.8rem 1.15rem;
+    font-size: 1.4rem;
+  }
+
+  .onp-info-seis span {
+    font-size: 1.7rem;
+  }
+
+  .onp-info-seis .onp-info-seis-card-container {
+    width: 55vw;
+  }
+
+  .onp-info-seis .onp-info-seis-card-container .onp-info-seis-card.card-uno {
+    height: 20vh;
+    -webkit-border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
+    border-radius: 15px 15px 15px 15px;
+  }
+
+  .onp-info-seis .onp-info-seis-card-container .onp-info-seis-card.card-dos {
+    height: 20vh;
+    -webkit-border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
+    border-radius: 15px 15px 15px 15px;
+  }
+
+  .onp-info-seis .onp-info-seis-card-container .onp-info-seis-card.card-tres {
+    height: 20vh;
+    -webkit-border-radius: 15px 15px 15px 15px;
+    -moz-border-radius: 15px 15px 15px 15px;
+    border-radius: 15px 15px 15px 15px;
+  }
+
+  .onp-info-seis .onp-info-seis-card-container .onp-info-seis-card p {
+    position: absolute;
+    left: 0%;
+    top: 30%;
+    font-size: 1.3rem;
+    width: 50%;
+    font-weight: 600;
+  }
+  .onp-section-info-cuatro .onp-section-cuatro-list-container {
+    width: 52.5vw;
+    background-color: white;
+    height: 100%;
+    top: 80%;
+  }
+
+  .onp-section-info-cuatro
+    .onp-section-cuatro-list-container
+    .onp-list-icon-cuatro {
+    width: 53vw;
+    margin-top: 4em;
+  }
+}
+
+@media only screen and (max-width: 1759px) and (min-width: 1439px) {
+  .onp-banner .onp-title {
+    font-size: 1.7rem;
+    line-height: 30px;
+  }
+  .onp-card-user .onp-card-user-text {
+    font-size: 1.15rem;
+    color: white;
+    margin-right: 15px;
+    margin-left: 5px;
+    margin-top: 1px;
+    margin-bottom: 0 !important;
+    line-height: 25px;
+  }
+  .onp-icon-container .ng-carousel .onp-list-icon > span {
+    line-height: 20px;
+  }
+  .onp-section-info {
+    height: 45vh;
+    margin: 3rem auto;
+  }
+  .onp-section-info > img {
+    height: 110%;
+    width: 20%;
+    top: -10%;
+    left: 26%;
+  }
+  .onp-section-info-text-container {
+    position: absolute;
+    left: 48%;
+    top: 15%;
+    text-align: center;
+  }
+  .onp-section-info .onp-rombo-info {
+    width: 71vh;
+    left: -25%;
+  }
+  .onp-section-info-text-container h5 {
+    margin-right: 3.7rem;
+  }
+  .onp-facil-afiliarte-span {
+    font-size: 1rem !important;
+    margin-left: -5rem;
+  }
+  .onp-info-tres {
+    left: 45%;
+  }
+  .onp-info-cuatro {
+    left: 23%;
+  }
+
+  .onp-section-info-cuatro .onp-section-cuatro-list-container {
+    width: 52.5vw;
+    background-color: white;
+    height: 100%;
+    top: 80%;
+  }
+
+  .onp-section-info-cuatro
+    .onp-section-cuatro-list-container
+    .onp-list-icon-cuatro {
+    width: 53vw;
+    margin-top: 4em;
+  }
+
+  .onp-info-cinco {
+    top: 20%;
+    left: 46%;
+  }
+  .onp-info-cinco span {
+    font-size: 1.7rem;
+    font-weight: bold;
+  }
+  .onp-info-cinco p {
+    font-size: 1.3rem;
+  }
+  .onp-info-seis .onp-info-seis-card-container {
+    width: 53.5vw;
+  }
+}
+
+.card-uno-container a, .card-uno-container a:hover {
+  color: #000;
+}
+
+.card-uno-container a:hover {
+  text-decoration: none;
+}

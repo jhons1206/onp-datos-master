@@ -1,0 +1,171 @@
+.onp-background {
+  position: relative;
+  background: url("../../../assets/images/onp-datos-abierto-banner.jpg")
+    no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 121%;
+  height: 60vh;
+  display: flex;
+  flex-direction: row;
+  left: -11%;
+  box-shadow: 0px 1px 10px #888888;
+  -webkit-border-radius: 0% 0% 50% 50%;
+  -moz-border-radius: 0% 0% 50% 50%;
+  border-radius: 0% 0% 50% 50%;
+}
+
+/* .onp-banner {
+  position: absolute;
+  top: 25%;
+  left: 25%;
+} */
+
+.onp-banner p {
+  position: relative;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  top: 33%;
+  left: 165%;
+  line-height: 25px;
+}
+
+.onp-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3%;
+  margin-bottom: 7%;
+  width: 100%;
+}
+
+.onp-content > p {
+  font-size: 1.15rem;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 25px;
+  color: black;
+  margin-bottom: 3%;
+  width: 50vw;
+}
+
+.onp-content-btn {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgb(255, 109, 106);
+  -webkit-border-radius: 25px 25px 25px 25px;
+  -moz-border-radius: 25px 25px 25px 25px;
+  border-radius: 25px 25px 25px 25px;
+  width: 15%;
+  color: white;
+  text-decoration: none;
+  padding: 0.2rem 1.35rem 0.45rem 1.3rem;
+  font-size: 1.3rem;
+  position: relative;
+  text-align: center;
+}
+
+.onp-content-btn {
+  border-color: rgba(20, 27, 77, 1);
+  color: #fff;
+  background-image: -webkit-linear-gradient(
+    100deg,
+    rgba(20, 27, 77, 1) 50%,
+    transparent 50%
+  );
+  background-image: linear-gradient(
+    100deg,
+    rgba(20, 27, 77, 1) 50%,
+    transparent 50%
+  );
+  background-position: 100%;
+  background-size: 400%;
+  -webkit-transition: background 1s ease-in-out;
+  transition: background 1s ease-in-out;
+}
+.onp-content-btn:hover {
+  background-position: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .onp-banner p {
+    font-size: 1.5rem;
+    left: 135%;
+    line-height: 30px;
+  }
+  .onp-content-text {
+    font-size: 1.3rem;
+  }
+
+  .onp-content-btn {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* insert styles here */
+  .onp-banner p {
+    font-size: 1.5rem;
+    left: 165%;
+    line-height: 30px;
+  }
+  .onp-content-text {
+    font-size: 1.3rem;
+  }
+
+  .onp-content-btn {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  /* insert styles here */
+  .onp-banner p {
+    font-size: 1.5rem;
+    left: 175%;
+    line-height: 30px;
+  }
+  .onp-content-text {
+    font-size: 1.6rem;
+  }
+
+  .onp-content-btn {
+    font-size: 1.3rem;
+  }
+}
+
+@media screen and (min-width: 1760px) {
+  .onp-banner .onp-title {
+    font-size: 2.5rem;
+    left: 200%;
+    line-height: 45px;
+  }
+  .onp-content > a {
+    -webkit-border-radius: 30px 30px 30px 30px;
+    -moz-border-radius: 30px 30px 30px 30px;
+    border-radius: 30px 30px 30px 30px;
+    padding: 1.5% 3.5%;
+    font-size: 1.7rem !important;
+  }
+  .onp-content .onp-content-text {
+    font-size: 2rem;
+    line-height: 40px;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  /* insert styles here */
+  .onp-banner p {
+    font-size: 1.5rem;
+    left: 188%;
+    line-height: 30px;
+  }
+}
+
+@media screen and (min-width: 2560px) {
+  .onp-banner p {
+    font-size: 1.5rem;
+    left: 250%;
+    line-height: 30px;
+  }
+}

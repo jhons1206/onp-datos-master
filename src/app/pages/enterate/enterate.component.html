@@ -1,0 +1,443 @@
+<div class="onp-submenu-header onp-bg-primary">
+  <div id="onp-submenu" class="onp-submenu">
+    <div class="onp-submenu-item">
+      <span
+        id="btn-ventajas"
+        onclick="setPosition('ventajas')"
+        class="onp-color-tertiary"
+      >
+        Tus ventajas y<br />
+        facilidades
+      </span>
+    </div>
+    <div class="onp-submenu-item">
+      <span
+        id="btn-afiliarte"
+        onclick="setPosition('afiliarte')"
+        class="onp-color-tertiary"
+        >Afíliate al SNP</span
+      >
+    </div>
+    <div class="onp-submenu-item">
+      <span
+        id="btn-opciones"
+        onclick="setPosition('opciones')"
+        class="onp-color-tertiary"
+      >
+        Tus opciones de jubilación
+      </span>
+    </div>
+    <div class="onp-submenu-item">
+      <span
+        id="btn-beneficios"
+        onclick="setPosition('beneficios')"
+        class="onp-color-tertiary"
+        >Tus beneficios</span
+      >
+    </div>
+    <div class="onp-submenu-item">
+      <span
+        id="btn-cifras"
+        onclick="setPosition('cifras')"
+        class="onp-color-tertiary"
+        >Cifras del SNP</span
+      >
+    </div>
+  </div>
+</div>
+
+<div class="onp-background">
+  <div class="onp-banner">
+    <p class="onp-title text-white">
+      Imagina un grupo de personas
+      <br />reunidas para ayudarse. <br />
+      Eso es el Sistema Nacional <br />
+      de Pensiones.
+    </p>
+  </div>
+</div>
+
+<div class="card-container">
+  <div class="onp-card-user-container">
+    <div class="onp-card-user onp-bg-acero">
+      <div></div>
+      <img
+        class="onp-card-user-img"
+        src="./assets/images/card_user1.jpg"
+        alt="Usuario 1"
+      />
+      <p class="onp-card-user-text">
+        Si eres afiliada o afiliado, tu aporte de cada mes, además construir tu
+        pensión, permite a las y los pensionistas cobrar sus pensiones.
+      </p>
+    </div>
+    <div class="onp-card-user onp-bg-acero">
+      <img
+        class="onp-card-user-img"
+        src="./assets/images/card_user2.jpg"
+        alt="Usuario 2"
+      />
+      <p class="onp-card-user-text">
+        Si eres pensionista, cada mes puedes cobrar tu pensión porque las
+        personas afiliadas pagan sus aportes.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div id="ventajas">
+  <div class="onp-text-center">
+    <span>El SNP es un sistema de personas que se ayudan mutuamente.</span>
+    <p class="text-center">Estas son tus ventajas y facilidades.</p>
+  </div>
+  <div class="onp-icon-container">
+    <si-ng-carousel class="ng-carousel" [visible]="4" [autoPlay]="0">
+      <div
+        *ngFor="let item of gallery"
+        siCarouselItem
+        class="item-auto onp-list-icon"
+      >
+        <img
+          [src]="item.img"
+          height="75"
+          width="75"
+          [ngStyle]="{
+            'margin-bottom': item.marginBottom,
+            'margin-top': item.marginTop
+          }"
+        />
+        <span>{{ item.text }}</span>
+      </div>
+    </si-ng-carousel>
+  </div>
+</div>
+
+<div id="afiliarte">
+  <div class="onp-section-info">
+    <img src="../../../assets/images/Recurso 9.png" alt="" />
+    <div class="onp-section-info-text-container">
+      <span class="onp-facil-afiliarte-span text-white">
+        Ya imaginaste a este grupo de personas reunidas para ayudarse.
+      </span>
+      <h5 class="text-white">Ahora entérate como ser parte de él</h5>
+      <div class="onp-rombo-info text-center">
+        <p class="onp-rombo-info-text text-white">
+          Te explicamos de manera sencilla como puedes afiliarte, cuánto y cómo
+          aportar y en qué consiste la validación de esos aportes para tu futura
+          pensión.
+        </p>
+        <a class="onp-info-button" href="">Aquí</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="opciones">
+  <div class="onp-section-info-dos">
+    <div class="onp-info-dos text-center">
+      <span class="text-white">Tus años de esfuerzo aseguran tu pensión</span>
+      <p class="onp-info-dos-text text-white">
+        Conoce que opción tienes para jubilarte
+        <a class="onp-info-button-dos" href="">Aquí</a>
+      </p>
+    </div>
+  </div>
+</div>
+
+<ng-container>
+  <div class="onp-section-info-tres">
+    <div class="onp-info-tres text-center">
+      <span class="onp-color-primary">En caso de complicaciones...</span>
+      <p class="onp-info-tres-text onp-color-primary">
+        Puedes acceder a una pensión completa o proporcional en caso hayas
+        perdido la capacidad de trabajar debido a un daño ocasionado en tu
+        salud.
+      </p>
+      <span class="onp-info-tres-span"
+        >Conoce más de la Pensión por discapacidad para el trabajo</span
+      >
+      <a class="onp-info-button" href="">Aquí</a>
+    </div>
+  </div>
+</ng-container>
+
+<ng-container>
+  <div class="onp-section-tabs">
+    <nav class="nav-tab-container">
+      <h5>Protegemos a tu familia</h5>
+      <ul
+        class="nav nav-tabs flex-column flex-sm-row"
+        id="pills-tab"
+        role="tablist"
+      >
+        <li class="nav-item" role="presentation">
+          <a
+            class="flex-sm-fill text-sm-center nav-link active"
+            id="pills-viudez-tab"
+            data-toggle="pill"
+            href="#pills-viudez"
+            role="tab"
+            aria-controls="pills-viudez"
+            aria-selected="true"
+            onclick="openTabs(event, 'pills-viudez')"
+            >Cónyuge o conviviente</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link"
+            id="pills-orfandad-tab"
+            data-toggle="pill"
+            href="#pills-orfandad"
+            role="tab"
+            aria-controls="pills-orfandad"
+            aria-selected="false"
+            onclick="openTabs(event, 'pills-orfandad')"
+            >Hijas o hijos</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link"
+            id="pills-ascendencia-tab"
+            data-toggle="pill"
+            href="#pills-ascendencia"
+            role="tab"
+            aria-controls="pills-ascendencia"
+            aria-selected="false"
+            onclick="openTabs(event, 'pills-ascendencia')"
+            >Madre o padre</a
+          >
+        </li>
+        <li class="nav-item" role="presentation">
+          <a
+            class="nav-link"
+            id="pills-defuncion-tab"
+            data-toggle="pill"
+            href="#pills-defuncion"
+            role="tab"
+            aria-controls="pills-defuncion"
+            aria-selected="false"
+            onclick="openTabs(event, 'pills-defuncion')"
+            >Capital de defunción</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <div class="tab-content" id="pills-tabContent">
+      <div
+        class="tab-pane fade show active"
+        id="pills-viudez"
+        role="tabpanel"
+        aria-labelledby="pills-viudez-tab"
+      >
+        <div class="onp-section-tabs-content">
+          <img
+            src="../../../assets/images/onp-facil-conyuge.jpg"
+            alt="onp-tabs-uno"
+            width="300"
+            height="300"
+          />
+          <div class="onp-section-tabs-content-text">
+            <h4 class="onp-color-primary">
+              Pensión para tu cónyuge o conviviente
+            </h4>
+            <p>
+              Tu cónyuge o conviviente con declaración de unión de hecho puede
+              convertirse en beneficiaria o beneficiario de una pensión cuando
+              le faltes; siempre que recibas (o hayas tenido derecho a recibir)
+              pensión.
+            </p>
+            <a class="" href="">Conoce más</a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="tab-pane fade show active"
+        id="pills-orfandad"
+        role="tabpanel"
+        aria-labelledby="pills-orfandad-tab"
+      >
+        <div class="onp-section-tabs-content">
+          <img
+            src="../../../assets/images/hijas_e_hijos.jpg"
+            alt="onp-tabs-uno"
+            width="300"
+            height="300"
+          />
+          <div class="onp-section-tabs-content-text">
+            <h4 class="onp-color-primary">Pensión para tus hijas o hijos</h4>
+            <p>
+              Tus hijas o hijos menores de 18 años pueden convertirse en
+              beneficiarias o beneficiarios de una pensión cuando le faltes;
+              siempre que recibas (o hayas tenido derecho a recibir) pensión.
+              <br />
+              También aplica para tus hijas o hijos mayores de 18 años que
+              siguen estudios de nivel básico o superior en forma
+              ininterrumpida, o si tienen discapacidad permanente parcial o
+              total para el trabajo.
+            </p>
+            <a class="" href="">Conoce más</a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="tab-pane fade show active"
+        id="pills-ascendencia"
+        role="tabpanel"
+        aria-labelledby="pills-ascendencia-tab"
+      >
+        <div class="onp-section-tabs-content">
+          <img
+            src="../../../assets/images/madre_o_padre.jpg"
+            alt="onp-tabs-uno"
+            width="300"
+            height="300"
+          />
+          <div class="onp-section-tabs-content-text">
+            <h4 class="onp-color-primary">Pensión para tu madre o padre</h4>
+            <p>
+              Tu madre o padre pueden convertirse en beneficiaria o beneficiario
+              de una pensión cuando le faltes; siempre que recibas (o hayas
+              tenido derecho a recibir) pensión. Además, si tienen alguna
+              discapacidad o si tu padre tiene como mínimo 60 años de edad o tu
+              madre tiene como mínimo 55 años de edad. También aplica si tus
+              padres dependen económicamente de ti y ya no reciben ingresos
+              mayores al monto de la pensión que te corresponde o te
+              correspondía.
+            </p>
+            <a class="" href="">Conoce más</a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="tab-pane fade show active"
+        id="pills-defuncion"
+        role="tabpanel"
+        aria-labelledby="pills-defuncion-tab"
+      >
+        <div class="onp-section-tabs-content">
+          <img
+            src="../../../assets/images/onp-facil-defuncion.jpg"
+            alt="onp-tabs-uno"
+            width="300"
+            height="300"
+          />
+          <div class="onp-section-tabs-content-text">
+            <h4 class="onp-color-primary">Capital de defunción</h4>
+            <p>
+              Este es un pago único que se brinda en caso de no haber familiares
+              beneficiarios de una pensión y se otorga al primer familiar de
+              acuerdo al siguiente orden: <br />
+              • La o el cónyuge o conviviente con declaración de unión de hecho.
+              <br />
+              • Las hijas y los hijos. <br />
+              • La madre y/o el padre. <br />
+              • Las hermanas y los hermanos menores de 18 años de edad. <br />
+            </p>
+            <a class="" href="">Conoce más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-container>
+
+<div id="beneficios">
+  <div class="onp-section-info-cuatro">
+    <div class="onp-info-cuatro text-center">
+      <span>Más beneficios</span>
+      <p>
+        Pertenecer al Sistema Nacional de Pensiones tiene beneficios que tal vez
+        no conocías.
+      </p>
+    </div>
+    <div class="onp-section-cuatro-list-container">
+      <div class="onp-list-icon-cuatro">
+        <div class="onp-list-item-cuatro">
+          <img
+            src="../../../assets/images/SVG/list-icon-home-bolsa_1.svg"
+            alt="Calendario"
+            class="onp-list-img"
+          />
+          <span class="onp-color-primary">Incrementos</span>
+          <p class="onp-list-p onp-color-primary">
+            El monto de tu pensión puede aumentar bajo ciertas condiciones.
+          </p>
+        </div>
+        <div class="onp-list-item-cuatro">
+          <img
+            class="onp-list-bonos"
+            src="../../../assets/images/SVG/list-icon-soles.svg"
+            alt=""
+          />
+          <span class="onp-list-bonos-span onp-color-primary"
+            >Bonificaciones</span
+          >
+          <p class="onp-list-p onp-color-primary">
+            Conoce si te corresponde alguna bonificación que se sume a tu
+            pensión.
+          </p>
+        </div>
+        <div class="onp-list-item-cuatro">
+          <img
+            class="onp-list-img-bene"
+            src="../../../assets/images//SVG/list-icon-hand.svg"
+            alt=""
+          />
+          <span class="onp-color-primary onp-list-bene-span"
+            >Beneficios complementarios</span
+          >
+          <p class="onp-list-p onp-list-bene onp-color-primary">
+            Dirigido a las y los trabajadoras/es mineras/os.
+          </p>
+        </div>
+      </div>
+      <a class="onp-info-cuatro-button" href="">Conoce más</a>
+    </div>
+  </div>
+</div>
+
+<div class="onp-section-info-cinco">
+  <div class="onp-info-cinco">
+    <span class="text-white"
+      >Si estás en una AFP <br />
+      Seguimos pensando en tu bienestar</span
+    >
+    <p>
+      ¿Estabas afiliada o afiliado al Sistema Nacional de Pensiones y te
+      trasladaste a una AFP? Entérate si uno de estos bonos o pensión te
+      corresponde.
+    </p>
+    <a class="onp-info-cinco-button" href="">Entérate aquí</a>
+  </div>
+</div>
+
+<div id="cifras">
+  <div class="onp-section-info-seis">
+    <div class="onp-info-seis text-center">
+      <span class="text-white">Cifras del SNP</span>
+      <div class="onp-info-seis-card-container">
+        <div class="card-uno-container">
+          <a [routerLink]="['/Afiliados']">
+            <div class="onp-info-seis-card card-uno"></div>
+            <p>Afiliadas y afiliados</p>
+          </a>
+        </div>
+        <div class="card-uno-container">
+          <a [routerLink]="['/Pensionistas']">
+            <div class="onp-info-seis-card card-dos"></div>
+            <p>Pensionistas y beneficiarias/os</p>
+          </a>
+        </div>
+        <div class="card-uno-container">
+          <div class="onp-info-seis-card card-tres"></div>
+          <p>Trasladadas y trasladados</p>
+        </div>
+      </div>
+      <!--<p class="onp-info-tres-text">Conoce que opción tienes para jubilarte</p>
+  <span class="text-white">Tus años de trabajo aseguran tu pensión</span>
+  <a class="onp-info-button" href="">aquí</a> -->
+    </div>
+  </div>
+</div>

@@ -1,0 +1,1428 @@
+.onp-header {
+  position: -webkit-sticky;
+  position: sticky;
+  height: 80px;
+  width: 100%;
+  padding: 0 14%;
+  top: 0;
+  z-index: 10;
+  box-shadow: 0px 1px 5px #888888;
+}
+
+.onp-navbar {
+  width: 77%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.onp-logo-content {
+  position: relative;
+  width: 14%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.onp-brand {
+  width: 100%;
+}
+
+.onp-menu-content {
+  margin-left: 5%;
+  position: relative;
+  width: 40% !important;
+  height: 100%;
+}
+
+.onp-indicator {
+  left: 0%;
+  position: absolute;
+  background-color: rgb(20, 27, 77);
+  height: 100%;
+  width: 25%;
+  transition: all 1s;
+  z-index: 0;
+}
+
+.onp-navmenu {
+  position: absolute;
+  width: 100%;
+  height: 93%;
+  top: 7%;
+  background-color: #ffffff;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-item {
+  /* flex: 1; */
+  list-style: none;
+  width: 25%;
+  /* height: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-item > .onp-navitem:hover {
+  color: rgb(20, 27, 77);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.onp-navitem {
+  font-size: 0.95vw;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.onp-navitem.active {
+  color: rgb(20, 27, 77);
+  font-weight: bolder;
+}
+
+.active {
+  color: rgb(20, 27, 77);
+  font-weight: bolder;
+}
+
+.onp-external-item {
+  height: 100%;
+  background: rgb(111, 155, 164) !important;
+  /* border-radius: 5px !important; */
+  width: 15% !important;
+}
+
+.onp-external-link {
+  color: #fafafa;
+}
+
+.onp-external-link:hover {
+  color: rgb(255, 184, 28) !important;
+}
+
+.onp-navzonaprensa {
+  font-size: 1rem;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.onp-navzonaprensa > img {
+  width: 7%;
+  margin-right: 4%;
+}
+
+.m-menu {
+  /* display: none; */
+  position: relative;
+  top: -300%;
+  background-color: rgb(20, 27, 77);
+  width: 100%;
+  height: 300%;
+  z-index: 0;
+  transition: all 1s;
+}
+.onp-brand-logo-m {
+  display: none;
+}
+
+/* .header {
+    position: relative;
+    height: 10%;
+    width: 100%;
+    top: 0;
+    padding: 0% 14%;
+} */
+
+/* .onp-navbar {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+} */
+
+@media screen and (max-width: 768px) {
+  .onp-header {
+    position: -webkit-sticky;
+    position: sticky;
+    height: 80px;
+    width: 100%;
+    padding: 0 0;
+  }
+  .onp-navbar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* version Movil */
+    padding: 0 4%;
+    position: relative;
+    z-index: 3;
+    background-color: white;
+  }
+  /* ESTILOS MOVIL */
+  .m-menuicon {
+    width: 40px;
+    cursor: pointer;
+  }
+  .m-menu {
+    position: relative;
+    top: -900%;
+    background-color: rgb(20, 27, 77);
+    width: 100%;
+    height: 88vh;
+    z-index: 0;
+    transition: all 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .m-menulist {
+    display: flex;
+    flex-flow: column wrap;
+    /* margin: 1rem 0; */
+    width: 100%;
+    height: 40%;
+    padding: 1rem 2rem;
+    position: relative;
+  }
+
+  .m-menulist .menu-item {
+    flex: 1;
+    color: white;
+    border-bottom: 2px solid rgb(142, 144, 137);
+    margin-top: 1rem;
+    width: 40%;
+  }
+
+  .m-menulist .menu-item a {
+    font-size: 5rem;
+  }
+
+  /* ESTILOS MOVIL */
+  .onp-logo-content {
+    position: relative;
+    width: 150px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .onp-brand {
+    width: 100%;
+    height: 100px !important;
+  }
+
+  .onp-brand-logo-m {
+    width: 100%;
+    height: 100px !important;
+  }
+
+  .onp-indicator {
+    display: none;
+  }
+  .onp-navmenu {
+    position: absolute;
+    width: 100%;
+    height: 93%;
+    top: 7%;
+    background-color: #ffffff;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu-item {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .menu-item > a {
+    color: rgb(255, 255, 255);
+    font-size: 1rem !important;
+  }
+  .menu-item:hover > a {
+    color: rgb(255, 184, 28) !important;
+    text-decoration: none;
+  }
+
+  .m-item-external {
+    margin-top: 1.5rem;
+    border: 0 !important;
+    width: 100%;
+    background: rgb(255, 109, 106) !important;
+  }
+  .m-link-external {
+    color: white;
+    top: 50%;
+    padding: 10px;
+    background: rgb(255, 109, 106) !important;
+    padding: 1rem 2rem;
+    margin-top: 3rem;
+    position: absolute;
+    width: 100%;
+  }
+  .onp-customtext {
+    font-size: 0.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .active {
+    color: rgb(255, 184, 28) !important;
+    font-weight: bold;
+  }
+  .onp-navzonaprensa {
+    font-size: 1rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  .onp-navzonaprensa > img {
+    width: 7%;
+    margin-right: 4%;
+  }
+  .onp-external-item {
+    display: none;
+  }
+
+  .m-menuicon-close {
+    margin-bottom: 3rem;
+    position: absolute;
+    top: 85%;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+  }
+  /* .header {
+        position: relative;
+        height: 10%;
+        width: 100%;
+        top: 0;
+        padding: 0% 14%;
+    } */
+  /* .onp-navbar {
+        display: flex;
+        flex-direction: row;
+        height: 100%;
+        align-items: center;
+        justify-content: space-between;
+        padding-top: 1.5%;
+        padding-bottom: 1.5%;
+    } */
+}
+
+@media screen and (min-device-width: 768px) {
+  .m-menu {
+    display: none;
+  }
+}
+
+@media only screen and (device-width: 375px) and (device-height: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .onp-header {
+    position: -webkit-sticky;
+    position: sticky;
+    height: 80px;
+    width: 100%;
+    padding: 0 0;
+  }
+  .onp-navbar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* version Movil */
+    padding: 0 4%;
+    position: relative;
+    z-index: 3;
+    background-color: white;
+  }
+  /* ESTILOS MOVIL */
+  .m-menuicon {
+    width: 40px;
+    cursor: pointer;
+  }
+  .m-menulist {
+    display: flex;
+    flex-flow: column wrap;
+    /* margin: 1rem 0; */
+    width: 100%;
+    height: 40%;
+    padding: 1rem 2rem;
+    position: relative;
+  }
+
+  .m-menulist .menu-item {
+    flex: 1;
+    color: white;
+    border-bottom: 2px solid rgb(142, 144, 137);
+    margin-top: 1rem;
+    width: 40%;
+  }
+
+  .m-menulist .menu-item a {
+    font-size: 5rem;
+  }
+
+  /* ESTILOS MOVIL */
+  .onp-logo-content {
+    position: relative;
+    width: 150px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .onp-brand {
+    width: 100%;
+    height: 100px !important;
+  }
+
+  .onp-brand-logo-m {
+    width: 100%;
+    height: 100px !important;
+  }
+
+  .onp-indicator {
+    display: none;
+  }
+  .onp-navmenu {
+    position: absolute;
+    width: 100%;
+    height: 93%;
+    top: 7%;
+    background-color: #ffffff;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu-item {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .menu-item > a {
+    color: rgb(255, 255, 255);
+    font-size: 1rem !important;
+  }
+  .menu-item:hover > a {
+    color: rgb(255, 184, 28) !important;
+    text-decoration: none;
+  }
+
+  .m-item-external {
+    margin-top: 1.5rem;
+    border: 0 !important;
+    width: 100%;
+    background: rgb(255, 109, 106) !important;
+  }
+  .m-link-external {
+    color: white;
+    top: 50%;
+    padding: 10px;
+    background: rgb(255, 109, 106) !important;
+    padding: 1rem 2rem;
+    margin-top: 3rem;
+    position: absolute;
+    width: 100%;
+  }
+  .onp-customtext {
+    font-size: 0.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .active {
+    color: rgb(255, 184, 28) !important;
+    font-weight: bold;
+  }
+  .onp-navzonaprensa {
+    font-size: 1rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  .onp-navzonaprensa > img {
+    width: 7%;
+    margin-right: 4%;
+  }
+  .onp-external-item {
+    display: none;
+  }
+
+  .m-menuicon-close {
+    margin-bottom: 3rem;
+    position: absolute;
+    top: 85%;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+  }
+  .m-menu {
+    position: relative;
+    top: -900%;
+    background-color: rgb(20, 27, 77);
+    width: 100%;
+    height: 90vh;
+    z-index: 0;
+    transition: all 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (device-width: 414px) and (device-height: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+  .onp-header {
+    position: -webkit-sticky;
+    position: sticky;
+    height: 80px;
+    width: 100%;
+    padding: 0 0;
+  }
+  .onp-navbar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* version Movil */
+    padding: 0 4%;
+    position: relative;
+    z-index: 3;
+    background-color: white;
+  }
+  /* ESTILOS MOVIL */
+  .m-menuicon {
+    width: 40px;
+    cursor: pointer;
+  }
+  .m-menulist {
+    display: flex;
+    flex-flow: column wrap;
+    /* margin: 1rem 0; */
+    width: 100%;
+    height: 40%;
+    padding: 1rem 2rem;
+    position: relative;
+  }
+
+  .m-menulist .menu-item {
+    flex: 1;
+    color: white;
+    border-bottom: 2px solid rgb(142, 144, 137);
+    margin-top: 1rem;
+    width: 40%;
+  }
+
+  .m-menulist .menu-item a {
+    font-size: 5rem;
+  }
+
+  /* ESTILOS MOVIL */
+  .onp-logo-content {
+    position: relative;
+    width: 150px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .onp-brand {
+    width: 100%;
+    height: 100px !important;
+  }
+
+  .onp-brand-logo-m {
+    width: 100%;
+    height: 100px !important;
+  }
+
+  .onp-indicator {
+    display: none;
+  }
+  .onp-navmenu {
+    position: absolute;
+    width: 100%;
+    height: 93%;
+    top: 7%;
+    background-color: #ffffff;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu-item {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .menu-item > a {
+    color: rgb(255, 255, 255);
+    font-size: 1rem !important;
+  }
+  .menu-item:hover > a {
+    color: rgb(255, 184, 28) !important;
+    text-decoration: none;
+  }
+
+  .m-item-external {
+    margin-top: 1.5rem;
+    border: 0 !important;
+    width: 100%;
+    background: rgb(255, 109, 106) !important;
+  }
+  .m-link-external {
+    color: white;
+    top: 50%;
+    padding: 10px;
+    background: rgb(255, 109, 106) !important;
+    padding: 1rem 2rem;
+    margin-top: 3rem;
+    position: absolute;
+    width: 100%;
+  }
+  .onp-customtext {
+    font-size: 0.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .active {
+    color: rgb(255, 184, 28) !important;
+    font-weight: bold;
+  }
+  .onp-navzonaprensa {
+    font-size: 1rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  .onp-navzonaprensa > img {
+    width: 7%;
+    margin-right: 4%;
+  }
+  .onp-external-item {
+    display: none;
+  }
+
+  .m-menuicon-close {
+    margin-bottom: 3rem;
+    position: absolute;
+    top: 85%;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+  }
+  .m-menu {
+    position: relative;
+    top: -900%;
+    background-color: rgb(20, 27, 77);
+    width: 100%;
+    height: 90vh;
+    z-index: 0;
+    transition: all 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 4) {
+  .onp-header {
+    position: -webkit-sticky;
+    position: sticky;
+    height: 80px;
+    width: 100%;
+    padding: 0 0;
+  }
+  .onp-navbar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* version Movil */
+    padding: 0 4%;
+    position: relative;
+    z-index: 3;
+    background-color: white;
+  }
+  /* ESTILOS MOVIL */
+  .m-menuicon {
+    width: 40px;
+    cursor: pointer;
+  }
+  .m-menulist {
+    display: flex;
+    flex-flow: column wrap;
+    /* margin: 1rem 0; */
+    width: 100%;
+    height: 40%;
+    padding: 1rem 2rem;
+    position: relative;
+  }
+
+  .m-menulist .menu-item {
+    flex: 1;
+    color: white;
+    border-bottom: 2px solid rgb(142, 144, 137);
+    margin-top: 1rem;
+    width: 40%;
+  }
+
+  .m-menulist .menu-item a {
+    font-size: 5rem;
+  }
+
+  /* ESTILOS MOVIL */
+  .onp-logo-content {
+    position: relative;
+    width: 150px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .onp-brand {
+    width: 100%;
+    height: 100px !important;
+  }
+
+  .onp-brand-logo-m {
+    width: 100%;
+    height: 100px !important;
+  }
+
+  .onp-indicator {
+    display: none;
+  }
+  .onp-navmenu {
+    position: absolute;
+    width: 100%;
+    height: 93%;
+    top: 7%;
+    background-color: #ffffff;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu-item {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .menu-item > a {
+    color: rgb(255, 255, 255);
+    font-size: 1rem !important;
+  }
+  .menu-item:hover > a {
+    color: rgb(255, 184, 28) !important;
+    text-decoration: none;
+  }
+
+  .m-item-external {
+    margin-top: 1.5rem;
+    border: 0 !important;
+    width: 100%;
+    background: rgb(255, 109, 106) !important;
+  }
+  .m-link-external {
+    color: white;
+    top: 50%;
+    padding: 10px;
+    background: rgb(255, 109, 106) !important;
+    padding: 1rem 2rem;
+    margin-top: 3rem;
+    position: absolute;
+    width: 100%;
+  }
+  .onp-customtext {
+    font-size: 0.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .active {
+    color: rgb(255, 184, 28) !important;
+    font-weight: bold;
+  }
+  .onp-navzonaprensa {
+    font-size: 1rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  .onp-navzonaprensa > img {
+    width: 7%;
+    margin-right: 4%;
+  }
+  .onp-external-item {
+    display: none;
+  }
+
+  .m-menuicon-close {
+    margin-bottom: 3rem;
+    position: absolute;
+    top: 85%;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+  }
+  .m-menu {
+    position: relative;
+    top: -900%;
+    background-color: rgb(20, 27, 77);
+    width: 100%;
+    height: 90vh;
+    z-index: 0;
+    transition: all 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+  .onp-header {
+    position: -webkit-sticky;
+    position: sticky;
+    height: 80px;
+    width: 100%;
+    padding: 0 0;
+  }
+  .onp-navbar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* version Movil */
+    padding: 0 4%;
+    position: relative;
+    z-index: 3;
+    background-color: white;
+  }
+  /* ESTILOS MOVIL */
+  .m-menuicon {
+    width: 40px;
+    cursor: pointer;
+  }
+  .m-menulist {
+    display: flex;
+    flex-flow: column wrap;
+    /* margin: 1rem 0; */
+    width: 100%;
+    height: 40%;
+    padding: 1rem 2rem;
+    position: relative;
+  }
+
+  .m-menulist .menu-item {
+    flex: 1;
+    color: white;
+    border-bottom: 2px solid rgb(142, 144, 137);
+    margin-top: 1rem;
+    width: 40%;
+  }
+
+  .m-menulist .menu-item a {
+    font-size: 5rem;
+  }
+
+  /* ESTILOS MOVIL */
+  .onp-logo-content {
+    position: relative;
+    width: 150px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .onp-brand {
+    width: 100%;
+    height: 100px !important;
+  }
+
+  .onp-brand-logo-m {
+    width: 100%;
+    height: 100px !important;
+  }
+
+  .onp-indicator {
+    display: none;
+  }
+  .onp-navmenu {
+    position: absolute;
+    width: 100%;
+    height: 93%;
+    top: 7%;
+    background-color: #ffffff;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu-item {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .menu-item > a {
+    color: rgb(255, 255, 255);
+    font-size: 1rem !important;
+  }
+  .menu-item:hover > a {
+    color: rgb(255, 184, 28) !important;
+    text-decoration: none;
+  }
+
+  .m-item-external {
+    margin-top: 1.5rem;
+    border: 0 !important;
+    width: 100%;
+    background: rgb(255, 109, 106) !important;
+  }
+  .m-link-external {
+    color: white;
+    top: 50%;
+    padding: 10px;
+    background: rgb(255, 109, 106) !important;
+    padding: 1rem 2rem;
+    margin-top: 3rem;
+    position: absolute;
+    width: 100%;
+  }
+  .onp-customtext {
+    font-size: 0.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .active {
+    color: rgb(255, 184, 28) !important;
+    font-weight: bold;
+  }
+  .onp-navzonaprensa {
+    font-size: 1rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  .onp-navzonaprensa > img {
+    width: 7%;
+    margin-right: 4%;
+  }
+  .onp-external-item {
+    display: none;
+  }
+
+  .m-menuicon-close {
+    margin-bottom: 3rem;
+    position: absolute;
+    top: 85%;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+  }
+  .m-menu {
+    position: relative;
+    top: -1015%;
+    background-color: rgb(20, 27, 77);
+    width: 100%;
+    height: 90vh;
+    z-index: 0;
+    transition: all 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (device-width: 320px) and (device-height: 568px) and (-webkit-min-device-pixel-ratio: 2) {
+  .onp-header {
+    position: -webkit-sticky;
+    position: sticky;
+    height: 80px;
+    width: 100%;
+    padding: 0 0;
+  }
+  .onp-navbar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* version Movil */
+    padding: 0 4%;
+    position: relative;
+    z-index: 3;
+    background-color: white;
+  }
+  /* ESTILOS MOVIL */
+  .m-menuicon {
+    width: 40px;
+    cursor: pointer;
+  }
+  .m-menulist {
+    display: flex;
+    flex-flow: column wrap;
+    /* margin: 1rem 0; */
+    width: 100%;
+    height: 50%;
+    padding: 1rem 2rem;
+    position: relative;
+  }
+
+  .m-menulist .menu-item {
+    flex: 1;
+    color: white;
+    border-bottom: 2px solid rgb(142, 144, 137);
+    margin-top: 1rem;
+    width: 40%;
+  }
+
+  .m-menulist .menu-item a {
+    font-size: 5rem;
+  }
+
+  /* ESTILOS MOVIL */
+  .onp-logo-content {
+    position: relative;
+    width: 150px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .onp-brand {
+    width: 100%;
+    height: 100px !important;
+  }
+
+  .onp-brand-logo-m {
+    width: 100%;
+    height: 100px !important;
+  }
+
+  .onp-indicator {
+    display: none;
+  }
+  .onp-navmenu {
+    position: absolute;
+    width: 100%;
+    height: 93%;
+    top: 7%;
+    background-color: #ffffff;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu-item {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .menu-item > a {
+    color: rgb(255, 255, 255);
+    font-size: 1rem !important;
+  }
+  .menu-item:hover > a {
+    color: rgb(255, 184, 28) !important;
+    text-decoration: none;
+  }
+
+  .m-item-external {
+    margin-top: 1.5rem;
+    border: 0 !important;
+    width: 100%;
+    background: rgb(255, 109, 106) !important;
+  }
+  .m-link-external {
+    color: white;
+    top: 50%;
+    padding: 10px;
+    background: rgb(255, 109, 106) !important;
+    padding: 1rem 2rem;
+    margin-top: 3rem;
+    position: absolute;
+    width: 100%;
+  }
+  .onp-customtext {
+    font-size: 0.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .active {
+    color: rgb(255, 184, 28) !important;
+    font-weight: bold;
+  }
+  .onp-navzonaprensa {
+    font-size: 1rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  .onp-navzonaprensa > img {
+    width: 7%;
+    margin-right: 4%;
+  }
+  .onp-external-item {
+    display: none;
+  }
+
+  .m-menuicon-close {
+    margin-bottom: 3rem;
+    position: absolute;
+    top: 85%;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+  }
+  .m-menu {
+    position: relative;
+    top: -900%;
+    background-color: rgb(20, 27, 77);
+    width: 100%;
+    height: 90vh;
+    z-index: 0;
+    transition: all 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (device-width: 411px) and (device-height: 731px) and (-webkit-min-device-pixel-ratio: 2) {
+  .onp-header {
+    position: -webkit-sticky;
+    position: sticky;
+    height: 80px;
+    width: 100%;
+    padding: 0 0;
+  }
+  .onp-navbar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* version Movil */
+    padding: 0 4%;
+    position: relative;
+    z-index: 3;
+    background-color: white;
+  }
+  /* ESTILOS MOVIL */
+  .m-menuicon {
+    width: 40px;
+    cursor: pointer;
+  }
+  .m-menulist {
+    display: flex;
+    flex-flow: column wrap;
+    /* margin: 1rem 0; */
+    width: 100%;
+    height: 40%;
+    padding: 1rem 2rem;
+    position: relative;
+  }
+
+  .m-menulist .menu-item {
+    flex: 1;
+    color: white;
+    border-bottom: 2px solid rgb(142, 144, 137);
+    margin-top: 1rem;
+    width: 40%;
+  }
+
+  .m-menulist .menu-item a {
+    font-size: 5rem;
+  }
+
+  /* ESTILOS MOVIL */
+  .onp-logo-content {
+    position: relative;
+    width: 150px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .onp-brand {
+    width: 100%;
+    height: 100px !important;
+  }
+
+  .onp-brand-logo-m {
+    width: 100%;
+    height: 100px !important;
+  }
+
+  .onp-indicator {
+    display: none;
+  }
+  .onp-navmenu {
+    position: absolute;
+    width: 100%;
+    height: 93%;
+    top: 7%;
+    background-color: #ffffff;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu-item {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .menu-item > a {
+    color: rgb(255, 255, 255);
+    font-size: 1rem !important;
+  }
+  .menu-item:hover > a {
+    color: rgb(255, 184, 28) !important;
+    text-decoration: none;
+  }
+
+  .m-item-external {
+    margin-top: 1.5rem;
+    border: 0 !important;
+    width: 100%;
+    background: rgb(255, 109, 106) !important;
+  }
+  .m-link-external {
+    color: white;
+    top: 50%;
+    padding: 10px;
+    background: rgb(255, 109, 106) !important;
+    padding: 1rem 2rem;
+    margin-top: 3rem;
+    position: absolute;
+    width: 100%;
+  }
+  .onp-customtext {
+    font-size: 0.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .active {
+    color: rgb(255, 184, 28) !important;
+    font-weight: bold;
+  }
+  .onp-navzonaprensa {
+    font-size: 1rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  .onp-navzonaprensa > img {
+    width: 7%;
+    margin-right: 4%;
+  }
+  .onp-external-item {
+    display: none;
+  }
+
+  .m-menuicon-close {
+    margin-bottom: 3rem;
+    position: absolute;
+    top: 85%;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+  }
+  .m-menu {
+    position: relative;
+    top: -900%;
+    background-color: rgb(20, 27, 77);
+    width: 100%;
+    height: 90vh;
+    z-index: 0;
+    transition: all 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media only screen and (device-width: 411px) and (device-height: 823px) and (-webkit-min-device-pixel-ratio: 2) {
+  .onp-header {
+    position: -webkit-sticky;
+    position: sticky;
+    height: 80px;
+    width: 100%;
+    padding: 0 0;
+  }
+  .onp-navbar {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* version Movil */
+    padding: 0 4%;
+    position: relative;
+    z-index: 3;
+    background-color: white;
+  }
+  /* ESTILOS MOVIL */
+  .m-menuicon {
+    width: 40px;
+    cursor: pointer;
+  }
+  .m-menulist {
+    display: flex;
+    flex-flow: column wrap;
+    /* margin: 1rem 0; */
+    width: 100%;
+    height: 40%;
+    padding: 1rem 2rem;
+    position: relative;
+  }
+
+  .m-menulist .menu-item {
+    flex: 1;
+    color: white;
+    border-bottom: 2px solid rgb(142, 144, 137);
+    margin-top: 1rem;
+    width: 40%;
+  }
+
+  .m-menulist .menu-item a {
+    font-size: 5rem;
+  }
+
+  /* ESTILOS MOVIL */
+  .onp-logo-content {
+    position: relative;
+    width: 150px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .onp-brand {
+    width: 100%;
+    height: 100px !important;
+  }
+
+  .onp-brand-logo-m {
+    width: 100%;
+    height: 100px !important;
+  }
+
+  .onp-indicator {
+    display: none;
+  }
+  .onp-navmenu {
+    position: absolute;
+    width: 100%;
+    height: 93%;
+    top: 7%;
+    background-color: #ffffff;
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .menu-item {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .menu-item > a {
+    color: rgb(255, 255, 255);
+    font-size: 1rem !important;
+  }
+  .menu-item:hover > a {
+    color: rgb(255, 184, 28) !important;
+    text-decoration: none;
+  }
+
+  .m-item-external {
+    margin-top: 1.5rem;
+    border: 0 !important;
+    width: 100%;
+    background: rgb(255, 109, 106) !important;
+  }
+  .m-link-external {
+    color: white;
+    top: 50%;
+    padding: 10px;
+    background: rgb(255, 109, 106) !important;
+    padding: 1rem 2rem;
+    margin-top: 3rem;
+    position: absolute;
+    width: 100%;
+  }
+  .onp-customtext {
+    font-size: 0.9rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .active {
+    color: rgb(255, 184, 28) !important;
+    font-weight: bold;
+  }
+  .onp-navzonaprensa {
+    font-size: 1rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  }
+  .onp-navzonaprensa > img {
+    width: 7%;
+    margin-right: 4%;
+  }
+  .onp-external-item {
+    display: none;
+  }
+
+  .m-menuicon-close {
+    margin-bottom: 3rem;
+    position: absolute;
+    top: 85%;
+    text-align: center;
+    width: 100%;
+    z-index: 1;
+  }
+  .m-menu {
+    position: relative;
+    top: -900%;
+    background-color: rgb(20, 27, 77);
+    width: 100%;
+    height: 90vh;
+    z-index: 0;
+    transition: all 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
