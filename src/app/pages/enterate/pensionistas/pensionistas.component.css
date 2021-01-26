@@ -197,6 +197,10 @@ p {
 .map-region {
     text-align: center;
 }
+
+.map-region .cls-1 {
+    position: relative;
+}
  
 .map-region .cls-1:hover {
 	fill: #FF6D6A;

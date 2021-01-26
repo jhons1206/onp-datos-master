@@ -9,6 +9,7 @@ import { PublicacionesComponent } from './pages/publicaciones/publicaciones.comp
 import { ZonaPrensaComponent } from './pages/zona-prensa/zona-prensa.component';
 import { PensionistasComponent } from './pages/enterate/pensionistas/pensionistas.component';
 import { AfiliadosComponent } from './pages/enterate/afiliados/afiliados.component';
+import { ActuarialInformationComponent } from './pages/publicaciones/actuarial-information/actuarial-information.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/Inicio', pathMatch: 'full' },
@@ -27,6 +28,10 @@ const routes: Routes = [
   {
     path: 'Publicaciones',
     component: PublicacionesComponent,
+  },
+  {
+    path: 'ActuarialInformation',
+    component: ActuarialInformationComponent,
   },
   {
     path: 'ZonaPrensa',
