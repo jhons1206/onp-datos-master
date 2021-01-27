@@ -79,7 +79,24 @@ p {
     height: var(--height-bar);
     background-color: var(--bg-bar);
 }
-
+.item-age-estado-civil {
+    background-color: var(--third-color);
+    border-left: thin solid var(--second-color);
+    /*border-right: thin solid var(--second-color);*/
+    padding: 1rem;
+    margin-bottom: 0.25rem;
+    text-align: center;
+}
+.item-age-estado-civil p {
+    color: var(--white-color);
+    font-size: 0.8rem;
+    margin-bottom: 0;
+}
+.percent-age-estado-civil {
+    color: var(--white-color);
+    font-weight: bold;
+    font-size: 2rem;
+}
 .percent-bar {
     font-weight: bold;
     color: var(--second-color);

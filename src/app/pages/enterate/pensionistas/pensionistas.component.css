@@ -197,10 +197,6 @@ p {
 .map-region {
     text-align: center;
 }
-
-.map-region .cls-1 {
-    position: relative;
-}
  
 .map-region .cls-1:hover {
 	fill: #FF6D6A;
@@ -223,7 +219,12 @@ p {
     text-align: center;
     border-bottom: thin solid var(--second-color);
 }
-
+.total-estado-civil {
+    text-align: center;
+    border-bottom: thin solid var(--second-color);
+    padding-bottom: 30px;
+    margin-bottom: 15px;
+}
 .total-pensioners > div {
     display: flex;
     justify-content: center;
@@ -288,7 +289,24 @@ p {
     margin-bottom: 0.25rem;
     text-align: center;
 }
-
+.item-age-estado-civil {
+    background-color: var(--third-color);
+    border-left: thin solid var(--second-color);
+    /*border-right: thin solid var(--second-color);*/
+    padding: 1rem;
+    margin-bottom: 0.25rem;
+    text-align: center;
+}
+.item-age-estado-civil p {
+    color: var(--white-color);
+    font-size: 0.8rem;
+    margin-bottom: 0;
+}
+.percent-age-estado-civil {
+    color: var(--white-color);
+    font-weight: bold;
+    font-size: 2rem;
+}
 .item-age:nth-child(even) {
     border-right: 0;
 }

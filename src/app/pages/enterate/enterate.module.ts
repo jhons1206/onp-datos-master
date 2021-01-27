@@ -9,6 +9,7 @@ import { EnterateRoutingModule } from './enterate-routing.module';
 import { EnterateComponent } from './enterate.component';
 import { PensionistasComponent } from './pensionistas/pensionistas.component';
 import { AfiliadosComponent } from './afiliados/afiliados.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [EnterateComponent, PensionistasComponent, AfiliadosComponent],
@@ -18,6 +19,8 @@ import { AfiliadosComponent } from './afiliados/afiliados.component';
     NgCarouselModule,
     EnterateRoutingModule,
     BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
 })
 export class EnterateModule {}
