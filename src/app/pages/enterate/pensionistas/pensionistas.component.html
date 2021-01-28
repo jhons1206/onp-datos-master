@@ -29,11 +29,11 @@
             </div>
         </div>
         <div class="indicator-details spacing-y pb-0">
-            <div class="indicator-description" style="--width-indicator-description: 51%;">
+            <div class="indicator-description" style="--width-indicator-description: {{PorcentajeMujer| number:'1.0-2'}}%;">
                 <img src="../../../../assets/images/mujeres.svg" alt="Mujeres">
                 <p>Mujeres</p>
             </div>
-            <div class="indicator-description" style="--width-indicator-description: 49%;">
+            <div class="indicator-description" style="--width-indicator-description: {{PorcentajeHombre | number:'1.0-2'}}%;">
                 <img src="../../../../assets/images/hombres.svg" alt="Hombres">
                 <p>Hombres</p>
             </div>
@@ -62,11 +62,11 @@
             <h3 class="section-title pb-0">Tipo de Pensión</h3>
             <h4 class="total-indicator">{{TotalPensionista | number:'1.0-0'}}</h4>
             <div class="indicator-details spacing-y pb-0">
-                <div class="indicator-description" style="--width-indicator-description: 72%;">
+                <div class="indicator-description" style="--width-indicator-description: {{PorcentajeJubilacion | number:'1.0-2'}}%;">
                     <img src="../../../../assets/images/jubilacion.svg" alt="Jubilación">
                     <p>Jubilación</p>
                 </div>
-                <div class="indicator-description" style="--width-indicator-description: 28%;">
+                <div class="indicator-description" style="--width-indicator-description: {{PorcentajeDiscapacidad | number:'1.0-2'}}%;">
                     <img src="../../../../assets/images/discapacidad.svg" alt="Discapacidad">
                     <p>Discapacidad</p>
                 </div>
