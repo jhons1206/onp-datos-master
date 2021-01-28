@@ -179,8 +179,8 @@ function hideCard3() {
   });
 }
 
-function carrusel() {
-  alert("hola mundo");
+function toogleMenu() {
+    $(".top-menu").slideToggle();  
 }
 
 function showImage1() {

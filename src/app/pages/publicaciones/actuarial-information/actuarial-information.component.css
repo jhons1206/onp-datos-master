@@ -9,10 +9,6 @@ a {
     transition: all 0.5s ease-out;
 }
 
-a:hover {
-    opacity: 0.75;
-}
-
 h1 {
     font-size: 2rem;
     margin: 0;
@@ -88,6 +84,42 @@ p {
     font-size: 1.2rem;
     padding-left: 1rem;
     font-weight: 600;
+}
+
+.btn-menu {
+    background-color: var(--second-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 0.7rem;
+    cursor: pointer;
+}
+
+.btn-menu img {
+    width: 1rem;
+}
+
+ul.top-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: none;
+    z-index: 999;
+    position: absolute;
+    width: 100%;
+    background: var(--second-color);
+}
+
+ul.top-menu li a {
+    
+    color: var(--white-color);
+    padding: 0.7rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+ul.top-menu li a:hover {
+    background-color: var(--third-alpha-color);
 }
 
 @media screen and (min-width: 768px) {
