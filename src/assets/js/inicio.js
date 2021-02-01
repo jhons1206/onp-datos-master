@@ -179,10 +179,6 @@ function hideCard3() {
   });
 }
 
-function toogleMenu() {
-    $(".top-menu").slideToggle();  
-}
-
 function showImage1() {
   img_num = 1;
 
@@ -251,4 +247,13 @@ function switchImg() {
 
 function interval() {
   inter = setInterval(switchImg, 5000);
+}
+
+// Menu toogle subpages JSM
+function toogleMenuTop() {
+  $(".top-menu").slideToggle();  
+}
+
+function toogleMenu2() {
+  $(".top-menu2").slideToggle();  
 }

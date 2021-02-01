@@ -5,9 +5,10 @@ import { InicioModule } from './inicio/inicio.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PublicacionesModule } from './publicaciones/publicaciones.module';
+import { FacilComponent } from './facil/facil.component';
 
 @NgModule({
-  declarations: [],
+  declarations: [FacilComponent],
   imports: [
     CommonModule,
     InicioModule,

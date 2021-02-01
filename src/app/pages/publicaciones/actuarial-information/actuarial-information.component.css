@@ -63,20 +63,11 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 1.2rem 0;
 }
 
 .header-page__content img {
     width: 3.25rem;    
-}
-
-.header-page__image-opacity {
-    align-items: center;
-    background-color: var(--hero-opacity-color) ;
-    display: flex;
-    justify-content: center;
-    min-height: 12vh;
-    text-align: center;
-    width: 100%;
 }
 
 .header-page__title {
@@ -86,7 +77,12 @@ p {
     font-weight: 600;
 }
 
-.btn-menu {
+/* ONP Top Menu */
+.onp__top-menu {
+    background-color: var(--second-color);
+}
+
+.btn-toogle-menu {
     background-color: var(--second-color);
     color: var(--white-color);
     text-align: center;
@@ -94,7 +90,7 @@ p {
     cursor: pointer;
 }
 
-.btn-menu img {
+.btn-toogle-menu img {
     width: 1rem;
 }
 
@@ -122,6 +118,28 @@ ul.top-menu li a:hover {
     background-color: var(--third-alpha-color);
 }
 
+/* Pagination */
+
+.onp__pagination {
+    margin: 2rem 0 1.5rem;
+}
+
+.onp__pagination ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.onp__pagination li {
+    background: var(--second-color);
+    padding: 0.5rem 1rem;
+    color: var(--white-color);
+    margin: 0 0.2rem;
+
+}
+
 @media screen and (min-width: 768px) {
 
     .header-page__title {
@@ -130,6 +148,12 @@ ul.top-menu li a:hover {
 }
 
 @media screen and (min-width: 1024px) { 
+
+    .header-page__content {
+        display: flex;
+        justify-content: flex-start;
+        padding: 2rem 0;
+    }
 
     .header-page__content img {
         width: 4.5rem;    
@@ -143,6 +167,29 @@ ul.top-menu li a:hover {
         font-size: 2rem;
         padding-left: 2rem;
     }
+
+    .onp__top-menu {
+        padding: 1rem 0;
+    }
+
+    .onp__top-menu .btn-toogle-menu {
+        display: none;
+    }
+
+    .onp__top-menu .top-menu {
+        display: flex;
+        justify-content: space-between;
+        max-width: var(--max-width);
+        margin: 0 auto;
+        position: relative;
+        z-index: inherit;
+    }
+
+    ul.top-menu li a:hover {
+        background-color: transparent;
+        color: var(--link-color);
+    }
+
 }
 
 /* *********** Utilities *********** */
@@ -189,4 +236,19 @@ ul.top-menu li a:hover {
 
 .card-download__icon img {
     width: 2rem;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .actuarial-info {
+        display: grid;
+        grid-template-columns: repeat(3, 32.5%);
+        justify-content: space-between;
+        padding: 2.5rem 0;
+    }
+
+    .actuarial-info .onp__pagination {
+        grid-column: span 3;
+    }
+
 }

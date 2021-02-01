@@ -26,16 +26,6 @@
   line-height: 25px;
 }
 
-.onp-content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding-right: 14%;
-  padding-left: 14%;
-  margin-top: 2rem;
-}
-
 /* .onp-content > h4 {
   text-align: justify;
   width: 90%;
@@ -76,7 +66,12 @@
   background-color: rgb(111, 155, 154);
 }
 
-.onp-card > img {
+.onp-card a {
+  display: flex;
+  justify-content: center;
+}
+
+.onp-card img {
   width: 22%;
   background-color: transparent;
 }
@@ -97,6 +92,14 @@
   font-size: 1.3rem;
   margin-left: 1rem;
   margin-top: 1rem;
+}
+
+.onp-cards a img {
+  width: 40%;
+}
+
+.onp-card a:hover {
+  text-decoration: none;
 }
 
 .onp-section-dos {

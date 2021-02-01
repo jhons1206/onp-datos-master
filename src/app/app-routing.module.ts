@@ -10,6 +10,7 @@ import { ZonaPrensaComponent } from './pages/zona-prensa/zona-prensa.component';
 import { PensionistasComponent } from './pages/enterate/pensionistas/pensionistas.component';
 import { AfiliadosComponent } from './pages/enterate/afiliados/afiliados.component';
 import { ActuarialInformationComponent } from './pages/publicaciones/actuarial-information/actuarial-information.component';
+import { FacilComponent } from './pages/facil/facil.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/Inicio', pathMatch: 'full' },
@@ -42,6 +43,9 @@ const routes: Routes = [
   },
   {
     path: 'Afiliados', component: AfiliadosComponent
+  },
+  {
+    path: 'Facil', component: FacilComponent
   },
   // {
   //   path: 'OnpVirtual',
