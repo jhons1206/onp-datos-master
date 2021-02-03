@@ -392,7 +392,7 @@ p {
     }
 
     .total-pensioners .total-indicator::before {
-        content: 'A nivel nacional';
+        content:'A nivel nacional';
         display: block;
         font-size: 1.2rem;
         font-weight: 500;

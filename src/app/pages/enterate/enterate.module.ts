@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule,CUSTOM_ELEMENTS_SCHEMA  } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HammerModule } from '@angular/platform-browser';
 import { NgCarouselModule } from '@silmar/ng-carousel';
@@ -9,8 +9,7 @@ import { EnterateRoutingModule } from './enterate-routing.module';
 import { EnterateComponent } from './enterate.component';
 import { PensionistasComponent } from './pensionistas/pensionistas.component';
 import { AfiliadosComponent } from './afiliados/afiliados.component';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms'; 
 @NgModule({
   declarations: [EnterateComponent, PensionistasComponent, AfiliadosComponent],
   imports: [
@@ -20,7 +19,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     EnterateRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
-    ReactiveFormsModule
-  ],
+    ReactiveFormsModule, 
+  ], 
 })
-export class EnterateModule {}
+export class EnterateModule {
+  
+}

@@ -1,0 +1,40 @@
+[
+    {
+        "type":"Presentaciones",
+        "typeCode":"001",
+        "data": [
+          {
+            "id":1,
+            "title": "Situación actual de la Oficina de Normalización Previsional (ONP) y perspectivas ante la reforma del sistema pensionario del país",
+            "date":"30/06/2020",
+            "description": "Se explican las competencias de la ONP, cuál es la situación financiera y las perspectivas ante la reforma del sistema de pensiones en el país.",
+            "url": "PE_001.pdf",
+            "urlTitle": "Descargar"   
+          },
+          {
+            "id":2,
+            "title": "Estudio sobre el sistema de pensiones en el Perú",
+            "date":"19/06/2020",
+            "description": "Esta presentación se expuso ante la Comisión Especial Multipartidaria del Congreso de la República, encargada de evaluar, diseñar y proponer el proyecto de ley para la reforma integral del Sistema de Pensiones Peruano. Aquí se explican las condiciones y sostenibilidad que debería tomar en cuenta la reforma de pensiones.",
+            "url": "PE_002.pdf",
+            "urlTitle": "Descargar"    
+          },
+          {
+            "id":3,
+            "title": "Presentación de las medidas extraordinarias a favor de los asegurados del SNP por el impacto del COVID-19",
+            "date":"30/09/2020",
+            "description": "Se exponen las diferencias entre el SPP y el SNP,  se observa la propuesta del Congreso y  se proponen medidas extraordinarias en beneficio de los asegurados del SNP debido al impacto del COVID-19. ",
+            "url": "PE_003.pdf",
+            "urlTitle": "Descargar"    
+          },
+          {
+            "id":4,
+            "title": "Funcionamiento y desempeño del Fondo Consolidado de Reservas Previsionales",
+            "date":"3/11/2020",
+            "description": "Esta presentación se expuso ante la Comisión Especial Multipartidaria encargada de evaluar, diseñar y proponer el Proyecto para la Reforma Integral del Sistema Previsional Peruano, en ella se explicó cuál es el funcionamiento y desempeño del Fondo Consolidado de Reservas.",
+            "url": "PE_004.pdf",
+            "urlTitle": "Descargar"    
+          }         
+        ]
+      } 
+    ]

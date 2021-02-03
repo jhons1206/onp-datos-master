@@ -5,8 +5,8 @@
     <ul class="top-menu">
         <li><a [routerLink]="['/MemorialesAnuales']">Memorias Anuales</a></li>
         <li><a [routerLink]="['/Presentaciones']">Presentaciones</a></li>
-        <li><a [routerLink]="['/InformesInstitucionales']">Informes Institucionales</a></li>
-        <li><a [routerLink]="['/ActuarialInformation']">Información Actuarial</a></li>
+        <li><a [routerLink]="['/InformesInstitucionales/001']">Informes Institucionales</a></li>
+        <li><a [routerLink]="['/ActuarialInformation/001']">Información Actuarial</a></li>
     </ul>
 </aside>
 <section class="header-page" >
@@ -20,162 +20,49 @@
     </article>
 </section>
 <section class="actuarial-info section section-personalice"  > 
-    <h2 style="font-weight: 600;" class="onp-info-title onp-color-secondary">Cáculos DL 19990</h2>
+    <h2 style="font-weight: 600;" class="onp-info-title onp-color-secondary">{{Title}}</h2>
 </section>
 <section class="actuarial-info section section-personalice"  >   
-        <article class="card-download">
+        <article class="card-download" *ngFor="let item of ListActuarialPaginate">
             <div class="card-download__wrapper">
                 <div class="card-download__details">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis nulla ipsum itaque autem dolores animi facilis molestiae nam esse unde!
+                    {{item.description}}
                 </div>
                 <div class="card-download__icon">
                     <a href="#"><img src="../../../../assets/images/file-download-icon.svg" alt="Descargar"></a>
-                    Descargar
+                    {{item.urlTitle}}
                 </div>
             </div>
         </article>
-        <article class="card-download">
-            <div class="card-download__wrapper">
-                <div class="card-download__details">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis nulla ipsum itaque autem dolores animi facilis molestiae nam esse unde!
-                </div>
-                <div class="card-download__icon">
-                    <img src="../../../../assets/images/file-download-icon.svg" alt="Descargar">
-                    Descargar
-                </div>
-            </div>
-        </article>
-        <article class="card-download">
-            <div class="card-download__wrapper">
-                <div class="card-download__details">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis nulla ipsum itaque autem dolores animi facilis molestiae nam esse unde!
-                </div>
-                <div class="card-download__icon">
-                    <img src="../../../../assets/images/file-download-icon.svg" alt="Descargar">
-                    Descargar
-                </div>
-            </div>
-        </article>
-        <article class="card-download">
-            <div class="card-download__wrapper">
-                <div class="card-download__details">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis nulla ipsum itaque autem dolores animi facilis molestiae nam esse unde!
-                </div>
-                <div class="card-download__icon">
-                    <img src="../../../../assets/images/file-download-icon.svg" alt="Descargar">
-                    Descargar
-                </div>
-            </div>
-        </article>
-        <article class="card-download">
-            <div class="card-download__wrapper">
-                <div class="card-download__details">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis nulla ipsum itaque autem dolores animi facilis molestiae nam esse unde!
-                </div>
-                <div class="card-download__icon">
-                    <img src="../../../../assets/images/file-download-icon.svg" alt="Descargar">
-                    Descargar
-                </div>
-            </div>
-        </article>
-        <article class="card-download">
-            <div class="card-download__wrapper">
-                <div class="card-download__details">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis nulla ipsum itaque autem dolores animi facilis molestiae nam esse unde!
-                </div>
-                <div class="card-download__icon">
-                    <img src="../../../../assets/images/file-download-icon.svg" alt="Descargar">
-                    Descargar
-                </div>
-            </div>
-        </article>
-        <article class="card-download">
-            <div class="card-download__wrapper">
-                <div class="card-download__details">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis nulla ipsum itaque autem dolores animi facilis molestiae nam esse unde!
-                </div>
-                <div class="card-download__icon">
-                    <img src="../../../../assets/images/file-download-icon.svg" alt="Descargar">
-                    Descargar
-                </div>
-            </div>
-        </article>
-        <article class="card-download">
-            <div class="card-download__wrapper">
-                <div class="card-download__details">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis nulla ipsum itaque autem dolores animi facilis molestiae nam esse unde!
-                </div>
-                <div class="card-download__icon">
-                    <img src="../../../../assets/images/file-download-icon.svg" alt="Descargar">
-                    Descargar
-                </div>
-            </div>
-        </article>
-        <article class="card-download">
-            <div class="card-download__wrapper">
-                <div class="card-download__details">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis nulla ipsum itaque autem dolores animi facilis molestiae nam esse unde!
-                </div>
-                <div class="card-download__icon">
-                    <img src="../../../../assets/images/file-download-icon.svg" alt="Descargar">
-                    Descargar
-                </div>
-            </div>
-        </article>
-        <article class="card-download">
-            <div class="card-download__wrapper">
-                <div class="card-download__details">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis nulla ipsum itaque autem dolores animi facilis molestiae nam esse unde!
-                </div>
-                <div class="card-download__icon">
-                    <img src="../../../../assets/images/file-download-icon.svg" alt="Descargar">
-                    Descargar
-                </div>
-            </div>
-        </article>
-        <article class="card-download">
-            <div class="card-download__wrapper">
-                <div class="card-download__details">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis nulla ipsum itaque autem dolores animi facilis molestiae nam esse unde!
-                </div>
-                <div class="card-download__icon">
-                    <img src="../../../../assets/images/file-download-icon.svg" alt="Descargar">
-                    Descargar
-                </div>
-            </div>
-        </article>
-        <article class="card-download">
-            <div class="card-download__wrapper">
-                <div class="card-download__details">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis nulla ipsum itaque autem dolores animi facilis molestiae nam esse unde!
-                </div>
-                <div class="card-download__icon">
-                    <img src="../../../../assets/images/file-download-icon.svg" alt="Descargar">
-                    Descargar
-                </div>
-            </div>
-        </article>
+         
 
-        <section class="onp__pagination">
+        <section *ngIf="showPagination" class="onp__pagination">
             <ul>
-                <li><</li>
-                <li>1</li>
-                <li>2</li>
-                <li>3</li>
-                <li>4</li>
-                <li>></li>
+                <li style="cursor: pointer;" (click)="anterior()" ><</li>
+                <ng-container *ngFor="let item of ListtotalItemsPage">
+                    <li  style="cursor: pointer;" (click)="paginar(item)">
+                        {{item}}
+                    </li>
+                  </ng-container>                                    
+                <li style="cursor: pointer;" (click)="siguiente()">></li>
             </ul>
         </section>
 </section>
 <section class="age-distribution spacing-y section">
     <div class="item-age-ini" >
-        <h4 class="percent-age">Cálculo DL 19990</h4>            
+        <a [routerLink]="['/ActuarialInformation/001']"> 
+        <h4 class="percent-age">Cálculos DL 19990</h4>      
+        </a>      
     </div>  
     <div class="item-age-ini" >
-        <h4 class="percent-age">Cálculo Ley 30003</h4>            
+        <a [routerLink]="['/ActuarialInformation/002']"> 
+        <h4 class="percent-age">Cálculo Ley 30003</h4>      
+        </a>      
     </div>  
     <div class="item-age" >
-        <h4 class="percent-age">Guía Técnica</h4>            
+        <a [routerLink]="['/ActuarialInformation/003']"> 
+        <h4 class="percent-age">Guía Técnica</h4>           
+        </a> 
     </div>  
     
 </section>
