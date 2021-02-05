@@ -92,6 +92,7 @@ p {
     justify-content: space-between; 
     text-align: center;
     padding: 0.25rem 0.7rem 0;
+    border-bottom: thin solid var(--second-color);
 }
 
 .desc-bar-graphic p {
@@ -203,7 +204,11 @@ p {
     cursor: pointer;
     transition: all 0.5s;
 }
-
+.map-region .cls-2 {
+	fill: #FF6D6A;
+    cursor: pointer;
+    transition: all 0.5s;    
+}
 .map-region > svg {
     display: none;
 }
@@ -467,7 +472,7 @@ p {
     }
 
     .desc-bar-graphic {
-        padding: 0 var(--padding-bar-graphic);
+        padding: 1rem var(--padding-bar-graphic);
     }
 
     .desc-bar-graphic p {

@@ -12,7 +12,7 @@ export class InfotecaService {
   shareInformes = 'dataInformes.json';  
   shareMemoriales = 'dataMemorias.json';  
   sharePresentaciones = 'dataPresentaciones.json';  
-
+  shareEstudiosPrevisionales = 'dataBiblioteca.json';
   constructor(
     private customhttp: CustomHttpService
   ) { }
@@ -31,6 +31,10 @@ export class InfotecaService {
   }
   getListPresentaciones() {
     const result = this.customhttp.getValue(this.baseUrl + this.sharePresentaciones);
+    return result;
+  }
+  getListEstudiosPrevisionales() {
+    const result = this.customhttp.getValue(this.baseUrl + this.shareEstudiosPrevisionales);
     return result;
   }
 }

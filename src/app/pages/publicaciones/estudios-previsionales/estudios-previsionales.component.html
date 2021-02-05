@@ -12,27 +12,27 @@
 <section class="header-page" >
     <article class="header-page__wrapper" style="background: linear-gradient(90deg, #c6c6c6, #ffffff);">
         <div class="header-page__content section">
-            <img src="../../../../assets/images/memoraial-icon.svg" alt="Gráfico de barras">
+            <img src="../../../../assets/images/informes-icon.svg" alt="Gráfico de barras">
             <h2 class="header-page__title" style="--hero-text-color: var(--white-color);">
-                Memorias Anuales
+                Estudios Previsionales
             </h2>
         </div>
     </article>
 </section>
  
-<section class="actuarial-info section"  >   
-        <article class="card-download" *ngFor="let item of ListMemorialesPaginate" >
+<section class="actuarial-info section section-personalice"  >   
+        <article class="card-download" *ngFor="let item of ListEstudiosPaginate" >
             <div class="card-download__wrapper">
                 <div class="card-download__details">
                     {{item.description}}
-                </div>                
+                </div>
                 <div class="card-download__icon">
                     <a href="{{this.urlFiles+item.url}}" target="_blank"><img src="../../../../assets/images/file-download-icon.svg" alt="Descargar"></a>
                     {{item.urlTitle}}
                 </div>
             </div>
         </article>
-         
+        
 
         <section *ngIf="showPagination" class="onp__pagination">
             <ul>
@@ -45,8 +45,7 @@
                 <li style="cursor: pointer;" (click)="siguiente()">></li>
             </ul>
         </section>
-       
-        
-</section>
+</section> 
  
+
 

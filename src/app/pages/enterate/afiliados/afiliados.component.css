@@ -220,7 +220,11 @@ p {
     cursor: pointer;
     transition: all 0.5s;
 }
-
+.map-region .cls-2 {
+	fill: #FF6D6A;
+    cursor: pointer;
+    transition: all 0.5s;
+}
 .map-region > svg {
     display: none;
 }
@@ -322,7 +326,7 @@ p {
 .beneficiaries {
     text-align: center;
 }
-
+ 
 @media screen and (min-width: 768px) {
 
     .hero-image-title {

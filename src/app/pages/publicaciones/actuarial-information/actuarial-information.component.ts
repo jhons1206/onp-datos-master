@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { InfotecaService } from 'src/app/services/infoteca.service'; 
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { NgxSpinnerService } from "ngx-spinner";
+import { environment } from '../../../../environments/environment';
 @Component({
   selector: 'app-actuarial-information',
   templateUrl: './actuarial-information.component.html',
@@ -20,6 +21,7 @@ export class ActuarialInformationComponent implements OnInit {
   ListResult:any = [];
   id:string="";
   Title:string="";
+  urlFiles:string="";
   constructor(private infocetaServices: InfotecaService,
     private activateRoute: ActivatedRoute,
     private spinnerService: NgxSpinnerService) { }
@@ -38,9 +40,10 @@ export class ActuarialInformationComponent implements OnInit {
             this.showPagination = false;
           }
           else {
+            
             this.ListResult=result.filter((x: { typeCode: string; })=>x.typeCode==this.id);
             this.Title=this.ListResult[0].type;
-
+            this.urlFiles=environment.baseUrlFiles+'Informacion-actuarial/'+(((this.Title.replace(' ','-')).replace('á','a')).replace('í','i')).replace('é','e')+'/';
             this.ListActuarial = this.ListResult[0].data;
             this.totalItems = this.ListActuarial.length;
             this.showPagination = true;

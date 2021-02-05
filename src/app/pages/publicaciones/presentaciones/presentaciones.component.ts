@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { InfotecaService } from 'src/app/services/infoteca.service'; 
 import { NgxSpinnerService } from "ngx-spinner";
+import { environment } from '../../../../environments/environment';
 @Component({
   selector: 'app-presentaciones',
   templateUrl: './presentaciones.component.html',
@@ -16,6 +17,7 @@ export class PresentacionesComponent implements OnInit {
   showPagination: boolean=false;
   totalItemsPage: number=0;
   ListtotalItemsPage: any = [];
+  urlFiles:string="";
   constructor(private infocetaServices: InfotecaService,
     private spinnerService: NgxSpinnerService) { }
 
@@ -31,6 +33,7 @@ export class PresentacionesComponent implements OnInit {
           this.showPagination = false;
         }
         else {
+          this.urlFiles=environment.baseUrlFiles+'Presentaciones-Exposiciones/';
           this.ListPresentaciones = result[0].data;
           this.totalItems = this.ListPresentaciones.length;
           this.showPagination = true;

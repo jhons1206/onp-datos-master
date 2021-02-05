@@ -105,8 +105,8 @@
           "id":15,
             "title": "Opinión técnica con relación a cinco (05) Proyectos de Ley vinculados al SNP: PL N° 5449-2020-CR, solicitado por el congresista Daniel Oseda Yucra.",
           "description":"Opinión técnica con relación a cinco (05) Proyectos de Ley vinculados al SNP: PL N° 5449-2020-CR, solicitado por el congresista Daniel Oseda Yucra.",
-          "url": "SNP_0_002.pdf",
-        "urlTitle": "Descargar"
+  "url": "SNP_0_002.pdf",
+       "urlTitle": "Descargar"
         },
   {
           "id":16,
@@ -553,8 +553,14 @@
           "description":"Opinión al Proyecto de Ley que crea un régimen previsional especial de pensiones para los agricultores.",
   "url": "P_O_010",
        "urlTitle": "Descargar"
-        },
-  {
+        }
+      ]
+    },
+    {
+      "type":"Reforma previsional",
+      "typeCode":"004",
+      "data": [
+        {
           "id":78,
             "title": "Propuesta sobre la reforma integral del sistema de pensiones",
           "description":"Propuesta sobre la reforma integral del sistema de pensiones",
@@ -567,14 +573,8 @@
           "description":"Informe sobre los regímenes pensionarios administrados por la ONP e información del FCR",
   "url": "RP_D_002",
        "urlTitle": "Descargar"
-        }
-      ]
-    },
-    {
-      "type":"Reforma previsional",
-      "typeCode":"004",
-      "data": [
-        {
+        },
+  {
           "id":80,
             "title": "Informe sobre la atención de consultas y solicitudes a ONP",
           "description":"Informe sobre la atención de consultas y solicitudes a ONP",

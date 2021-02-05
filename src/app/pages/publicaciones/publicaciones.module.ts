@@ -8,9 +8,10 @@ import { ActuarialInformationComponent } from './actuarial-information/actuarial
 import { InformesInstitucionalesComponent } from './informes-institucionales/informes-institucionales.component';
 import { MemorialesAnualesComponent } from './memoriales-anuales/memoriales-anuales.component';
 import { PresentacionesComponent } from './presentaciones/presentaciones.component';
+import { EstudiosPrevisionalesComponent } from './estudios-previsionales/estudios-previsionales.component';
 
 @NgModule({
-  declarations: [PublicacionesComponent, ActuarialInformationComponent, InformesInstitucionalesComponent, MemorialesAnualesComponent, PresentacionesComponent],
+  declarations: [PublicacionesComponent, ActuarialInformationComponent, InformesInstitucionalesComponent, MemorialesAnualesComponent, PresentacionesComponent, EstudiosPrevisionalesComponent],
   imports: [CommonModule, PublicacionesRoutingModule],
 })
 export class PublicacionesModule {}

@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { AfiliadosServices } from 'src/app/services/afiliados.services';  
 import { NgxSpinnerService } from "ngx-spinner";
-declare var jQuery: any; 
+declare var jQuery: any;
+declare var AmCharts: any; 
+var Map: any; 
 @Component({
   selector: 'app-afiliados',
   templateUrl: './afiliados.component.html',
@@ -56,7 +58,39 @@ export class AfiliadosComponent implements OnInit {
         
         if(id==""){
           (($) => {
-            $(document).ready(() => {
+            Map= AmCharts.makeChart("chartdiv", {
+              "type": "map",
+              "theme": "dark",
+              "dataProvider" : {
+                "mapURL": "./assets/map/svg/peruHigh.svg",
+                "getAreasFromMap": true
+              },
+              "areasSettings": {
+                "autoZoom": true,
+                "selectedColor": "#FF6D6A"
+              },
+              "responsive": {
+                "enabled": true
+              },
+              "chartCursor": {
+                "oneBalloonOnly": true
+              },
+              "zoomControl": {
+                "zoomControlEnabled": false,
+                "homeButtonEnabled": false
+              } 
+            });              
+            var handleClick=(event: any) => 
+            { 
+               if("DPTO_LKT"!=event.chart.previouslyHovered.id && "DPTO1_14"!=event.chart.previouslyHovered.id){
+               this.iddepartament=event.chart.previouslyHovered.id.replace('DPTO_', '');
+               $("#IdddlDepartamet").val(this.iddepartament);
+               this.onChangeDepartamet();
+               }
+            }
+            Map.addListener("click", handleClick);
+
+            /*$(document).ready(() => {
                 $('[data-toggle="tooltip"]').tooltip();
                 for (var i = 0; i < result.ResultDepartamentoTotal.length; i += 1) {
                   var iddepartamento = result.ResultDepartamentoTotal[i].CodigoDepartamento;
@@ -74,7 +108,7 @@ export class AfiliadosComponent implements OnInit {
                       });
                 }
 
-              });
+              });*/
           })(jQuery);
         }
         }
@@ -87,12 +121,19 @@ export class AfiliadosComponent implements OnInit {
     this.listData(this.iddepartament);    
     if(this.iddepartament!=""){
       this.TitleDepartemento=this.ListDepartament.filter((x: { CodigoDepartamento: string; })=>x.CodigoDepartamento==this.iddepartament)[0].Departamento;
-      this.subTitle="EEEEES";
+      this.subTitle="";
     }
     else{
       this.TitleDepartemento="";
-      this.subTitle="AA nivel nacional";
+      this.subTitle="A nivel nacional";
     }
+  } 
+  onChangeDepartametPersonality(){
+    var country = Map.getObjectById("DPTO_"+this.iddepartament); 
+    Map.selectObject(country);
+    if(this.iddepartament!=""){
+    country.validate();
+    }
+    this.onChangeDepartamet();
   }
-
 }

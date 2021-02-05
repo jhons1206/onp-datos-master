@@ -14,6 +14,7 @@ import { FacilComponent } from './pages/facil/facil.component';
 import { InformesInstitucionalesComponent } from './pages/publicaciones/informes-institucionales/informes-institucionales.component';
 import { PresentacionesComponent } from './pages/publicaciones/presentaciones/presentaciones.component';
 import { MemorialesAnualesComponent } from './pages/publicaciones/memoriales-anuales/memoriales-anuales.component';
+import { EstudiosPrevisionalesComponent } from './pages/publicaciones/estudios-previsionales/estudios-previsionales.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/Inicio', pathMatch: 'full' },
@@ -25,6 +26,7 @@ const routes: Routes = [
   { path: 'InformesInstitucionales/:id',component: InformesInstitucionalesComponent,canActivate: []},
   { path: 'Presentaciones',component: PresentacionesComponent,},
   { path: 'MemorialesAnuales',component: MemorialesAnualesComponent,},
+  { path: 'EstudiosPrevisionales',component: EstudiosPrevisionalesComponent,},
   { path: 'ZonaPrensa',component: ZonaPrensaComponent,},
   { path: 'Pensionistas', component: PensionistasComponent},
   { path: 'Afiliados', component: AfiliadosComponent},

@@ -4,13 +4,13 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
 import { NgxSpinnerService } from "ngx-spinner";
 import { environment } from '../../../../environments/environment';
 @Component({
-  selector: 'app-informes-institucionales',
-  templateUrl: './informes-institucionales.component.html',
-  styleUrls: ['./informes-institucionales.component.css']
+  selector: 'app-estudios-previsionales',
+  templateUrl: './estudios-previsionales.component.html',
+  styleUrls: ['./estudios-previsionales.component.css']
 })
-export class InformesInstitucionalesComponent implements OnInit {
-  ListInformes: any = [];
-  ListInformesPaginate: any = [];
+export class EstudiosPrevisionalesComponent implements OnInit {
+  ListEstudios: any = [];
+  ListEstudiosPaginate: any = [];
   totalItems: number=0;
   page: number=1;
   cantidadPorPagina: number=12;
@@ -32,18 +32,17 @@ export class InformesInstitucionalesComponent implements OnInit {
       this.id = params['id'] 
       this.page =1;
       this.previousPage =1;
-      this.infocetaServices.getListInformes().subscribe(
+      this.infocetaServices.getListEstudiosPrevisionales().subscribe(
         (result: any) => {        
           if ((!result) || (result && result.length ==0)) {
-            this.ListInformes = [];
+            this.ListEstudios = [];
             this.showPagination = false;
           }
           else {
-            this.ListResult=result.filter((x: { typeCode: string; })=>x.typeCode==this.id);
-            this.Title=this.ListResult[0].type;
-            this.urlFiles=environment.baseUrlFiles+'Informes-Respuestas-Institucionales/'+(this.Title.replace(' ','-')).replace('í','i')+'/';
-            this.ListInformes = this.ListResult[0].data;
-            this.totalItems = this.ListInformes.length;
+            this.ListEstudios = result[0].data;
+            this.urlFiles=environment.baseUrlFiles+'Biblioteca-Estudios-Previsionales/';
+           
+            this.totalItems = this.ListEstudios.length;
             this.showPagination = true;
             this.totalItemsPage=Math.ceil(this.totalItems/this.cantidadPorPagina);
             this.ListtotalItemsPage=[];
@@ -52,7 +51,7 @@ export class InformesInstitucionalesComponent implements OnInit {
             }
             console.log(this.totalItemsPage);
           }
-          this.ListInformesPaginate=this.ListInformes.slice(0, this.cantidadPorPagina);
+          this.ListEstudiosPaginate=this.ListEstudios.slice(0, this.cantidadPorPagina);
         }
       );
       this.spinnerService.hide();
@@ -60,14 +59,14 @@ export class InformesInstitucionalesComponent implements OnInit {
   }
   paginar(paginacion: any) { 
     let actual = this.cantidadPorPagina * (paginacion-1);
-    this.ListInformesPaginate = this.ListInformes.slice(actual,paginacion*this.cantidadPorPagina);
+    this.ListEstudiosPaginate = this.ListEstudios.slice(actual,paginacion*this.cantidadPorPagina);
     this.page =paginacion; 
   }
   anterior() {
     if(this.page-1>=1){
     this.page -=1; 
     let actual = this.cantidadPorPagina * (this.page-1); 
-    this.ListInformesPaginate = this.ListInformes.slice(actual,this.page*this.cantidadPorPagina);   
+    this.ListEstudiosPaginate = this.ListEstudios.slice(actual,this.page*this.cantidadPorPagina);   
     }
     console.log(this.page);
   }
@@ -75,7 +74,7 @@ export class InformesInstitucionalesComponent implements OnInit {
     if(this.page+1<=this.totalItemsPage){
     this.page +=1; 
     let actual = this.cantidadPorPagina * (this.page-1); 
-    this.ListInformesPaginate = this.ListInformes.slice(actual,this.page*this.cantidadPorPagina);    
+    this.ListEstudiosPaginate = this.ListEstudios.slice(actual,this.page*this.cantidadPorPagina);    
     }
     console.log(this.page);
   }
