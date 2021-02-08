@@ -1,3 +1,5 @@
+const { $ } = require("protractor");
+
 var img_num = 1;
 
 interval();
@@ -249,11 +251,32 @@ function interval() {
   inter = setInterval(switchImg, 5000);
 }
 
-// Menu toogle subpages JSM
+// Menu toogle subpages
 function toogleMenuTop() {
   $(".top-menu").slideToggle();  
 }
 
 function toogleMenu2() {
   $(".top-menu2").slideToggle();  
+}
+
+// Show / Hide Carrusel
+function showCarrusel1() {
+      var x = document.getElementById("carrusel1");
+      var y = document.getElementById("carrusel2");
+
+      if (x.style.display === "none") {
+        x.style.display = "flex";
+        y.style.display = "none";
+      } 
+}
+
+function showCarrusel2() {
+  var y = document.getElementById("carrusel2");
+  var x = document.getElementById("carrusel1");
+
+  if (y.style.display === "none") {
+    y.style.display = "flex";
+    x.style.display = "none";
+  }
 }

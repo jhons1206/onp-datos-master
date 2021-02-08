@@ -1,0 +1,973 @@
+
+/* /// CSS Architecture ONP Project /// */
+
+/* >>>>>>>>>>> Custom Properties <<<<<<<<<<<< */
+/* Definidas de forma global en styles.css */
+
+/* >>>>>>>>>>>>>>> Reset <<<<<<<<<<<<<<< */
+a {
+    transition: all 0.5s;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+h3 {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+h4 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+h5 {
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+h6 {
+    font-size: 0.7rem;
+    margin: 0;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* >>>>>>>>>>>>>>> Components <<<<<<<<<<<<<<<< */
+
+
+
+
+/* >>>>>>>>>>>>>>> Utilities <<<<<<<<<<<<<<<< */
+.box-shadow-1 {
+    box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25);
+}
+
+.section {
+    padding: 2rem;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: var(--max-width);
+}
+
+.btn-first {
+    display: inline-block;
+    padding: 0.3rem 1.5rem;
+    background-color: var(--first-color);
+    color: var(--white-color);
+    margin: 1.5rem 0 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.btn-first:hover {
+    background-color: var(--second-color);
+}
+
+.title-onp-1 {
+    font-weight: bold;
+    color: var(--second-color);
+    padding: 1rem 0;
+    font-size: 1.3rem;
+    line-height: 1;
+    text-align: center;
+}
+
+.title-onp-2 {
+    font-weight: normal;
+    color: var(--second-color);
+    padding: 1rem 0;
+    font-size: 1.3rem;
+}
+
+.title-onp-3 {
+    font-weight: bold;
+    color: var(--second-color);
+    font-size: 1.1rem;
+}
+
+.title-onp-4 {
+    font-weight: bold;
+    color: var(--second-color);
+    font-size: 0.9rem;
+}
+
+.title-onp-5 {
+    font-weight: bold;
+    color: var(--second-color);
+    font-size: 0.7rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.p-detail {
+    padding: 0;
+    margin: 0;
+    line-height: 1.1;
+    font-size: 0.82rem;
+    font-weight: 400;
+}
+
+.small-text {
+    font-size: 0.6rem;
+}
+
+.fw-normal {
+    font-weight: normal;
+}
+
+.voltear-horizontal {
+    transform: scaleX(-1);
+}
+
+/* >>>>>>>>>>>>>>> SITE <<<<<<<<<<<<<<<< */
+.banner__detail {
+    display: none;
+}
+
+.advantage {
+    padding: 1.4rem 1rem 2rem;
+    text-align: center;
+}
+
+.advantage__p1 {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0 2rem;
+    margin-bottom: 0.1rem;
+    line-height: 1;
+    color: var(--second-color);
+}
+
+.advantage__p2 {
+    font-size: 0.82rem;
+    color: var(--second-color);
+    font-weight: normal;
+}
+
+.advantage__carrusel {
+    padding: 0.5rem 2.5rem 0;
+}
+
+.advantage__item {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.advantage__item img {
+    width: 16%;
+    margin-right: 1rem;
+    vertical-align: middle;
+}
+
+.advantage__item p {
+    font-size: 0.8rem;
+    line-height: 1;
+    color: var(--gray-color);
+    margin: 0;
+    padding: 0 1.2rem 0 0.5rem;
+}
+
+.advantage__users {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.advantage__card-user {
+    width: 49%;
+}
+
+.advantage__card-user img {
+    width: 70%;
+    border-radius: 50%;
+}
+
+.advantage__card-user p {
+    padding: 0.5rem 0.7rem;
+    background-color: var(--second-color);
+    color: var(--white-color);
+    font-size: 0.7rem;
+    text-align: left;
+    margin-top: 0.5rem;
+    border-radius: 12px;
+    min-height: 66px;
+    display: flex;
+    align-items: center;
+    line-height: 0.9;
+}
+
+.banner__content {
+    position:  relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+} 
+
+.banner__title {
+    position:  absolute;
+    padding: 0 3rem;
+    top: 20%;
+} 
+
+.banner__title h3 {
+    color: #fff;
+    font-size: 1.2rem;
+    line-height: 1.2;
+    margin: 0;
+} 
+
+.joinup {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    align-content: center;
+}
+
+.joinup__detail {
+    width: 55%;
+    position: absolute;
+    text-align: center;
+    color: var(--white-color);
+    padding: 0;
+    right: 0;
+}
+
+.joinup__info1 {
+    position: absolute;
+    bottom: 0;
+    padding: 0 2.7rem 0 0.5rem;
+}
+
+.joinup__info1 .p-detail2 {
+    line-height: 0.9;
+    padding-top: 0.5rem;
+}
+
+.joinup__info2 {
+    position: absolute;
+    top: 0;
+    padding-top: 1rem;
+    padding-right: 1.5rem;
+}
+
+.joinup__info2 .btn-first {
+    margin: 0.8rem 0 0;
+}
+
+.bonus {
+    background-color: var(--second-color);
+    color: var(--white-color);
+}
+
+.bonus aside {
+    padding: 1.5rem 2rem 1rem;
+}
+
+.bonus h4 {
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+    line-height: 0.5;
+    font-weight: 500;
+}
+
+.digits {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding: 1rem 0;
+    background-color: #0E0E0E;
+}
+
+.digits__content {
+    position: absolute;
+    color: var(--white-color);
+    padding: 0 1.6rem;
+}
+
+.digits__content h2 {
+    grid-column: span 2;
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 1.2rem;
+}
+
+.digits__item {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    align-content: center;
+    align-items: stretch;
+    margin-bottom: 0.5rem;
+}
+
+.digits__item img {
+    vertical-align: middle;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+.digits__number {
+    padding: 1rem 1rem 0.5rem 0.8rem;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: var(--second-color);
+}
+
+.digits__number h4 {
+    font-size: 0.8rem;
+    line-height: 1;
+}
+
+.digits__number h5 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.financing {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.financing img {
+    width: 45%;
+}
+
+.financing h3 {
+    font-weight: bold;
+    color: var(--second-color);
+    padding: 1rem 0;
+}
+
+.financing p {
+    color: var(--second-color);
+}
+
+.inability {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    align-content: center;
+    padding-bottom: -2rem;
+}
+
+.inability__detail {
+    width: 55%;
+    position: absolute;
+    text-align: center;
+    color: var(--second-color);
+    padding: 0 2rem;
+    right: 0;
+}
+
+.inability__detail h3 {
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    line-height: 1;
+    font-size: 1.1rem;
+}
+
+.inability__detail .small-text {
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.inability__detail .btn-first {
+    margin-top: 0.9rem;
+}
+
+.family__header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    top: -18px;
+} 
+
+.family__content {
+    position: absolute;
+    padding: 0;
+    top: 15%;
+} 
+
+.family__content h2 {
+    color: #fff;
+    font-size: 1.1rem;
+    line-height: 1.2;
+    margin: 0;
+}
+
+.family__card {
+    position: relative;
+    text-align: center;
+    padding-top: 0.7rem;
+}
+
+.family__card h3 {
+    background: var(--white-color);
+    font-size: 0.9rem;
+    color: var(--second-color);
+    padding: 0.7rem 2.5rem;
+    position: absolute;
+    top: -68px;
+    left: 29%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    line-height: 1;
+    min-height: 48px;
+    font-weight: bold;
+}
+
+.family__card img {
+    width: 50%;
+    border-radius: 50%;
+}
+
+.family__card h4 {
+    color: var(--second-color);
+    font-weight: bold;
+    padding: 1rem 0 0.5rem;
+    font-size: 0.9rem;
+}
+
+.family__card p {
+    font-size: 0.8rem;
+    line-height: 1.2;
+    text-align: left;
+    color: var(--second-color);
+    margin: 0;
+}
+
+.benefits {
+    margin: 2rem 0 12rem;
+    position: relative;
+}
+
+.benefits__header {
+    position: relative;
+    display: grid;
+    align-content: center;
+    align-items: flex-end;
+}
+
+.benefits__detail {
+    position: absolute;
+    color: var(--white-color);
+    text-align: center;
+    bottom: 16%;
+}
+
+.benefits__detail h2 {
+    font-size: 1.3rem;
+}
+
+.benefits__detail p {
+    font-size: 0.85rem;
+    line-height: 1.2;
+    padding: 0.2rem 2.5rem;
+}
+
+.benefits__carrusel {
+    border-radius: 20px;
+    padding: 2.3rem 2.2rem;
+    margin: 0 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    top: 82%;
+    position: absolute;
+    background-color: var(--white-color);
+}
+
+.benefits__carrusel img {
+    width: 25%;
+}
+
+.benefits__carrusel h3 {
+    color: var(--second-color);
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 1rem 0 0.2rem;
+}
+
+.benefits__carrusel p {
+    color: var(--second-color);
+}
+
+.benefits__carrusel .btn-first {
+    margin: 0;
+    position: absolute;
+    bottom: -15px;
+}
+
+.pension {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.pension__detail {
+    position: absolute;
+    text-align: center;
+    color: var(--white-color);
+    padding: 0 2rem;
+}
+
+.pension__detail h3 {
+    font-size: 1rem;
+    padding: 0 4rem 0.3rem;
+    font-weight: bold;
+}
+
+.pension__detail .btn-first {
+    margin-top: 0.9rem;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .banner__wrapper {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .banner__detail {
+        display: block;
+        position: absolute;
+        color: var(--white-color);
+        width: 27%;
+        left: 24%;
+    }
+
+    .banner__detail h1 {
+        font-size: 1.65rem;
+        line-height: 1.2;
+    }
+
+    .banner__content {
+        display: none;
+    }
+
+    .advantage {
+        padding: 2.5rem 0;
+        width: var(--max-width);
+        margin: 0 auto;
+    }
+
+    .advantage__p1 {
+        font-size: 1.2rem;
+    }
+
+    .advantage h3 {
+        font-size: 1.5rem;
+    }
+
+    .advantage__users {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+        padding: 0.7rem 13rem 0;
+    }
+
+    .advantage__card-user {
+        background-color: var(--second-color);
+        padding-right: 1rem;
+        border-top-left-radius: 59px;
+        border-bottom-left-radius: 59px;
+        border-top-right-radius: 59px;
+        border-bottom-right-radius: 59px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    .advantage__card-user img {
+        width: 40%;
+        float: left;
+        margin-left: -1px;
+    }
+
+    .advantage__card-user p {
+        background-color: transparent;
+        font-size: 0.8rem;
+        line-height: 1.1;
+        margin: 0;
+    }
+
+    .advantage__users div:nth-last-child(1) {
+        background-color: var(--third-color);
+    }
+
+    .advantage__p2 {
+        display: none;
+    }
+
+    .advantage__carrusel {
+        margin-top: 4rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .advantage__item {
+        display: block;
+        width: 17%;
+    }
+
+    .advantage__item img {
+        width: 60%;
+        margin: 0;
+    }
+
+    .advantage__item p {
+        margin-top: 1rem;
+        padding: 0;
+        font-size: 0.85rem;
+        line-height: 1.3;
+    }
+
+    .joinup {
+        justify-content: center;
+    }
+    
+    .joinup__detail {
+        width: 55%;
+        position: absolute;
+        text-align: center;
+        color: var(--white-color);
+        padding: 0;
+        right: 5%;
+    }
+    
+    .joinup__info1 {
+        position: absolute;
+        bottom: 25px;
+    }
+
+    .joinup__info1 .p-detail {
+        font-size: 0.9rem;
+    }
+    
+    .joinup__info1 .p-detail2 {
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+    
+    .joinup__info2 {
+        padding: 0 1.5rem;
+        bottom: 20px;
+    }
+
+    .joinup__info2 .p-detail {
+        font-size: 1rem;
+        width: 55%;
+        padding: 0.5rem 2rem;
+    }
+    
+    .joinup__info2 .btn-first {
+        margin: 0.8rem 0 0 -300px;
+        font-size: 1rem;
+    }
+
+    .pension__detail h3 {
+        font-size: 1.5rem;
+        padding-bottom: 1rem;
+    }
+
+    .pension__detail p {
+        font-size: 1.1rem;
+    }
+
+    .pension__detail .btn-first {
+        font-size: 1.1rem;
+    }
+
+    .inability {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .inability img {
+        transform: scaleX(-1);
+    }
+
+    .inability__detail {
+        width: 37%;
+        right: inherit;
+        left: 45%;
+    }
+
+    .inability__detail h3 {
+        font-size: 1.5rem;
+    }
+
+    .inability__detail .p-detail {
+        font-size: 0.95rem;
+        line-height: 1.4;
+        color: var(--second-color);
+    }
+
+    .inability__detail .btn-first {
+        font-size: 1.1rem;
+    }
+
+    .family {
+        padding: 1.5rem 0;
+    }
+
+    .family__header {
+        top: -90px;
+    }
+
+    .family__header img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .family__content h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding-top: 1.5rem;
+    }
+
+    .family__card {
+        text-align: left;
+        width: var(--max-width);
+        margin: 0 auto;
+        padding: 0 10rem;
+    }
+
+    .family__card img {
+        float: left;
+        width: 30%;
+        margin-right: 5rem;
+    }
+
+    .family__card h3 {
+        top: -115px;
+    }
+
+    .family__card h4 {
+        padding-bottom: 1rem;
+        font-size: 1rem;
+    }
+
+    .family__card p {
+        font-size: 0.9rem;
+    }
+
+    .benefits {
+        margin: 2rem 0 20rem;
+    }
+    
+    .benefits__detail {
+        bottom: 32%;
+        right: 45%;
+        width: 28%;
+    }
+    
+    .benefits__detail h2 {
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+    
+    .benefits__detail p {
+        font-size: 1rem;
+        padding: 1rem;
+    }
+    
+    .benefits__carrusel {
+        flex-direction: row;
+        padding: 4rem 2.5rem;
+        left: 18%;
+        width: 60%;
+    }
+    
+    .benefits__carrusel img {
+        width: 38%;
+    }
+    
+    .benefits__carrusel h3 {
+        font-size: 1.1rem;
+        padding: 1rem 0;
+    }
+    
+    .benefits__carrusel p {
+        font-size: 0.9rem;
+    }
+    
+    .benefits__item {
+        margin: 0 1rem;
+    }
+
+    .digits {
+        position: relative;
+        display: inherit;
+        padding: 0;
+        background-color: #0E0E0E;
+    }
+    
+    .digits__content {
+        position: absolute;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        top: 0;
+        bottom: 0;
+        margin: 0 16rem;
+    }
+    
+    .digits__content h2 {
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+        grid-column: span 3;
+    }
+    
+    .digits__item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        position: relative;
+    }
+    
+    .digits__item img {
+        border-radius: 20px;
+        width: 90%;
+    }
+    
+    .digits__number {
+        position: absolute;
+        padding: 1rem;
+        border-radius: 20px;
+        background-color: var(--second-alpha-color);
+        bottom: 0;
+        top: 0;
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+    }
+    
+    .digits__number h4 {
+        font-size: 0.9rem;
+    }
+    
+    .digits__number h5 {
+        font-size: 2.7em;
+    }    
+
+    .bonus {
+        display: flex;
+        justify-content: space-between;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    .bonus aside {
+        text-align: left;
+        position: absolute;
+        left: 48%;
+    }
+
+    .bonus aside h3 {
+        font-size: 1.3rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .bonus aside h4 {
+        font-size: 1.4rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .bonus aside p {
+        font-size: 0.9rem;
+        line-height: 1.5;
+        width: 70%;
+    }
+
+    .bonus aside .btn-first {
+        margin-top: 3rem;
+    }
+
+    .financing {
+        flex-direction: row;
+        width: var(--max-width);
+        margin: 0 auto;
+        text-align: left;
+        padding: 2.5rem 8.7rem;
+    }
+
+    .financing img {
+        width: 40%;
+        margin-right: 4rem;
+    }
+
+    .financing h3 {
+        font-size: 1.5rem;
+    }
+
+    .financing p {
+        font-size: 0.9rem;
+        line-height: 1.2;
+    }
+
+    .btn-first {
+        font-size: 1.1rem;
+    }
+
+
+}

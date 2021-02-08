@@ -1,11 +1,309 @@
 <!-- <aside>
-    <div class="btn-toogle-menu" onclick="toogleMenuTop();">
-        <img class="img-arrow" src="../../../../assets/images/arrow-down.svg" alt="flecha abajo">
-    </div>
-    <ul class="top-menu">
-        <li><a [routerLink]="['/Facil']">Tus ventajas y facilidades</a></li>
-        <li><a [routerLink]="['/Facil']">Afiliate al SNP</a></li>
-        <li><a [routerLink]="['/Facil']">Tus opciones de jubilación</a></li>
-        <li><a [routerLink]="['/Facil']">Tus beneficios</a></li>
+    <div class="btn-toogle-menu" onclick="toogleMenuTops();">
+        <img class="img-arrow" src="../../../../assets/images/arrow-down.svgs" alt="flecha abajo">
+    </div> <ul class="top-menu">
+        <li><a [routerLink]="'/Facil'">Tus ventajas y facilidades</a></li>
+        <li><a [routerLink]="'/Facil'">Afiliate al SNP</a></li>
+        <li><a [routerLink]="'/Facil'">Tus opciones de jubilación</a></li>
+        <li><a [routerLink]="'/Facil'">Tus beneficios</a></li>
     </ul>
 </aside> -->
+
+<div class="banner">
+    <div class="banner__wrapper">
+        <picture>
+            <source media="(max-width: 768px)" srcset="../../../assets/images/facil/banner-onp-facil-movil.jpg">
+            <source media="(min-width: 1024px)" srcset="../../../assets/images/facil/banner-onp-facil-desktop.jpg">
+            <img loading="lazy" src="../../../assets/images/facil/banner-onp-facil-desktop.jpg">
+        </picture>
+        <div class="banner__detail">
+            <h1>Imagina un grupo de personas reunidas para ayudarse.<br><b>Eso es el Sistema Nacional de Pensiones.</b></h1>
+        </div>
+    </div>
+    <div class="banner__content">
+        <img loading="lazy" src="../../../assets/images/facil/bg-rounded-bottom.png">
+        <div class="banner__title">
+            <h3>Imagina un grupo de personas reunidas para ayudarse.<br><b>Eso es el Sistema Nacional de Pensiones.</b></h3>
+        </div>
+    </div>
+</div>
+
+<section class="advantage">
+    <p class="advantage__p1 pt-0">El SNP es un sistema de personas que se ayudan mutuamente.</p>
+    <h3 class="title-onp-1 pt-0">Estas son tus ventajas y facilidades</h3>
+    <div class="advantage__users">
+        <div class="advantage__card-user" id="user-afiliado" onclick="showCarrusel1()">
+            <img loading="lazy" src="../../../assets/images/card_user1.jpg" alt="">
+            <p>Si te afilias, con tu aporte de cada mes construyes tu pensión y, además, permites que las y los pensionistas cobren sus pensiones.</p>
+        </div>
+        <div class="advantage__card-user" id="user-pensionista"  onclick="showCarrusel2()">
+            <img loading="lazy" src="../../../assets/images/card_user2.jpg" alt="">
+            <p>Cuando eres pensionista, cada mes puedes cobrar tu pensión porque las personas afiliadas pagan sus aportes.</p>
+        </div>
+    </div>
+    <p class="advantage__p2">Cuando eres afiliada o afiliado</p>
+    <!-- <ngx-slick-carousel class="carousel" 
+                        #slickModal="slick-carousel" 
+                        [config]="slideConfig" 
+>
+        <div ngxSlickItem class="slide">
+            <img loading="lazy" src="../../../assets/images/facil/icon-home-money.svg" alt="icono casa">
+            <img loading="lazy" src="../../../assets/images/facil/icon-home-money.svg" alt="icono casa">
+            <img loading="lazy" src="../../../assets/images/facil/icon-home-money.svg" alt="icono casa">
+            <img loading="lazy" src="../../../assets/images/facil/icon-home-money.svg" alt="icono casa">
+        </div>
+    </ngx-slick-carousel> -->
+
+    <!-- <si-ng-carousel class="ng-carousel" [autoPlay]="0" [visible]="{sm:1,all:4}">
+        <div
+          *ngFor="let item of gallery1"
+          siCarouselItem
+          class="item-auto onp-list-icon"
+        >
+          <img
+            [src]="item.img"
+            height="75"
+            width="75"
+            [ngStyle]="{
+              'margin-bottom': item.marginBottom,
+              'margin-top': item.marginTop
+            }"
+          />
+          <span>{{ item.text }}</span>
+        </div>
+      </si-ng-carousel> -->
+
+    <div class="advantage__carrusel" id="carrusel1">
+        <div class="advantage__item">
+            <img loading="lazy" src="../../../assets/images/facil/icon-home-money.svg" alt="icono casa">
+            <p>Aunque 1 ya no tengas un trabajo fijo, puedes seguir aportando para construir tu futura pensión.</p>
+        </div>
+        <div class="advantage__item">
+            <img loading="lazy" src="../../../assets/images/facil/icon-hand.svg" alt="icono casa">
+            <p>Tu futura pensión nunca será menor a S/ 500.</p>
+        </div>
+        <div class="advantage__item">
+            <img loading="lazy" src="../../../assets/images/facil/icon-alcancia.svg" alt="icono casa">
+            <p>Puedes mejorar el monto de tu futura pensión. Si ya realizas aportes obligatorios,puedes sumar aportes como independiente.</p>
+        </div>
+        <div class="advantage__item">
+            <img loading="lazy" src="../../../assets/images/facil/icon-prestamo.svg" alt="icono casa">
+            <p>Puedes pedir un préstamo por hasta 3 años (36 unidades de aporte) para acceder a tu pensión.</p>
+        </div>
+        <div class="advantage__item">
+            <img loading="lazy" src="../../../assets/images/facil/icon-users.svg" alt="icono casa">
+            <p>Tus familiares podrían tener una pensión cuando les faltes.</p>
+        </div>
+    </div>
+    <div class="advantage__carrusel" id="carrusel2" style="display: none;">
+        <div class="advantage__item">
+            <img loading="lazy" src="../../../assets/images/facil/icon-home-money.svg" alt="icono casa">
+            <p>Aunque 2 ya no tengas un trabajo fijo, puedes seguir aportando para construir tu futura pensión.</p>
+        </div>
+        <div class="advantage__item">
+            <img loading="lazy" src="../../../assets/images/facil/icon-hand.svg" alt="icono casa">
+            <p>Tu futura pensión nunca será menor a S/ 500.</p>
+        </div>
+        <div class="advantage__item">
+            <img loading="lazy" src="../../../assets/images/facil/icon-alcancia.svg" alt="icono casa">
+            <p>Puedes mejorar el monto de tu futura pensión. Si ya realizas aportes obligatorios,puedes sumar aportes como independiente.</p>
+        </div>
+        <div class="advantage__item">
+            <img loading="lazy" src="../../../assets/images/facil/icon-prestamo.svg" alt="icono casa">
+            <p>Puedes pedir un préstamo por hasta 3 años (36 unidades de aporte) para acceder a tu pensión.</p>
+        </div>
+        <div class="advantage__item">
+            <img loading="lazy" src="../../../assets/images/facil/icon-users.svg" alt="icono casa">
+            <p>Tus familiares podrían tener una pensión cuando les faltes.</p>
+        </div>
+    </div>
+</section>
+
+<section class="joinup">
+    <picture>
+        <source media="(max-width: 768px)" srcset="../../../assets/images/facil/unete.png">
+        <source media="(min-width: 1024px)" srcset="../../../assets/images/facil/unete-desktop.png">
+        <img loading="lazy" src="../../../assets/images/facil/unete-desktop.png" alt="Únete ONP">
+    </picture>
+    <div class="joinup__detail">
+        <article class="joinup__info1">
+            <p class="p-detail">Ya imaginaste a este grupo de personas reunidas para ayudarse.</p>
+            <p class="p-detail2">Tú puedes ser parte de él.</p>
+        </article>   
+        <article class="joinup__info2">
+            <p class="p-detail">Conoce cómo puedes afiliarte. Cuánto y cómo puedes aportar para tu futura pensión.</p>
+            <a href="#" class="btn-first">Aquí</a>
+        </article>  
+    </div>
+</section>
+
+<section class="pension">
+    <picture>
+        <source media="(max-width: 768px)" srcset="../../../assets/images/facil/asegura-tu-pension-movil.jpg">
+        <source media="(min-width: 1024px)" srcset="../../../assets/images/facil/pension-desktop.jpg">
+        <img loading="lazy" src="../../../assets/images/facil/pension-desktop.jpg" alt="Asegura tu pensión">
+    </picture>
+    <div class="pension__detail">
+        <h3>Tus años de esfuerzo aseguran tu pensión</h3>
+        <p class="p-detail">Conoce tus opciones de jubilación</p>
+        <a href="#" class="btn-first mb-0">Aquí</a>
+    </div>
+</section>
+
+<section class="inability">
+    <picture>
+        <source media="(max-width: 768px)" srcset="../../../assets/images/facil/discapacidad-movil.jpg">
+        <source media="(min-width: 1024px)" srcset="../../../assets/images/facil/pension-incapacidad-desktop.jpg">
+        <img loading="lazy" src="../../../assets/images/facil/pension-incapacidad-desktop.jpg" alt="Pensión por incapacidad">
+    </picture>
+    <div class="inability__detail">
+        <h3>En caso de discapacidad...</h3>
+        <p class="p-detail">Tú puedes acceder a una pensión completa o proporcional si has perdido la capacidad de trabajar debido a un daño ocasionado en tu salud.</p>
+        <p class="p-detail small-text">Conoce más de la Pensión por discapacidad para el trabajo</p>
+        <a href="#" class="btn-first mb-0">Aquí</a>
+    </div>
+</section>
+
+<section class="family">
+    <div class="family__header">
+        <picture>
+            <source media="(max-width: 768px)" srcset="../../../assets/images/facil/bg-rounded-top.png">
+            <source media="(min-width: 1024px)" srcset="../../../assets/images/facil/top-header-desktop.png">
+            <img loading="lazy" src="../../../assets/images/facil/top-header-desktop.png" alt="Pensión por incapacidad">
+        </picture>
+        <div class="family__content">
+            <h2>Protegemos a tu familia</h2>
+        </div>
+    </div>
+    <div class="family__card section">
+        <h3>Cónyuge o<br>conviviente</h3>
+        <img src="../../../assets/images/facil/tab-conyuge.jpg" alt="Cónyuge o conviviente">
+        <h4>Pensión para tu cónyuge o conviviente</h4>
+        <p>Tu cónyuge o conviviente con declaración de unión de hecho puede convertirse en beneficiaria o beneficiario de una pensión cuando le faltes, siempre y cuando tú recibas pensión (o hayas tenido derecho a recibirla).</p>
+        <a href="#" class="btn-first mb-0">Conoce más</a>
+    </div>
+</section>
+
+<section class="benefits">
+    <div class="benefits__header">
+        <picture>
+            <source media="(max-width: 768px)" srcset="../../../assets/images/facil/beneficios-movil.jpg" alt="Beneficios SNP">
+            <source media="(min-width: 1024px)" srcset="../../../assets/images/facil/tus-beneficios-desktop.jpg">
+            <img loading="lazy" src="../../../assets/images/facil/tus-beneficios-desktop.jpg" alt="Beneficios SNP">
+        </picture>
+        <div class="benefits__detail">
+            <h2>Tus beneficios</h2>
+            <p>Pertenecer al Sistema Nacional de Pensiones tiene beneficios que tal vez no conocías.</p>
+        </div>
+    </div>
+    <div class="benefits__carrusel box-shadow-1">
+        <div class="benefits__item">
+            <img loading="lazy" src="../../../assets/images/facil/icon-home-money-bolsa.svg" alt="icono beneficios">
+            <h3>Incrementos</h3>
+            <p class="p-detail">El monto de tu pensión puede aumentar bajo ciertas condiciones.</p>
+        </div>
+        <div class="benefits__item">
+            <img loading="lazy" src="../../../assets/images/facil/icon-home-money-bolsa.svg" alt="icono beneficios">
+            <h3>Incrementos</h3>
+            <p class="p-detail">El monto de tu pensión puede aumentar bajo ciertas condiciones.</p>
+        </div>
+        <div class="benefits__item">
+            <img loading="lazy" src="../../../assets/images/facil/icon-home-money-bolsa.svg" alt="icono beneficios">
+            <h3>Incrementos</h3>
+            <p class="p-detail">El monto de tu pensión puede aumentar bajo ciertas condiciones.</p>
+        </div>
+        <a href="#" class="btn-first">Conoce más</a>
+    </div>
+</section>
+
+<section class="bonus text-center">
+    <picture>
+        <source media="(max-width: 768px)" srcset="../../../assets/images/facil/bonos-snp.png">
+        <source media="(min-width: 1024px)" srcset="../../../assets/images/facil/bonos-desktop.png">
+        <img loading="lazy" src="../../../assets/images/facil/bonos-desktop.png" alt="Bonos SNP">
+    </picture>
+    <aside>
+        <h3><b>Si estás en una AFP</b></h3>
+        <h4>Seguimos pensando en ti</h4>
+        <p class="p-detail">¿Estabas afiliada o afiliado al Sistema Nacional de Pensiones y te trasladaste a una AFP?</p>
+        <p class="p-detail">Entérate si uno de estos bonos o pensiones te corresponde.</p>
+        <a href="#" class="btn-first">Entérate aquí</a>
+    </aside>
+</section>
+
+<section class="digits">
+    <picture>
+        <source media="(max-width: 768px)" srcset="../../../assets/images/facil/cifras-bg-movil.jpg">
+        <source media="(min-width: 1024px)" srcset="../../../assets/images/facil/cifras-desktop.jpg">
+        <img loading="lazy" src="../../../assets/images/facil/cifras-desktop.jpg" alt="Cifras SNP">
+    </picture>
+    <div class="digits__content">
+        <h2>Cifras del SNP</h2>
+        <div class="digits__item">
+            <img src="../../../assets/images/facil/cifras-afiliados.jpg" alt="Cifras afiliados">
+            <div class="digits__number">
+                <h4>Afiliadas y <br>afiliados</h4>
+                <h5>4,000,430</h5>
+            </div>
+        </div>
+        <div class="digits__item">
+            <img src="../../../assets/images/facil/cifras-pensionistas.jpg" alt="Cifras pensionistas">
+            <div class="digits__number">
+                <h4>Pensionistas y <br>beneficiarias/os</h4>
+                <h5>1,070,430</h5>
+            </div>
+        </div>
+        <div class="digits__item">
+            <img src="../../../assets/images/facil/cifras-trasladados.jpg" alt="Cifras trasladados">
+            <div class="digits__number">
+                <h4>Trasladadas y <br>trasladados</h4>
+                <h5>970,430</h5>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="financing section">
+    <img loading="lazy" src="../../../assets/images/facil/financiamiento-snp.png" alt="Financiamiento SNP">
+    <div>
+        <h3>Financiamiento del SNP</h3>
+        <p class="p-detail">El pago de las pensiones se basa en la colaboración.</p>
+        <p class="p-detail">Conoce quiénes colaboran para garantizar el pago mensual de las pensiones tanto a pensionistas como beneficiarias y beneficiarios.</p>
+        <a href="#" class="btn-first">Ingresa aquí</a>
+    </div>
+</section>
+
+<script src="../../../assets/js/slick.min.js"></script>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+
+    $(".advantage__carrusel").slick({
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        responsive: [
+            {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+            }
+            },
+            {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 1
+            }
+            }
+        ]
+    });
+});
+
+    if (window.matchMedia("(max-width: 768px)").matches) {
+
+        
+    }
+</script>
