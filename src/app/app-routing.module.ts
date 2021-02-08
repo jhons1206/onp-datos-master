@@ -11,42 +11,26 @@ import { PensionistasComponent } from './pages/enterate/pensionistas/pensionista
 import { AfiliadosComponent } from './pages/enterate/afiliados/afiliados.component';
 import { ActuarialInformationComponent } from './pages/publicaciones/actuarial-information/actuarial-information.component';
 import { FacilComponent } from './pages/facil/facil.component';
+import { InformesInstitucionalesComponent } from './pages/publicaciones/informes-institucionales/informes-institucionales.component';
+import { PresentacionesComponent } from './pages/publicaciones/presentaciones/presentaciones.component';
+import { MemorialesAnualesComponent } from './pages/publicaciones/memoriales-anuales/memoriales-anuales.component';
+import { EstudiosPrevisionalesComponent } from './pages/publicaciones/estudios-previsionales/estudios-previsionales.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/Inicio', pathMatch: 'full' },
-  {
-    path: 'Inicio',
-    component: InicioComponent,
-  },
-  {
-    path: 'Enterate',
-    component: EnterateComponent,
-  },
-  {
-    path: 'DatosAbiertos',
-    component: DatosAbiertosComponent,
-  },
-  {
-    path: 'Publicaciones',
-    component: PublicacionesComponent,
-  },
-  {
-    path: 'ActuarialInformation',
-    component: ActuarialInformationComponent,
-  },
-  {
-    path: 'ZonaPrensa',
-    component: ZonaPrensaComponent,
-  },
-  {
-    path: 'Pensionistas', component: PensionistasComponent
-  },
-  {
-    path: 'Afiliados', component: AfiliadosComponent
-  },
-  {
-    path: 'Facil', component: FacilComponent
-  },
+  { path: 'Inicio',component: InicioComponent,},
+  { path: 'Enterate',component: EnterateComponent, },
+  { path: 'DatosAbiertos', component: DatosAbiertosComponent, },
+  { path: 'Publicaciones',component: PublicacionesComponent,},
+  { path: 'ActuarialInformation/:id',component: ActuarialInformationComponent,canActivate: []},
+  { path: 'InformesInstitucionales/:id',component: InformesInstitucionalesComponent,canActivate: []},
+  { path: 'Presentaciones',component: PresentacionesComponent,},
+  { path: 'MemorialesAnuales',component: MemorialesAnualesComponent,},
+  { path: 'EstudiosPrevisionales',component: EstudiosPrevisionalesComponent,},
+  { path: 'ZonaPrensa',component: ZonaPrensaComponent,},
+  { path: 'Pensionistas', component: PensionistasComponent},
+  { path: 'Afiliados', component: AfiliadosComponent},
+  { path: 'Facil', component: FacilComponent},
   // {
   //   path: 'OnpVirtual',
   //   component: OnpVirtualComponent,

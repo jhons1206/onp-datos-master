@@ -25,7 +25,15 @@
   left: 22%;
   line-height: 25px;
 }
-
+.onp-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-right: 14%;
+  padding-left: 14%;
+  margin-top: 2rem;
+}
 /* .onp-content > h4 {
   text-align: justify;
   width: 90%;

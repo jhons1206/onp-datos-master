@@ -15,7 +15,7 @@ import { FacilComponent } from './facil/facil.component';
     EnterateModule,
     DatosAbiertosModule,
     PublicacionesModule,
-    ZonaPrensaModule,
+    ZonaPrensaModule
   ],
   exports: [
     InicioModule,

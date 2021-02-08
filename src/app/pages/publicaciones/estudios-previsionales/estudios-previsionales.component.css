@@ -5,7 +5,7 @@
 
 .age-distribution {
     display: grid;
-    grid-template-columns: repeat(3,33.34%);
+    grid-template-columns: repeat(5, 20%);
 }
 .age-distribution .section-title {
     grid-column: span 5;
@@ -237,7 +237,7 @@ ul.top-menu li a:hover {
 .section {
     margin-left: auto;
     margin-right: auto;
-    max-width: var(--max-width);
+    max-width: var(--max-width);    
 }
 
 /* *********** Site Styles *********** */
@@ -293,9 +293,8 @@ ul.top-menu li a:hover {
     .actuarial-info .onp__pagination {
         grid-column: span 3;
     }
-
+   
 }
-
 @media screen and (max-width: 1024px) {
     .age-distribution{
         display: none;

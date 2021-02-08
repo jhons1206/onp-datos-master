@@ -6,35 +6,41 @@
   </p>
 </div>
 <div class="onp-content">
-  <h3>Nuestra información</h3>
+  <h3>Nuestra información</h3>  
   <div class="onp-listcards">
     <div class="onp-card">
+      <a [routerLink]="['/MemorialesAnuales']"> 
       <img
         class="img1"
         src="../../../assets/images/SVG/opn-publicaciones-carpeta.svg"
         alt=""
       />
       <p class="onp-color-tertiary">Memorias Anuales</p>
+      </a>
     </div>
     <div class="onp-card">
+      <a [routerLink]="['/Presentaciones']"> 
       <img
         class="img2"
         src="../../../assets/images/SVG/opn-publicaciones-pc.svg"
         alt=""
       />
       <p class="onp-color-tertiary">Presentaciones</p>
+      </a>
     </div>
-    <div class="onp-card">
+    <div class="onp-card">      
+      <a [routerLink]="['/InformesInstitucionales/001']"> 
       <img
         class="img3"
         src="../../../assets/images/SVG/opn-publicaciones-bd.svg"
         alt=""
       />
       <p class="onp-color-tertiary">Informes<br />Institucionales</p>
+    </a>
     </div>
     
       <div class="onp-card">
-        <a [routerLink]="['/ActuarialInformation']">
+        <a [routerLink]="['/ActuarialInformation/001']">
           <img
             class="img4"
             src="../../../assets/images/SVG/opn-publicaciones-barras.svg"
@@ -54,7 +60,7 @@
         Accede a la información en materia Previsional <br />planteada por
         expertos
       </p>
-      <a class="onp-info-dos-button" href="">Ver estudios</a>
+      <a class="onp-info-dos-button" [routerLink]="['/EstudiosPrevisionales']" >Ver estudios</a>
     </div>
   </div>
 </div>

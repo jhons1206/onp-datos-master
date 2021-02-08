@@ -4,13 +4,13 @@ import { Router, ActivatedRoute, Params } from '@angular/router';
 import { NgxSpinnerService } from "ngx-spinner";
 import { environment } from '../../../../environments/environment';
 @Component({
-  selector: 'app-actuarial-information',
-  templateUrl: './actuarial-information.component.html',
-  styleUrls: ['./actuarial-information.component.css']
+  selector: 'app-estudios-previsionales',
+  templateUrl: './estudios-previsionales.component.html',
+  styleUrls: ['./estudios-previsionales.component.css']
 })
-export class ActuarialInformationComponent implements OnInit {
-  ListActuarial: any = [];
-  ListActuarialPaginate: any = [];
+export class EstudiosPrevisionalesComponent implements OnInit {
+  ListEstudios: any = [];
+  ListEstudiosPaginate: any = [];
   totalItems: number=0;
   page: number=1;
   cantidadPorPagina: number=12;
@@ -26,26 +26,23 @@ export class ActuarialInformationComponent implements OnInit {
     private activateRoute: ActivatedRoute,
     private spinnerService: NgxSpinnerService) { }
 
-  ngOnInit(): void { 
+  ngOnInit(): void {
     this.activateRoute.params.subscribe((params: Params) => {
       this.spinnerService.show();
-      this.id = params['id']      
+      this.id = params['id'] 
       this.page =1;
       this.previousPage =1;
-      this.infocetaServices.getListActuarial().subscribe(
-        (result: any) => {
-          
-          if ((!result && !result) || (result && result && result.length ==0)) {
-            this.ListActuarial = [];
+      this.infocetaServices.getListEstudiosPrevisionales().subscribe(
+        (result: any) => {        
+          if ((!result) || (result && result.length ==0)) {
+            this.ListEstudios = [];
             this.showPagination = false;
           }
           else {
-            
-            this.ListResult=result.filter((x: { typeCode: string; })=>x.typeCode==this.id);
-            this.Title=this.ListResult[0].type;
-            this.urlFiles=environment.baseUrlFiles+'Informacion-actuarial/'+(((this.Title.replace(' ','-')).replace('á','a')).replace('í','i')).replace('é','e')+'/';
-            this.ListActuarial = this.ListResult[0].data;
-            this.totalItems = this.ListActuarial.length;
+            this.ListEstudios = result[0].data;
+            this.urlFiles=environment.baseUrlFiles+'Biblioteca-Estudios-Previsionales/';
+           
+            this.totalItems = this.ListEstudios.length;
             this.showPagination = true;
             this.totalItemsPage=Math.ceil(this.totalItems/this.cantidadPorPagina);
             this.ListtotalItemsPage=[];
@@ -54,23 +51,22 @@ export class ActuarialInformationComponent implements OnInit {
             }
             console.log(this.totalItemsPage);
           }
-          this.ListActuarialPaginate=this.ListActuarial.slice(0, this.cantidadPorPagina);
+          this.ListEstudiosPaginate=this.ListEstudios.slice(0, this.cantidadPorPagina);
         }
       );
       this.spinnerService.hide();
-    });
-    
+    });    
   }
   paginar(paginacion: any) { 
     let actual = this.cantidadPorPagina * (paginacion-1);
-    this.ListActuarialPaginate = this.ListActuarial.slice(actual,paginacion*this.cantidadPorPagina);
+    this.ListEstudiosPaginate = this.ListEstudios.slice(actual,paginacion*this.cantidadPorPagina);
     this.page =paginacion; 
   }
   anterior() {
     if(this.page-1>=1){
     this.page -=1; 
     let actual = this.cantidadPorPagina * (this.page-1); 
-    this.ListActuarialPaginate = this.ListActuarial.slice(actual,this.page*this.cantidadPorPagina);   
+    this.ListEstudiosPaginate = this.ListEstudios.slice(actual,this.page*this.cantidadPorPagina);   
     }
     console.log(this.page);
   }
@@ -78,10 +74,9 @@ export class ActuarialInformationComponent implements OnInit {
     if(this.page+1<=this.totalItemsPage){
     this.page +=1; 
     let actual = this.cantidadPorPagina * (this.page-1); 
-    this.ListActuarialPaginate = this.ListActuarial.slice(actual,this.page*this.cantidadPorPagina);    
+    this.ListEstudiosPaginate = this.ListEstudios.slice(actual,this.page*this.cantidadPorPagina);    
     }
     console.log(this.page);
   }
-
 
 }

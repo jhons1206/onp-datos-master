@@ -3,46 +3,6 @@
 /* >>>>>>>>>>> Custom Properties <<<<<<<<<<<< */
 /* Definidas de forma global en styles.css */
 
-.age-distribution {
-    display: grid;
-    grid-template-columns: repeat(3,33.34%);
-}
-.age-distribution .section-title {
-    grid-column: span 5;
-}
-.spacing-y {
-    padding: 1rem 0;
-}
-.item-age {
-    /*background-color: var(--gray-light-color);*/
-    border-left: thin solid var(--second-color);
-    border-right: thin solid var(--second-color);
-    padding: 1rem;
-    margin-bottom: 0.25rem;
-    text-align: center;
-}
-.item-age-ini { 
-    border-left: thin solid var(--second-color);    
-    padding: 1rem;
-    margin-bottom: 0.25rem;
-    text-align: center;
-}
-
-.item-age:nth-child(even) {
-    border-right: 0;
-}
-
-.percent-age {
-    color: var(--second-color);
-    font-weight: bold;
-    font-size: 1rem;
-}
-
-.item-age p {
-    color: var(--second-color);
-    font-size: 0.8rem;
-    margin-bottom: 0;
-}
 
 /* >>>>>>>>>>>>>>> Reset <<<<<<<<<<<<<<< */
 a {
@@ -278,9 +238,7 @@ ul.top-menu li a:hover {
 .card-download__icon img {
     width: 2rem;
 }
-.section-personalice{
-    padding: 1rem 0 0 0 !important;
-}
+
 @media screen and (min-width: 1024px) {
 
     .actuarial-info {
@@ -294,14 +252,4 @@ ul.top-menu li a:hover {
         grid-column: span 3;
     }
 
-}
-
-@media screen and (max-width: 1024px) {
-    .age-distribution{
-        display: none;
-    }
-     
-    .section-personalice{
-        padding: 1rem 1rem 0!important;
-    }
 }

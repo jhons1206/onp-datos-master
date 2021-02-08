@@ -12,9 +12,9 @@
 <section class="header-page" >
     <article class="header-page__wrapper" style="background: linear-gradient(90deg, #c6c6c6, #ffffff);">
         <div class="header-page__content section">
-            <img src="../../../../assets/images/bars-icon.svg" alt="Gráfico de barras">
+            <img src="../../../../assets/images/informes-icon.svg" alt="Gráfico de barras">
             <h2 class="header-page__title" style="--hero-text-color: var(--white-color);">
-                Información Actuarial
+                Informes Institucionales
             </h2>
         </div>
     </article>
@@ -23,18 +23,18 @@
     <h2 style="font-weight: 600;" class="onp-info-title onp-color-secondary">{{Title}}</h2>
 </section>
 <section class="actuarial-info section section-personalice"  >   
-        <article class="card-download" *ngFor="let item of ListActuarialPaginate">
+        <article class="card-download" *ngFor="let item of ListInformesPaginate" >
             <div class="card-download__wrapper">
                 <div class="card-download__details">
                     {{item.description}}
                 </div>
                 <div class="card-download__icon">
-                    <a href="{{this.urlFiles+item.url}}"  target="_blank"><img src="../../../../assets/images/file-download-icon.svg" alt="Descargar"></a>
+                    <a href="{{this.urlFiles+item.url}}" target="_blank"><img src="../../../../assets/images/file-download-icon.svg" alt="Descargar"></a>
                     {{item.urlTitle}}
                 </div>
             </div>
         </article>
-         
+        
 
         <section *ngIf="showPagination" class="onp__pagination">
             <ul>
@@ -50,19 +50,29 @@
 </section>
 <section class="age-distribution spacing-y section">
     <div class="item-age-ini" >
-        <a [routerLink]="['/ActuarialInformation/001']"> 
-        <h4 class="percent-age">Cálculos DL 19990</h4>      
-        </a>      
+        <a [routerLink]="['/InformesInstitucionales/001']"> 
+        <h4 class="percent-age">SNP</h4>            
+        </a>
     </div>  
     <div class="item-age-ini" >
-        <a [routerLink]="['/ActuarialInformation/002']"> 
-        <h4 class="percent-age">Cálculo Ley 30003</h4>      
-        </a>      
+        <a [routerLink]="['/InformesInstitucionales/002']"> 
+        <h4 class="percent-age">Regimenes pesqueros</h4>   
+        </a>         
+    </div>  
+    <div class="item-age-ini" >
+        <a [routerLink]="['/InformesInstitucionales/003']"> 
+        <h4 class="percent-age">Otras pagadurías</h4>    
+        </a>        
+    </div>  
+    <div class="item-age-ini" >
+        <a [routerLink]="['/InformesInstitucionales/004']"> 
+        <h4 class="percent-age">Reforma previsional</h4> 
+        </a>           
     </div>  
     <div class="item-age" >
-        <a [routerLink]="['/ActuarialInformation/003']"> 
-        <h4 class="percent-age">Guía Técnica</h4>           
-        </a> 
+        <a [routerLink]="['/InformesInstitucionales/005']"> 
+        <h4 class="percent-age">Otros temas</h4>         
+        </a>   
     </div>  
-    
 </section>
+
