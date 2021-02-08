@@ -22,7 +22,7 @@ import { NgxSpinnerModule } from "ngx-spinner";
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,  
-    NgxSpinnerModule
+    NgxSpinnerModule, 
   ],
   providers: [],
   bootstrap: [AppComponent],

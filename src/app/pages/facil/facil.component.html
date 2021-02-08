@@ -40,82 +40,24 @@
             <img loading="lazy" src="../../../assets/images/card_user2.jpg" alt="">
             <p>Cuando eres pensionista, cada mes puedes cobrar tu pensión porque las personas afiliadas pagan sus aportes.</p>
         </div>
+        
     </div>
     <p class="advantage__p2">Cuando eres afiliada o afiliado</p>
-    <!-- <ngx-slick-carousel class="carousel" 
-                        #slickModal="slick-carousel" 
-                        [config]="slideConfig" 
->
-        <div ngxSlickItem class="slide">
-            <img loading="lazy" src="../../../assets/images/facil/icon-home-money.svg" alt="icono casa">
-            <img loading="lazy" src="../../../assets/images/facil/icon-home-money.svg" alt="icono casa">
-            <img loading="lazy" src="../../../assets/images/facil/icon-home-money.svg" alt="icono casa">
-            <img loading="lazy" src="../../../assets/images/facil/icon-home-money.svg" alt="icono casa">
-        </div>
-    </ngx-slick-carousel> -->
-
-    <!-- <si-ng-carousel class="ng-carousel" [autoPlay]="0" [visible]="{sm:1,all:4}">
-        <div
-          *ngFor="let item of gallery1"
-          siCarouselItem
-          class="item-auto onp-list-icon"
-        >
-          <img
-            [src]="item.img"
-            height="75"
-            width="75"
-            [ngStyle]="{
-              'margin-bottom': item.marginBottom,
-              'margin-top': item.marginTop
-            }"
-          />
-          <span>{{ item.text }}</span>
-        </div>
-      </si-ng-carousel> -->
-
     <div class="advantage__carrusel" id="carrusel1">
-        <div class="advantage__item">
-            <img loading="lazy" src="../../../assets/images/facil/icon-home-money.svg" alt="icono casa">
-            <p>Aunque 1 ya no tengas un trabajo fijo, puedes seguir aportando para construir tu futura pensión.</p>
-        </div>
-        <div class="advantage__item">
-            <img loading="lazy" src="../../../assets/images/facil/icon-hand.svg" alt="icono casa">
-            <p>Tu futura pensión nunca será menor a S/ 500.</p>
-        </div>
-        <div class="advantage__item">
-            <img loading="lazy" src="../../../assets/images/facil/icon-alcancia.svg" alt="icono casa">
-            <p>Puedes mejorar el monto de tu futura pensión. Si ya realizas aportes obligatorios,puedes sumar aportes como independiente.</p>
-        </div>
-        <div class="advantage__item">
-            <img loading="lazy" src="../../../assets/images/facil/icon-prestamo.svg" alt="icono casa">
-            <p>Puedes pedir un préstamo por hasta 3 años (36 unidades de aporte) para acceder a tu pensión.</p>
-        </div>
-        <div class="advantage__item">
-            <img loading="lazy" src="../../../assets/images/facil/icon-users.svg" alt="icono casa">
-            <p>Tus familiares podrían tener una pensión cuando les faltes.</p>
-        </div>
+        <si-ng-carousel class="ng-carousel" [visible]="{sm:1,all:5}">
+            <div *ngFor="let item of gallery" siCarouselItem class="advantage__item">
+                <img loading="lazy" [src]="item.img" alt="{{ item.text }}">
+                <p>{{ item.text }}</p>
+            </div>
+        </si-ng-carousel>
     </div>
     <div class="advantage__carrusel" id="carrusel2" style="display: none;">
-        <div class="advantage__item">
-            <img loading="lazy" src="../../../assets/images/facil/icon-home-money.svg" alt="icono casa">
-            <p>Aunque 2 ya no tengas un trabajo fijo, puedes seguir aportando para construir tu futura pensión.</p>
-        </div>
-        <div class="advantage__item">
-            <img loading="lazy" src="../../../assets/images/facil/icon-hand.svg" alt="icono casa">
-            <p>Tu futura pensión nunca será menor a S/ 500.</p>
-        </div>
-        <div class="advantage__item">
-            <img loading="lazy" src="../../../assets/images/facil/icon-alcancia.svg" alt="icono casa">
-            <p>Puedes mejorar el monto de tu futura pensión. Si ya realizas aportes obligatorios,puedes sumar aportes como independiente.</p>
-        </div>
-        <div class="advantage__item">
-            <img loading="lazy" src="../../../assets/images/facil/icon-prestamo.svg" alt="icono casa">
-            <p>Puedes pedir un préstamo por hasta 3 años (36 unidades de aporte) para acceder a tu pensión.</p>
-        </div>
-        <div class="advantage__item">
-            <img loading="lazy" src="../../../assets/images/facil/icon-users.svg" alt="icono casa">
-            <p>Tus familiares podrían tener una pensión cuando les faltes.</p>
-        </div>
+        <si-ng-carousel class="ng-carousel2" [visible]="{sm:1,all:5}" [autoPlay]="0">
+            <div *ngFor="let item2 of gallery2" siCarouselItem class="advantage__item">
+                <img loading="lazy" [src]="item2.img" alt="{{ item2.text }}">
+                <p>{{ item2.text }}</p>
+            </div>
+        </si-ng-carousel>
     </div>
 </section>
 
@@ -197,20 +139,44 @@
         </div>
     </div>
     <div class="benefits__carrusel box-shadow-1">
-        <div class="benefits__item">
-            <img loading="lazy" src="../../../assets/images/facil/icon-home-money-bolsa.svg" alt="icono beneficios">
+
+            <si-ng-carousel class="ng-carousel" [visible]="{sm:1,all:3}" [autoPlay]="0">
+                <div *ngFor="let item3 of gallery3" siCarouselItem class="benefits__item">
+                    <img loading="lazy" [src]="item3.img" alt="{{ item3.text }}">
+                    <h3>{{ item3.title }}</h3>
+                    <p class="p-detail">{{ item3.text }}</p>
+                </div>
+            </si-ng-carousel>
+
+            <!-- <div class="benefits__item">
+                <img loading="lazy" src="../../../assets/images/facil/icon-home-money-bolsa.svg" alt="icono beneficios">
+                <h3>Incrementos</h3>
+                <p class="p-detail">El monto de tu pensión puede aumentar bajo ciertas condiciones.</p>
+            </div>
+            <div class="benefits__item">
+                <img loading="lazy" src="../../../assets/images/facil/icon-home-money-bolsa.svg" alt="icono beneficios">
+                <h3>Bonificaciones</h3>
+                <p class="p-detail">El monto de tu pensión puede aumentar bajo ciertas condiciones.</p>
+            </div>
+            <div class="benefits__item">
+                <img loading="lazy" src="../../../assets/images/facil/icon-home-money-bolsa.svg" alt="icono beneficios">
+                <h3>Incrementos</h3>
+                <p class="p-detail">El monto de tu pensión puede aumentar bajo ciertas condiciones.</p>
+            </div> -->
+        <div class="benefits__item only-desktop">
+            <img loading="lazy" src="../../../assets/images/facil/icon-home-money-bolsa.svg" alt="Incrementos">
             <h3>Incrementos</h3>
             <p class="p-detail">El monto de tu pensión puede aumentar bajo ciertas condiciones.</p>
         </div>
-        <div class="benefits__item">
-            <img loading="lazy" src="../../../assets/images/facil/icon-home-money-bolsa.svg" alt="icono beneficios">
-            <h3>Incrementos</h3>
-            <p class="p-detail">El monto de tu pensión puede aumentar bajo ciertas condiciones.</p>
+        <div class="benefits__item only-desktop">
+            <img loading="lazy" src="../../../assets/images/facil/icon-bonificaciones.svg" alt="Bonificaciones">
+            <h3>Bonificaciones</h3>
+            <p class="p-detail">Confirma si te corresponde alguna bonificación que se sume a tu pensión.</p>
         </div>
-        <div class="benefits__item">
-            <img loading="lazy" src="../../../assets/images/facil/icon-home-money-bolsa.svg" alt="icono beneficios">
-            <h3>Incrementos</h3>
-            <p class="p-detail">El monto de tu pensión puede aumentar bajo ciertas condiciones.</p>
+        <div class="benefits__item only-desktop">
+            <img loading="lazy" src="../../../assets/images/facil/icon-beneficios-complementario.svg" alt="Beneficios complementarios">
+            <h3>Beneficios complementarios</h3>
+            <p class="p-detail">Para las trabajadoras mineras y los trabajadores mineros.</p>
         </div>
         <a href="#" class="btn-first">Conoce más</a>
     </div>
@@ -273,37 +239,6 @@
     </div>
 </section>
 
-<script src="../../../assets/js/slick.min.js"></script>
 
-<script type="text/javascript">
 
-$(document).ready(function() {
-
-    $(".advantage__carrusel").slick({
-        dots: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        arrows: false,
-        responsive: [
-            {
-            breakpoint: 1024,
-            settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-            }
-            },
-            {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 1
-            }
-            }
-        ]
-    });
-});
-
-    if (window.matchMedia("(max-width: 768px)").matches) {
-
-        
-    }
-</script>
+ 

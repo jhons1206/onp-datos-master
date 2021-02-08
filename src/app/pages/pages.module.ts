@@ -6,16 +6,18 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { PublicacionesModule } from './publicaciones/publicaciones.module';
 import { FacilComponent } from './facil/facil.component';
+import { FacilModule } from './facil/facil.module';
 
 @NgModule({
-  declarations: [FacilComponent],
+  declarations: [],
   imports: [
     CommonModule,
     InicioModule,
     EnterateModule,
     DatosAbiertosModule,
     PublicacionesModule,
-    ZonaPrensaModule
+    ZonaPrensaModule,
+    FacilModule,
   ],
   exports: [
     InicioModule,
@@ -23,6 +25,7 @@ import { FacilComponent } from './facil/facil.component';
     DatosAbiertosModule,
     PublicacionesModule,
     ZonaPrensaModule,
+    FacilModule,
   ],
 })
 export class PagesModule {}

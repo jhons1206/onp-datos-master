@@ -248,7 +248,7 @@ p {
 .joinup {
     position: relative;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     align-content: center;
 }
@@ -382,7 +382,7 @@ p {
 .inability {
     position: relative;
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
     align-content: center;
     padding-bottom: -2rem;
@@ -518,6 +518,7 @@ p {
     align-content: center;
     top: 82%;
     position: absolute;
+    width: 82%;
     background-color: var(--white-color);
 }
 
@@ -534,6 +535,11 @@ p {
 
 .benefits__carrusel p {
     color: var(--second-color);
+}
+
+.benefits__carrusel p.p-detail {
+    padding: 0 2.5rem;
+    text-align: center;
 }
 
 .benefits__carrusel .btn-first {
@@ -567,7 +573,19 @@ p {
     margin-top: 0.9rem;
 }
 
+.only-desktop {
+    display: none;
+}
+
 @media screen and (min-width: 1024px) {
+
+    .only-desktop {
+        display: block;
+    }
+
+    .benefits__movil {
+        display: none;
+    }
 
     .banner__wrapper {
         position: relative;
@@ -658,17 +676,17 @@ p {
 
     .advantage__item {
         display: block;
-        width: 17%;
+        width: 12%;
     }
 
     .advantage__item img {
-        width: 60%;
+        width: 55%;
         margin: 0;
     }
 
     .advantage__item p {
         margin-top: 1rem;
-        padding: 0;
+        padding: 0 1rem;
         font-size: 0.85rem;
         line-height: 1.3;
     }

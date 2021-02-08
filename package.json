@@ -33,12 +33,9 @@
     "ng-carousel-cdk": "^1.5.1",
     "ng4-loading-spinner": "^1.2.3",
     "ngx-owl-carousel-o": "^5.0.0",
-<<<<<<< HEAD
-    "ngx-slick-carousel": "^0.5.1",
-=======
     "ngx-pagination": "^5.0.0",
+    "ngx-slick-carousel": "^0.5.1",
     "ngx-spinner": "^10.0.1",
->>>>>>> 0e6ecf6d4ab45839463a0d556ad0a1b0ff92f8d2
     "rxjs": "~6.6.0",
     "save": "^2.4.0",
     "slick-carousel": "^1.8.1",

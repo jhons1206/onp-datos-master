@@ -1,4 +1,4 @@
-const { $ } = require("protractor");
+//const { $ } = require("protractor");
 
 var img_num = 1;
 
