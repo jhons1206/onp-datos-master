@@ -44,7 +44,7 @@ export class FacilComponent implements OnInit {
       },
       {
         id: 6,
-        img: './assets/images/facil/viajes-extrangero.svg',
+        img: './assets/images/facil/icon-viajes-extrangero.svg',
         text: 'Si viajas al extranjero, puedes sumar tus aportes realizados en Perú a los que realices allá para acceder a una pensión en ambos países. Mira la lista de países con los que tenemos convenio aquí.',
       },
       {
@@ -113,37 +113,85 @@ export class FacilComponent implements OnInit {
       },
     ];
 
-    // (($) => {      
-    //   $(document).ready(() => {
-    //     $(".advantage__carrusel1").slick({
-    //       dots: true,
-    //       slidesToShow: 1,
-    //       slidesToScroll: 1,
-    //       arrows: false,
-    //       responsive: [
-    //           {
-    //           breakpoint: 1024,
-    //           settings: {
-    //               slidesToShow: 2,
-    //               slidesToScroll: 2,
-    //           }
-    //           },
-    //           {
-    //           breakpoint: 768,
-    //           settings: {
-    //               slidesToShow: 1
-    //           }
-    //           }
-    //       ]
-    //   });
+    (($) => {      
+      $(document).ready(() => {
 
-    //     });
-    //     if (window.matchMedia("(max-width: 768px)").matches) {
+        $("#carrusel-afiliados").slick({
+          dots: false,
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          arrows: true,
+          autoplay: true,
+          responsive: [
+              {
+              breakpoint: 1024,
+              settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2,
+              }
+              },
+              {
+              breakpoint: 768,
+              settings: {
+                  slidesToShow: 1
+              }
+              }
+            ]
+        });
 
-        
-    //     }
+        $("#carrusel-pensionistas").slick({
+          dots: false,
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          arrows: true,
+          autoplay: true,
+          responsive: [
+              {
+              breakpoint: 1024,
+              settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 2,
+              }
+              },
+              {
+              breakpoint: 768,
+              settings: {
+                  slidesToShow: 1
+              }
+              }
+            ]
+        });
 
-    // })(jQuery);
+      });
+
+        if (window.matchMedia("(max-width: 768px)").matches) {
+
+          $("#carrusel-benefit").slick({
+            dots: false,
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            arrows: true,
+            autoplay: true,
+            responsive: [
+                {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                }
+                },
+                {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1
+                }
+                }
+            ]
+        });
+
+      }
+
+    })(jQuery);
 
   }
 

@@ -40,25 +40,65 @@
             <img loading="lazy" src="../../../assets/images/card_user2.jpg" alt="">
             <p>Cuando eres pensionista, cada mes puedes cobrar tu pensión porque las personas afiliadas pagan sus aportes.</p>
         </div>
-        
     </div>
     <p class="advantage__p2">Cuando eres afiliada o afiliado</p>
-    <div class="advantage__carrusel" id="carrusel1">
-        <si-ng-carousel class="ng-carousel" [visible]="{sm:1,all:5}">
-            <div *ngFor="let item of gallery" siCarouselItem class="advantage__item">
-                <img loading="lazy" [src]="item.img" alt="{{ item.text }}">
-                <p>{{ item.text }}</p>
-            </div>
-        </si-ng-carousel>
+
+    <div class="advantage__carrusel" id="carrusel-afiliados">
+
+        <div class="advantage__item">
+            <img loading="lazy" src="../../../assets/images/facil/icon-home-money.svg">
+            <p>Aunque ya no tengas un trabajo fijo, puedes seguir aportando para construir tu futura pensión.</p>
+        </div>
+        <div class="advantage__item">
+            <img loading="lazy" src="../../../assets/images/facil/icon-hand.svg">
+            <p>Tu futura pensión nunca será menor a S/ 500.</p>
+        </div>
+        <div class="advantage__item">
+            <img loading="lazy" src="../../../assets/images/facil/icon-alcancia.svg">
+            <p>Puedes mejorar el monto de tu futura pensión. Si ya realizas aportes obligatorios,puedes sumar aportes como independiente.</p>
+        </div>
+        <div class="advantage__item">
+            <img loading="lazy" src="../../../assets/images/facil/icon-prestamo.svg">
+            <p>Puedes pedir un préstamo por hasta 3 años (36 unidades de aporte) para acceder a tu pensión.</p>
+        </div>
+        <div class="advantage__item">
+            <img loading="lazy" src="../../../assets/images/facil/icon-users.svg">
+            <p>Tus familiares podrían tener una pensión cuando les faltes.</p>
+        </div>
+        <div class="advantage__item">
+            <img loading="lazys" src="../../../assets/images/facil/icon-viajes-extrangero.svg">
+            <p>Si viajas al extranjero, puedes sumar tus aportes realizados en Perú a los que realices allá para acceder a una pensión en ambos países. Mira la lista de países con los que tenemos convenio aquí.</p>
+        </div>
     </div>
-    <div class="advantage__carrusel" id="carrusel2" style="display: none;">
-        <si-ng-carousel class="ng-carousel2" [visible]="{sm:1,all:5}" [autoPlay]="0">
-            <div *ngFor="let item2 of gallery2" siCarouselItem class="advantage__item">
-                <img loading="lazy" [src]="item2.img" alt="{{ item2.text }}">
-                <p>{{ item2.text }}</p>
-            </div>
-        </si-ng-carousel>
+
+    <div class="advantage__carrusel" id="carrusel-pensionistas" style="display: none;">
+
+        <div class="advantage__item">
+            <img loading="lazy" src="../../../assets/images/facil/icon-home-money.svg">
+            <p>Aunque ya no tengas un trabajo fijo, puedes seguir aportando para construir tu futura pensión.</p>
+        </div>
+        <div class="advantage__item">
+            <img loading="lazy" src="../../../assets/images/facil/icon-hand.svg">
+            <p>Tu futura pensión nunca será menor a S/ 500.</p>
+        </div>
+        <div class="advantage__item">
+            <img loading="lazy" src="../../../assets/images/facil/icon-alcancia.svg">
+            <p>Puedes mejorar el monto de tu futura pensión. Si ya realizas aportes obligatorios,puedes sumar aportes como independiente.</p>
+        </div>
+        <div class="advantage__item">
+            <img loading="lazy" src="../../../assets/images/facil/icon-prestamo.svg">
+            <p>Puedes pedir un préstamo por hasta 3 años (36 unidades de aporte) para acceder a tu pensión.</p>
+        </div>
+        <div class="advantage__item">
+            <img loading="lazy" src="../../../assets/images/facil/icon-users.svg">
+            <p>Tus familiares podrían tener una pensión cuando les faltes.</p>
+        </div>
+        <div class="advantage__item">
+            <img loading="lazy" src="../../../assets/images/facil/icon-viajes-extrangero.svg">
+            <p>Si viajas al extranjero, puedes sumar tus aportes realizados en Perú a los que realices allá para acceder a una pensión en ambos países. Mira la lista de países con los que tenemos convenio aquí.</p>
+        </div>
     </div>
+    
 </section>
 
 <section class="joinup">
@@ -140,45 +180,25 @@
     </div>
     <div class="benefits__carrusel box-shadow-1">
 
-            <si-ng-carousel class="ng-carousel" [visible]="{sm:1,all:3}" [autoPlay]="0">
-                <div *ngFor="let item3 of gallery3" siCarouselItem class="benefits__item">
-                    <img loading="lazy" [src]="item3.img" alt="{{ item3.text }}">
-                    <h3>{{ item3.title }}</h3>
-                    <p class="p-detail">{{ item3.text }}</p>
-                </div>
-            </si-ng-carousel>
-
-            <!-- <div class="benefits__item">
-                <img loading="lazy" src="../../../assets/images/facil/icon-home-money-bolsa.svg" alt="icono beneficios">
+        <div class="benefits__wrapper" id="carrusel-benefit">
+            <div class="benefits__item">
+                <img loading="lazy" src="../../../assets/images/facil/icon-home-money-bolsa.svg" alt="Incrementos">
                 <h3>Incrementos</h3>
                 <p class="p-detail">El monto de tu pensión puede aumentar bajo ciertas condiciones.</p>
             </div>
             <div class="benefits__item">
-                <img loading="lazy" src="../../../assets/images/facil/icon-home-money-bolsa.svg" alt="icono beneficios">
+                <img loading="lazy" src="../../../assets/images/facil/icon-bonificaciones.svg" alt="Bonificaciones">
                 <h3>Bonificaciones</h3>
-                <p class="p-detail">El monto de tu pensión puede aumentar bajo ciertas condiciones.</p>
+                <p class="p-detail">Confirma si te corresponde alguna bonificación que se sume a tu pensión.</p>
             </div>
             <div class="benefits__item">
-                <img loading="lazy" src="../../../assets/images/facil/icon-home-money-bolsa.svg" alt="icono beneficios">
-                <h3>Incrementos</h3>
-                <p class="p-detail">El monto de tu pensión puede aumentar bajo ciertas condiciones.</p>
-            </div> -->
-        <div class="benefits__item only-desktop">
-            <img loading="lazy" src="../../../assets/images/facil/icon-home-money-bolsa.svg" alt="Incrementos">
-            <h3>Incrementos</h3>
-            <p class="p-detail">El monto de tu pensión puede aumentar bajo ciertas condiciones.</p>
+                <img loading="lazy" src="../../../assets/images/facil/icon-beneficios-complementario.svg" alt="Beneficios complementarios">
+                <h3>Beneficios complementarios</h3>
+                <p class="p-detail">Para las trabajadoras mineras y los trabajadores mineros.</p>
+            </div>
         </div>
-        <div class="benefits__item only-desktop">
-            <img loading="lazy" src="../../../assets/images/facil/icon-bonificaciones.svg" alt="Bonificaciones">
-            <h3>Bonificaciones</h3>
-            <p class="p-detail">Confirma si te corresponde alguna bonificación que se sume a tu pensión.</p>
-        </div>
-        <div class="benefits__item only-desktop">
-            <img loading="lazy" src="../../../assets/images/facil/icon-beneficios-complementario.svg" alt="Beneficios complementarios">
-            <h3>Beneficios complementarios</h3>
-            <p class="p-detail">Para las trabajadoras mineras y los trabajadores mineros.</p>
-        </div>
-        <a href="#" class="btn-first">Conoce más</a>
+
+    <a href="#" class="btn-first">Conoce más</a>
     </div>
 </section>
 

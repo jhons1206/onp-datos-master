@@ -262,21 +262,15 @@ function toogleMenu2() {
 
 // Show / Hide Carrusel
 function showCarrusel1() {
-      var x = document.getElementById("carrusel1");
-      var y = document.getElementById("carrusel2");
-
-      if (x.style.display === "none") {
-        x.style.display = "flex";
-        y.style.display = "none";
+      if ($("#carrusel-afiliados").css("display") === "none") {
+        $("#carrusel-afiliados").css("display","block")
+        $("#carrusel-pensionistas").css("display","none")
       } 
 }
 
 function showCarrusel2() {
-  var y = document.getElementById("carrusel2");
-  var x = document.getElementById("carrusel1");
-
-  if (y.style.display === "none") {
-    y.style.display = "flex";
-    x.style.display = "none";
-  }
+  if ($("#carrusel-pensionistas").css("display") === "none") {
+    $("#carrusel-pensionistas").css("display","block")
+    $("#carrusel-afiliados").css("display","none")
+  } 
 }

@@ -17,7 +17,7 @@ import { FacilRoutingModule } from './facil-routing.module';
     HammerModule,
     BrowserAnimationsModule,    
     FormsModule,
-    NgCarouselModule    
+    NgCarouselModule,
   ]
 })
 export class FacilModule { }

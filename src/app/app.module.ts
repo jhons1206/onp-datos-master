@@ -10,6 +10,7 @@ import { AppComponent } from './app.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';  
 import { NgxSpinnerModule } from "ngx-spinner";
+import { NgxSlickJsModule } from "ngx-slickjs";
 @NgModule({
   declarations: [AppComponent],
   imports: [
@@ -23,6 +24,7 @@ import { NgxSpinnerModule } from "ngx-spinner";
     FormsModule,
     ReactiveFormsModule,  
     NgxSpinnerModule, 
+    NgxSlickJsModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent],
