@@ -54,7 +54,54 @@ p {
 
 /* >>>>>>>>>>>>>>> Components <<<<<<<<<<<<<<<< */
 
-/* ************ Submenu Top ************** */
+/* Top Menu Movil */
+.top-menu-movil {
+   position: fixed;
+   display: block;
+   width: 100%;
+   z-index: 999;
+}
+
+.onp__top-menu {
+    background-color: var(--second-color);
+}
+
+.btn-toogle-menu {
+    background-color: var(--second-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 0.7rem;
+    cursor: pointer;
+}
+
+.btn-toogle-menu img {
+    width: 1rem;
+}
+
+ul.top-menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: none;
+    z-index: 999;
+    position: absolute;
+    width: 100%;
+    background: var(--second-color);
+}
+
+ul.top-menu li a {
+    color: var(--white-color);
+    padding: 0.7rem;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+
+ul.top-menu li a:hover {
+    background-color: var(--third-alpha-color);
+}
+
+/* ************ Submenu Top desktop ************** */
 .onp-submenu {
     position: relative;
     display: flex;
@@ -74,19 +121,19 @@ p {
     justify-content: center;
     z-index: 5;
     width: 100%;
-    box-shadow: 0px 1px 10px #888888;
   }
   
   .onp-submenu-header .onp-submenu .onp-submenu-item {
     flex: 0 1 15%;
     text-align: center;
+    line-height: 1;
   }
   
   .onp-submenu-header .onp-submenu .onp-submenu-item span {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     margin-bottom: 0;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     text-decoration: none;
     cursor: pointer;
   }
@@ -252,8 +299,9 @@ p {
 }
 
 .banner {
-    margin-top: 75px;
+    padding-top: 46.38px;
 }
+
 .banner__detail {
     display: none;
 }
@@ -435,6 +483,10 @@ p {
     margin-bottom: 1.2rem;
 }
 
+.digits__content a {
+    color: var(--white-color);
+}
+
 .digits__item {
     display: grid;
     grid-template-columns: repeat(2, 50%);
@@ -464,6 +516,10 @@ p {
 .digits__number h5 {
     font-size: 1.8rem;
     font-weight: bold;
+}
+
+.digits__item h3 {
+    display: none;
 }
 
 .financing {
@@ -525,6 +581,11 @@ p {
     margin-top: 0.9rem;
 }
 
+.family {
+    padding: 0;
+    position: relative;
+}
+
 .family__header {
     position: relative;
     display: flex;
@@ -547,10 +608,25 @@ p {
     margin: 0;
 }
 
+.family__item {
+    position: relative;
+    margin: 0 2rem;
+    background-image: transparent url(../../../assets/images/facil/bg-rounded-top.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: -122px;
+}
+
 .family__card {
     position: relative;
     text-align: center;
     padding-top: 0.7rem;
+    margin: 0;
+    padding-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .family__card h3 {
@@ -558,7 +634,8 @@ p {
     font-size: 0.9rem;
     color: var(--second-color);
     padding: 0.7rem 2.5rem;
-    position: absolute;
+    margin-top: 2.8rem;
+    margin-bottom: 2rem;
     top: -68px;
     left: 29%;
     border-top-left-radius: 15px;
@@ -566,11 +643,13 @@ p {
     line-height: 1;
     min-height: 48px;
     font-weight: bold;
+    z-index: 9999;
 }
 
 .family__card img {
     width: 50%;
     border-radius: 50%;
+    margin: 0 auto;
 }
 
 .family__card h4 {
@@ -695,6 +774,16 @@ p {
 }
 
 @media screen and (min-width: 1024px) {
+
+    /* Top Menu Movil */
+    .top-menu-movil {
+        display: none;
+    }
+
+    .banner {
+        margin-top: 58px;
+        padding-top: 0;
+    }
 
     .onp-submenu-header {
         display: flex;
@@ -920,30 +1009,12 @@ p {
         padding-top: 1.5rem;
     }
 
+    .family__item {
+        margin-top: 0;
+    }
+
     .family__card {
-        text-align: left;
-        width: var(--max-width);
-        margin: 0 auto;
-        padding: 0 10rem;
-    }
-
-    .family__card img {
-        float: left;
-        width: 30%;
-        margin-right: 5rem;
-    }
-
-    .family__card h3 {
-        top: -115px;
-    }
-
-    .family__card h4 {
-        padding-bottom: 1rem;
-        font-size: 1rem;
-    }
-
-    .family__card p {
-        font-size: 0.9rem;
+        display: none;
     }
 
     .tab {
@@ -1035,10 +1106,20 @@ p {
     
     .digits__item {
         display: flex;
-        justify-content: center;
+        justify-content: flex-start;
         align-items: center;
         align-content: center;
         position: relative;
+    }
+
+    .digits__item h3 {
+        display: block;
+        position: absolute;
+        padding: 1rem;
+        color: var(--second-color);
+        font-size: 0.8rem;
+        font-weight: bold;
+        line-height: 1;
     }
     
     .digits__item img {
@@ -1067,6 +1148,11 @@ p {
         pointer-events: auto;
         transition: all .5s ease-in-out;
         cursor: pointer;
+    }
+
+    .digits__item:hover .digits__title {
+        opacity: 0;
+        pointer-events: none;
     }
     
     .digits__number h4 {

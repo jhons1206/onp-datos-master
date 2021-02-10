@@ -1,13 +1,16 @@
-<!-- <aside>
-    <div class="btn-toogle-menu" onclick="toogleMenuTops();">
-        <img class="img-arrow" src="../../../../assets/images/arrow-down.svgs" alt="flecha abajo">
-    </div> <ul class="top-menu">
-        <li><a [routerLink]="'/Facil'">Tus ventajas y facilidades</a></li>
-        <li><a [routerLink]="'/Facil'">Afiliate al SNP</a></li>
-        <li><a [routerLink]="'/Facil'">Tus opciones de jubilación</a></li>
-        <li><a [routerLink]="'/Facil'">Tus beneficios</a></li>
+<aside class="top-menu-movil">
+    <div class="btn-toogle-menu" onclick="toogleMenuTop();">
+        <img class="img-arrow" src="../../../../assets/images/arrow-down.svg" alt="flecha abajo">
+    </div> 
+    <ul class="top-menu">
+        <li><a onclick="setPosition('ventajas')">Tus ventajas y facilidades</a></li>
+        <li><a onclick="setPosition('afiliarte')">Afiliate al SNP</a></li>
+        <li><a onclick="setPosition('opciones')">Tus opciones de jubilación</a></li>
+        <li><a  onclick="setPosition('beneficios')">Tus beneficios</a></li>
+        <li><a  onclick="setPosition('cifras')">Cifras del SNP</a></li>
     </ul>
-</aside> -->
+</aside>
+
 <div class="onp-submenu-header onp-bg-primary">
     <div id="onp-submenu" class="onp-submenu">
       <div class="onp-submenu-item">
@@ -209,13 +212,49 @@
             <h2>Protegemos a tu familia</h2>
         </div>
     </div>
-    <!-- <div class="family__card section">
-        <h3>Cónyuge o<br>conviviente</h3>
-        <img src="../../../assets/images/facil/tab-conyuge.jpg" alt="Cónyuge o conviviente">
-        <h4>Pensión para tu cónyuge o conviviente</h4>
-        <p>Tu cónyuge o conviviente con declaración de unión de hecho puede convertirse en beneficiaria o beneficiario de una pensión cuando le faltes, siempre y cuando tú recibas pensión (o hayas tenido derecho a recibirla).</p>
+
+    <div class="family__item" id="carrusel-family">
+      
+      <div class="family__card section">
+          <h3>Cónyuge o<br>conviviente</h3>
+          <img src="../../../assets/images/facil/tab-conyuge.jpg" alt="Cónyuge o conviviente">
+          <h4>Pensión para tu cónyuge o conviviente</h4>
+          <p>Tu cónyuge o conviviente con declaración de unión de hecho puede convertirse en beneficiaria o beneficiario de una pensión cuando le faltes, siempre y cuando tú recibas pensión (o hayas tenido derecho a recibirla).</p>
+          <a href="#" class="btn-first mb-0">Conoce más</a>
+      </div>
+      <div class="family__card section">
+        <h3>Hijas o<br>hijos</h3>
+        <img src="../../../assets/images/facil/tab-hijos.jpg" alt="Hijas o hijos">
+        <h4 class="onp-color-primary">Pensión para tus hijas o hijos</h4>
+        <p>
+          Tus hijas o hijos menores de 18 años pueden convertirse en beneficiarias o beneficiarios de una pensión cuando le faltes; siempre que recibas (o hayas tenido derecho a recibir) pensión. También aplica para tus hijas o hijos mayores de 18 años que siguen estudios de nivel básico o superior en forma ininterrumpida, o si tienen discapacidad permanente parcial o total para el trabajo.
+        </p>
         <a href="#" class="btn-first mb-0">Conoce más</a>
-    </div> -->
+      </div>
+      <div class="family__card section">
+        <h3>Madre o<br>padre</h3>
+        <img src="../../../assets/images/facil/tab-padres.jpg" alt="Madre o padre">
+        <h4 class="onp-color-primary">Pensión para tu madre o padre</h4>
+        <p>Tu madre o padre pueden convertirse en beneficiaria o beneficiario de una pensión cuando le faltes; siempre que recibas (o hayas tenido derecho a recibir) pensión. Además, si tienen alguna discapacidad o si tu padre tiene como mínimo 60 años de edad o tu madre tiene como mínimo 55 años de edad. También aplica si tus padres dependen económicamente de ti y ya no reciben ingresos mayores al monto de la pensión que te corresponde o te correspondía.</p>
+        <a href="#" class="btn-first mb-0">Conoce más</a>
+      </div>
+      <div class="family__card section">
+        <h3>Capital de<br>defunción</h3>
+        <img src="../../../assets/images/facil/tab-capital-defuncion.jpg" alt="Capital de defunción">
+        <h4 class="onp-color-primary">Capital de defunción</h4>
+        <p>
+          Este es un pago único que se brinda en caso de no haber familiares
+          beneficiarios de una pensión y se otorga al primer familiar de
+          acuerdo al siguiente orden: <br />
+          • La o el cónyuge o conviviente con declaración de unión de hecho.
+          <br />
+          • Las hijas y los hijos. <br />
+          • La madre y/o el padre. <br />
+          • Las hermanas y los hermanos menores de 18 años de edad. <br />
+        </p>
+        <a href="#" class="btn-first mb-0">Conoce más</a>
+      </div>
+    </div>
     <ng-container>
         <div class="tab">
           <nav class="nav-tab-container">
@@ -411,7 +450,6 @@
         </div>
     </div>
     <div class="benefits__carrusel box-shadow-1">
-
         <div class="benefits__wrapper" id="carrusel-benefit">
             <div class="benefits__item">
                 <img loading="lazy" src="../../../assets/images/facil/icon-home-money-bolsa.svg" alt="Incrementos">
@@ -429,7 +467,6 @@
                 <p class="p-detail">Para las trabajadoras mineras y los trabajadores mineros.</p>
             </div>
         </div>
-
     <a href="#" class="btn-first">Conoce más</a>
     </div>
 </section>
@@ -457,22 +494,29 @@
     </picture>
     <div class="digits__content">
         <h2>Cifras del SNP</h2>
+        <a [routerLink]="['/Afiliados']">
+          <div class="digits__item">
+              <h3 class="digits__title">Afiliadas y <br>afiliados</h3>
+              <img src="../../../assets/images/facil/cifras-afiliados.jpg" alt="Cifras afiliados">
+              <div class="digits__number">
+                  <h4>Afiliadas y <br>afiliados</h4>
+                  <h5>4,000,430</h5>
+              </div>
+          </div>
+        </a>
+        <a [routerLink]="['/Pensionistas']">
+          <div class="digits__item">
+            <h3 class="digits__title">Pensionistas y <br>beneficiarias/os</h3>
+              <img src="../../../assets/images/facil/cifras-pensionistas.jpg" alt="Cifras pensionistas">
+              <div class="digits__number">
+                  <h4>Pensionistas y <br>beneficiarias/os</h4>
+                  <h5>1,070,430</h5>
+              </div>
+          </div>
+        </a>
         <div class="digits__item">
-            <img src="../../../assets/images/facil/afiliadas-onp.png" alt="Cifras afiliados">
-            <div class="digits__number">
-                <h4>Afiliadas y <br>afiliados</h4>
-                <h5>4,000,430</h5>
-            </div>
-        </div>
-        <div class="digits__item">
-            <img src="../../../assets/images/facil/pensionistas-onp.png" alt="Cifras pensionistas">
-            <div class="digits__number">
-                <h4>Pensionistas y <br>beneficiarias/os</h4>
-                <h5>1,070,430</h5>
-            </div>
-        </div>
-        <div class="digits__item">
-            <img src="../../../assets/images/facil/trasladados-onp.png" alt="Cifras trasladados">
+          <h3 class="digits__title">Trasladadas y <br>trasladados</h3>
+            <img src="../../../assets/images/facil/cifras-trasladados.jpg" alt="Cifras trasladados">
             <div class="digits__number">
                 <h4>Trasladadas y <br>trasladados</h4>
                 <h5>970,430</h5>
