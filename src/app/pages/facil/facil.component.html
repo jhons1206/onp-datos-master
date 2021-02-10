@@ -8,6 +8,53 @@
         <li><a [routerLink]="'/Facil'">Tus beneficios</a></li>
     </ul>
 </aside> -->
+<div class="onp-submenu-header onp-bg-primary">
+    <div id="onp-submenu" class="onp-submenu">
+      <div class="onp-submenu-item">
+        <span
+          id="btn-ventajas"
+          onclick="setPosition('ventajas')"
+          class="onp-color-tertiary"
+        >
+          Tus ventajas y<br />
+          facilidades
+        </span>
+      </div>
+      <div class="onp-submenu-item">
+        <span
+          id="btn-afiliarte"
+          onclick="setPosition('afiliarte')"
+          class="onp-color-tertiary"
+          >Afíliate al SNP</span
+        >
+      </div>
+      <div class="onp-submenu-item">
+        <span
+          id="btn-opciones"
+          onclick="setPosition('opciones')"
+          class="onp-color-tertiary"
+        >
+          Tus opciones de jubilación
+        </span>
+      </div>
+      <div class="onp-submenu-item">
+        <span
+          id="btn-beneficios"
+          onclick="setPosition('beneficios')"
+          class="onp-color-tertiary"
+          >Tus beneficios</span
+        >
+      </div>
+      <div class="onp-submenu-item">
+        <span
+          id="btn-cifras"
+          onclick="setPosition('cifras')"
+          class="onp-color-tertiary"
+          >Cifras del SNP</span
+        >
+      </div>
+    </div>
+  </div>
 
 <div class="banner">
     <div class="banner__wrapper">
@@ -29,7 +76,7 @@
 </div>
 
 <section class="advantage">
-    <p class="advantage__p1 pt-0">El SNP es un sistema de personas que se ayudan mutuamente.</p>
+    <p class="advantage__p1 pt-0" id="ventajas">El SNP es un sistema de personas que se ayudan mutuamente.</p>
     <h3 class="title-onp-1 pt-0">Estas son tus ventajas y facilidades</h3>
     <div class="advantage__users">
         <div class="advantage__card-user" id="user-afiliado" onclick="showCarrusel1()">
@@ -44,35 +91,6 @@
     <p class="advantage__p2">Cuando eres afiliada o afiliado</p>
 
     <div class="advantage__carrusel" id="carrusel-afiliados">
-
-        <div class="advantage__item">
-            <img loading="lazy" src="../../../assets/images/facil/icon-home-money.svg">
-            <p>Aunque ya no tengas un trabajo fijo, puedes seguir aportando para construir tu futura pensión.</p>
-        </div>
-        <div class="advantage__item">
-            <img loading="lazy" src="../../../assets/images/facil/icon-hand.svg">
-            <p>Tu futura pensión nunca será menor a S/ 500.</p>
-        </div>
-        <div class="advantage__item">
-            <img loading="lazy" src="../../../assets/images/facil/icon-alcancia.svg">
-            <p>Puedes mejorar el monto de tu futura pensión. Si ya realizas aportes obligatorios,puedes sumar aportes como independiente.</p>
-        </div>
-        <div class="advantage__item">
-            <img loading="lazy" src="../../../assets/images/facil/icon-prestamo.svg">
-            <p>Puedes pedir un préstamo por hasta 3 años (36 unidades de aporte) para acceder a tu pensión.</p>
-        </div>
-        <div class="advantage__item">
-            <img loading="lazy" src="../../../assets/images/facil/icon-users.svg">
-            <p>Tus familiares podrían tener una pensión cuando les faltes.</p>
-        </div>
-        <div class="advantage__item">
-            <img loading="lazys" src="../../../assets/images/facil/icon-viajes-extrangero.svg">
-            <p>Si viajas al extranjero, puedes sumar tus aportes realizados en Perú a los que realices allá para acceder a una pensión en ambos países. Mira la lista de países con los que tenemos convenio aquí.</p>
-        </div>
-    </div>
-
-    <div class="advantage__carrusel" id="carrusel-pensionistas" style="display: none;">
-
         <div class="advantage__item">
             <img loading="lazy" src="../../../assets/images/facil/icon-home-money.svg">
             <p>Aunque ya no tengas un trabajo fijo, puedes seguir aportando para construir tu futura pensión.</p>
@@ -97,11 +115,45 @@
             <img loading="lazy" src="../../../assets/images/facil/icon-viajes-extrangero.svg">
             <p>Si viajas al extranjero, puedes sumar tus aportes realizados en Perú a los que realices allá para acceder a una pensión en ambos países. Mira la lista de países con los que tenemos convenio aquí.</p>
         </div>
+        <div class="advantage__item">
+            <img loading="lazy" src="../../../assets/images/facil/icon-adelanto.svg">
+            <p>Puedes pagar por adelantado hasta 3 años (36 unidades de aporte) para acceder a tu pensión.</p>
+        </div>
+        <div class="advantage__item">
+            <img loading="lazy" src="../../../assets/images/facil/icon-asesoria.svg">
+            <p>Puedes solicitar asesoría personalizada gratuita a través de cualquiera de nuestros canales oficiales.</p>
+        </div>
     </div>
     
+    <div class="advantage__carrusel" id="carrusel-pensionistas" style="display: none;">
+        <div class="advantage__item">
+            <img loading="lazy" src="../../../assets/images/facil/icon-pension-vida.svg">
+            <p>Cobrarás tu pensión todos los meses durante toda tu vida.</p>
+        </div>
+        <div class="advantage__item">
+            <img loading="lazy" src="../../../assets/images/facil/icon-pension-julio.svg">
+            <p>Recibes pensión adicional en julio y en diciembre</p>
+        </div>
+        <div class="advantage__item">
+            <img loading="lazy" src="../../../assets/images/facil/icon-bonificaciones.svg">
+            <p>Puedes recibir bonificaciones automáticas junto con tu pensión.</p>
+        </div>
+        <div class="advantage__item">
+            <img loading="lazy" src="../../../assets/images/facil/icon-essalud.svg">
+            <p>Tienes servicio de salud en EsSalud.</p>
+        </div>
+        <div class="advantage__item">
+            <img loading="lazy" src="../../../assets/images/facil/icon-home-user.svg">
+            <p>Puedes cobrar tu pensión sin salir de tu casa.</p>
+        </div>
+        <div class="advantage__item">
+            <img loading="lazy" src="../../../assets/images/facil/icon-pension-pais.svg">
+            <p>Puedes solicitar cobrar tu pensión desde el país en el que te encuentres. Mira la lista de países con los que tenemos convenio aquí.</p>
+        </div>
+    </div>
 </section>
 
-<section class="joinup">
+<section class="joinup" id="afiliarte">
     <picture>
         <source media="(max-width: 768px)" srcset="../../../assets/images/facil/unete.png">
         <source media="(min-width: 1024px)" srcset="../../../assets/images/facil/unete-desktop.png">
@@ -119,7 +171,7 @@
     </div>
 </section>
 
-<section class="pension">
+<section class="pension" id="opciones">
     <picture>
         <source media="(max-width: 768px)" srcset="../../../assets/images/facil/asegura-tu-pension-movil.jpg">
         <source media="(min-width: 1024px)" srcset="../../../assets/images/facil/pension-desktop.jpg">
@@ -157,16 +209,196 @@
             <h2>Protegemos a tu familia</h2>
         </div>
     </div>
-    <div class="family__card section">
+    <!-- <div class="family__card section">
         <h3>Cónyuge o<br>conviviente</h3>
         <img src="../../../assets/images/facil/tab-conyuge.jpg" alt="Cónyuge o conviviente">
         <h4>Pensión para tu cónyuge o conviviente</h4>
         <p>Tu cónyuge o conviviente con declaración de unión de hecho puede convertirse en beneficiaria o beneficiario de una pensión cuando le faltes, siempre y cuando tú recibas pensión (o hayas tenido derecho a recibirla).</p>
         <a href="#" class="btn-first mb-0">Conoce más</a>
-    </div>
+    </div> -->
+    <ng-container>
+        <div class="tab">
+          <nav class="nav-tab-container">
+            <ul
+              class="nav nav-tabs flex-column flex-sm-row"
+              id="pills-tab"
+              role="tablist"
+            >
+              <li class="nav-item" role="presentation">
+                <a
+                  class="flex-sm-fill text-sm-center nav-link active"
+                  id="pills-viudez-tab"
+                  data-toggle="pill"
+                  href="#pills-viudez"
+                  role="tab"
+                  aria-controls="pills-viudez"
+                  aria-selected="true"
+                  onclick="openTabs(event, 'pills-viudez')"
+                  >Cónyuge o conviviente</a
+                >
+              </li>
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link"
+                  id="pills-orfandad-tab"
+                  data-toggle="pill"
+                  href="#pills-orfandad"
+                  role="tab"
+                  aria-controls="pills-orfandad"
+                  aria-selected="false"
+                  onclick="openTabs(event, 'pills-orfandad')"
+                  >Hijas o hijos</a
+                >
+              </li>
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link"
+                  id="pills-ascendencia-tab"
+                  data-toggle="pill"
+                  href="#pills-ascendencia"
+                  role="tab"
+                  aria-controls="pills-ascendencia"
+                  aria-selected="false"
+                  onclick="openTabs(event, 'pills-ascendencia')"
+                  >Madre o padre</a
+                >
+              </li>
+              <li class="nav-item" role="presentation">
+                <a
+                  class="nav-link"
+                  id="pills-defuncion-tab"
+                  data-toggle="pill"
+                  href="#pills-defuncion"
+                  role="tab"
+                  aria-controls="pills-defuncion"
+                  aria-selected="false"
+                  onclick="openTabs(event, 'pills-defuncion')"
+                  >Capital de defunción</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <div class="tab-content" id="pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="pills-viudez"
+              role="tabpanel"
+              aria-labelledby="pills-viudez-tab"
+            >
+              <div class="tab-onp-content">
+                <img
+                  src="../../../assets/images/onp-facil-conyuge.jpg"
+                  alt="onp-tabs-uno"
+                  width="300"
+                  height="300"
+                />
+                <div class="tab-onp-content-detail">
+                  <h4 class="onp-color-primary">
+                    Pensión para tu cónyuge o conviviente
+                  </h4>
+                  <p>
+                    Tu cónyuge o conviviente con declaración de unión de hecho puede
+                    convertirse en beneficiaria o beneficiario de una pensión cuando
+                    le faltes; siempre que recibas (o hayas tenido derecho a recibir)
+                    pensión.
+                  </p>
+                  <a class="btn-first" href="#">Conoce más</a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade show active"
+              id="pills-orfandad"
+              role="tabpanel"
+              aria-labelledby="pills-orfandad-tab"
+            >
+              <div class="tab-onp-content">
+                <img
+                  src="../../../assets/images/hijas_e_hijos.jpg"
+                  alt="onp-tabs-uno"
+                  width="300"
+                  height="300"
+                />
+                <div class="tab-onp-content-detail">
+                  <h4 class="onp-color-primary">Pensión para tus hijas o hijos</h4>
+                  <p>
+                    Tus hijas o hijos menores de 18 años pueden convertirse en
+                    beneficiarias o beneficiarios de una pensión cuando le faltes;
+                    siempre que recibas (o hayas tenido derecho a recibir) pensión.
+                    <br />
+                    También aplica para tus hijas o hijos mayores de 18 años que
+                    siguen estudios de nivel básico o superior en forma
+                    ininterrumpida, o si tienen discapacidad permanente parcial o
+                    total para el trabajo.
+                  </p>
+                  <a class="btn-first" href="#">Conoce más</a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade show active"
+              id="pills-ascendencia"
+              role="tabpanel"
+              aria-labelledby="pills-ascendencia-tab"
+            >
+              <div class="tab-onp-content">
+                <img
+                  src="../../../assets/images/madre_o_padre.jpg"
+                  alt="onp-tabs-uno"
+                  width="300"
+                  height="300"
+                />
+                <div class="tab-onp-content-detail">
+                  <h4 class="onp-color-primary">Pensión para tu madre o padre</h4>
+                  <p>
+                    Tu madre o padre pueden convertirse en beneficiaria o beneficiario
+                    de una pensión cuando le faltes; siempre que recibas (o hayas
+                    tenido derecho a recibir) pensión. Además, si tienen alguna
+                    discapacidad o si tu padre tiene como mínimo 60 años de edad o tu
+                    madre tiene como mínimo 55 años de edad. También aplica si tus
+                    padres dependen económicamente de ti y ya no reciben ingresos
+                    mayores al monto de la pensión que te corresponde o te
+                    correspondía.
+                  </p>
+                  <a class="btn-first" href="#">Conoce más</a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="tab-pane fade show active"
+              id="pills-defuncion"
+              role="tabpanel"
+              aria-labelledby="pills-defuncion-tab"
+            >
+              <div class="tab-onp-content">
+                <img
+                  src="../../../assets/images/onp-facil-defuncion.jpg"
+                  alt="onp-tabs-uno"
+                  width="300"
+                  height="300"
+                />
+                <div class="tab-onp-content-detail">
+                  <h4 class="onp-color-primary">Capital de defunción</h4>
+                  <p>
+                    Este es un pago único que se brinda en caso de no haber familiares
+                    beneficiarios de una pensión y se otorga al primer familiar de
+                    acuerdo al siguiente orden: <br />
+                    • La o el cónyuge o conviviente con declaración de unión de hecho.
+                    <br />
+                    • Las hijas y los hijos. <br />
+                    • La madre y/o el padre. <br />
+                    • Las hermanas y los hermanos menores de 18 años de edad. <br />
+                  </p>
+                  <a class="btn-first" href="#">Conoce más</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ng-container>
 </section>
 
-<section class="benefits">
+<section class="benefits" id="beneficios">
     <div class="benefits__header">
         <picture>
             <source media="(max-width: 768px)" srcset="../../../assets/images/facil/beneficios-movil.jpg" alt="Beneficios SNP">
@@ -226,21 +458,21 @@
     <div class="digits__content">
         <h2>Cifras del SNP</h2>
         <div class="digits__item">
-            <img src="../../../assets/images/facil/cifras-afiliados.jpg" alt="Cifras afiliados">
+            <img src="../../../assets/images/facil/afiliadas-onp.png" alt="Cifras afiliados">
             <div class="digits__number">
                 <h4>Afiliadas y <br>afiliados</h4>
                 <h5>4,000,430</h5>
             </div>
         </div>
         <div class="digits__item">
-            <img src="../../../assets/images/facil/cifras-pensionistas.jpg" alt="Cifras pensionistas">
+            <img src="../../../assets/images/facil/pensionistas-onp.png" alt="Cifras pensionistas">
             <div class="digits__number">
                 <h4>Pensionistas y <br>beneficiarias/os</h4>
                 <h5>1,070,430</h5>
             </div>
         </div>
         <div class="digits__item">
-            <img src="../../../assets/images/facil/cifras-trasladados.jpg" alt="Cifras trasladados">
+            <img src="../../../assets/images/facil/trasladados-onp.png" alt="Cifras trasladados">
             <div class="digits__number">
                 <h4>Trasladadas y <br>trasladados</h4>
                 <h5>970,430</h5>
@@ -249,9 +481,9 @@
     </div>
 </section>
 
-<section class="financing section">
+<section class="financing section" >
     <img loading="lazy" src="../../../assets/images/facil/financiamiento-snp.png" alt="Financiamiento SNP">
-    <div>
+    <div id="cifras">
         <h3>Financiamiento del SNP</h3>
         <p class="p-detail">El pago de las pensiones se basa en la colaboración.</p>
         <p class="p-detail">Conoce quiénes colaboran para garantizar el pago mensual de las pensiones tanto a pensionistas como beneficiarias y beneficiarios.</p>

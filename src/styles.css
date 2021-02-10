@@ -25,6 +25,10 @@
 }
 
 /* >>>>>>>>>>>>>>> Reset <<<<<<<<<<<<<<< */
+html {
+  scroll-behavior: smooth;
+}
+
 html,
 body {
   box-sizing: border-box;

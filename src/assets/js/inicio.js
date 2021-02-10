@@ -262,15 +262,11 @@ function toogleMenu2() {
 
 // Show / Hide Carrusel
 function showCarrusel1() {
-      if ($("#carrusel-afiliados").css("display") === "none") {
-        $("#carrusel-afiliados").css("display","block")
-        $("#carrusel-pensionistas").css("display","none")
-      } 
+  $('#carrusel-afiliados').show();
+  $("#carrusel-pensionistas").hide();
 }
 
 function showCarrusel2() {
-  if ($("#carrusel-pensionistas").css("display") === "none") {
-    $("#carrusel-pensionistas").css("display","block")
-    $("#carrusel-afiliados").css("display","none")
-  } 
+  $('#carrusel-afiliados').hide();
+  $("#carrusel-pensionistas").show();
 }

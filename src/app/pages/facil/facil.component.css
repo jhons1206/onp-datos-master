@@ -54,7 +54,109 @@ p {
 
 /* >>>>>>>>>>>>>>> Components <<<<<<<<<<<<<<<< */
 
+/* ************ Submenu Top ************** */
+.onp-submenu {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    width: 50%;
+  }
+  
+  .onp-submenu-header {
+    position: -webkit-sticky;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    z-index: 5;
+    width: 100%;
+    box-shadow: 0px 1px 10px #888888;
+  }
+  
+  .onp-submenu-header .onp-submenu .onp-submenu-item {
+    flex: 0 1 15%;
+    text-align: center;
+  }
+  
+  .onp-submenu-header .onp-submenu .onp-submenu-item span {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 0.85rem;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .onp-submenu-header .onp-submenu .onp-submenu-item span:hover {
+    color: rgb(255, 184, 28);
+  }
 
+/* ************ Tabs ************** */
+.tab {
+    position: absolute;
+    margin-top: -151px;
+    left: 23%;
+    width: 768px;
+}
+
+.nav-tabs .nav-link {
+    border: 0;
+    color: var(--white-color);
+    padding: 1.2rem 1.6rem;
+}
+
+.nav-tabs .nav-link.active {
+    background-color: rgb(255, 255, 255) !important;
+    color: rgb(20, 27, 77) !important;
+}
+
+.nav.nav-tabs {
+    background-color: rgb(20, 27, 77);
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    background-color: var(--second-color);
+    color: var(--white-color);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    padding: 1.2rem 2rem;
+    font-weight: bold;
+}
+
+.tab-onp-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 3rem 3rem 0;
+}
+
+.tab-onp-content img {
+    border-radius: 50%;
+    width: 25%;
+    margin-right: 4rem;
+    float: left;
+}
+
+.tab-onp-content-detail h4 {
+    padding-bottom: 0.5rem;
+}
+
+.tab-onp-content-detail p {
+    font-size: 0.9rem;
+    line-height: 1.2;
+    margin: 0;
+    color: var(--second-color);
+}
+
+#pills-orfandad,
+#pills-ascendencia,
+#pills-defuncion {
+  display: none;
+}
 
 
 /* >>>>>>>>>>>>>>> Utilities <<<<<<<<<<<<<<<< */
@@ -145,6 +247,9 @@ p {
 }
 
 /* >>>>>>>>>>>>>>> SITE <<<<<<<<<<<<<<<< */
+.banner {
+    margin-top: 75px;
+}
 .banner__detail {
     display: none;
 }
@@ -175,6 +280,7 @@ p {
 }
 
 .advantage__item {
+    display: block;
     display: flex;
     justify-content: center;
     align-content: center;
@@ -478,6 +584,10 @@ p {
     margin: 0;
 }
 
+.tab {
+    display: none;
+}
+
 .benefits {
     margin: 2rem 0 12rem;
     position: relative;
@@ -668,9 +778,10 @@ p {
 
     .advantage__carrusel {
         margin-top: 4rem;
-        display: flex;
+        display: block;
+        /* display: flex;
         justify-content: space-between;
-        align-items: flex-start;
+        align-items: flex-start; */
         padding: 0;
     }
 
@@ -680,8 +791,8 @@ p {
     }
 
     .advantage__item img {
-        width: 55%;
-        margin: 0;
+        width: 45%;
+        margin: 0 auto;
     }
 
     .advantage__item p {
@@ -778,6 +889,8 @@ p {
 
     .family {
         padding: 1.5rem 0;
+        position: relative;
+        min-height: 380px;
     }
 
     .family__header {
@@ -819,6 +932,10 @@ p {
 
     .family__card p {
         font-size: 0.9rem;
+    }
+
+    .tab {
+        display: block;
     }
 
     .benefits {
@@ -929,6 +1046,15 @@ p {
         flex-direction: column;
         justify-content: center;
         align-content: center;
+        opacity: 0;
+        pointer-events: none;
+    }
+
+    .digits__item:hover .digits__number {
+        opacity: 1;
+        pointer-events: auto;
+        transition: all .5s ease-in-out;
+        cursor: pointer;
     }
     
     .digits__number h4 {
