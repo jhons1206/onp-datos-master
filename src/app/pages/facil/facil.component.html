@@ -492,6 +492,7 @@
         <source media="(min-width: 1024px)" srcset="../../../assets/images/facil/cifras-desktop.jpg">
         <img loading="lazy" src="../../../assets/images/facil/cifras-desktop.jpg" alt="Cifras SNP">
     </picture>
+     
     <div class="digits__content">
         <h2>Cifras del SNP</h2>
         <a [routerLink]="['/Afiliados']">
@@ -500,7 +501,7 @@
               <img src="../../../assets/images/facil/cifras-afiliados.jpg" alt="Cifras afiliados">
               <div class="digits__number">
                   <h4>Afiliadas y <br>afiliados</h4>
-                  <h5>4,000,430</h5>
+                  <h5>{{TotalAfiliados | number:'1.0-0'}}</h5>
               </div>
           </div>
         </a>
@@ -510,7 +511,7 @@
               <img src="../../../assets/images/facil/cifras-pensionistas.jpg" alt="Cifras pensionistas">
               <div class="digits__number">
                   <h4>Pensionistas y <br>beneficiarias/os</h4>
-                  <h5>1,070,430</h5>
+                  <h5>{{TotalPensionista | number:'1.0-0'}}</h5>
               </div>
           </div>
         </a>
@@ -519,7 +520,7 @@
             <img src="../../../assets/images/facil/cifras-trasladados.jpg" alt="Cifras trasladados">
             <div class="digits__number">
                 <h4>Trasladadas y <br>trasladados</h4>
-                <h5>970,430</h5>
+                <h5>{{TotalTrasladados | number:'1.0-0'}}</h5>
             </div>
         </div>
     </div>

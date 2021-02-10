@@ -12,7 +12,7 @@ export class AfiliadosServices {
   baseUrl: string = environment.baseUrlApi;  
   share = 'ServiceData/GetSearchAllAfiliados'; 
   shareUbigeo = 'ServiceData/SearchAfiliadosDepartamento'; 
-
+  shareTotalAfiliados = 'ServiceData/GetAllAfiliados';
   constructor(
     private customhttp: CustomHttpService
   ) { }
@@ -25,5 +25,8 @@ export class AfiliadosServices {
     const result = this.customhttp.getValue(this.baseUrl + this.share+"?id="+id);
     return result;
   }
-
+  getListAfiliadosAll() {
+    const result = this.customhttp.getValue(this.baseUrl + this.shareTotalAfiliados);
+    return result;
+  }
 }

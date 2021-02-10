@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AfiliadosServices } from 'src/app/services/afiliados.services';
+import { PensionistasServices } from 'src/app/services/pensionistas.services';
 declare var jQuery: any;
 @Component({
   selector: 'app-facil',
@@ -7,12 +9,16 @@ declare var jQuery: any;
 })
 
 export class FacilComponent implements OnInit {
-
+  TotalPensionista:number =0;
+  TotalAfiliados:number =0;
+  TotalTrasladados:number =0;
   // gallery: any[] = [];
   // gallery2: any[] = [];
   // gallery3: any[] = [];
 
-  constructor() { }
+  constructor(private afiliadosServices: AfiliadosServices,
+    private pensionistaServices: PensionistasServices,
+    ) { }
 
   ngOnInit(): void {
 
@@ -215,6 +221,41 @@ export class FacilComponent implements OnInit {
       }
 
     })(jQuery);
+
+
+    
+
+    this.afiliadosServices.getListAfiliadosAll().subscribe(
+      (result: any) => {
+        if ((!result) || (result && result.length ==0)|| (result && result.length ==0 && result.ResultTotal && result.ResultTotal.length ==0)) {
+          this.TotalAfiliados = 0; 
+        }
+        else {        
+          this.TotalAfiliados = result.ResultTotal[0].Total;
+           
+        }
+      });
+      this.pensionistaServices.getListPensionistaAll().subscribe(
+        (result: any) => {
+          if ((!result) || (result && result.length ==0)|| (result && result.length ==0 && result.ResultTotal && result.ResultTotal.length ==0)) {
+            this.TotalPensionista = 0; 
+          }
+          else {        
+            this.TotalPensionista = result.ResultTotal[0].Total;
+             
+          }
+        });
+        this.pensionistaServices.getListTrasladadosAll().subscribe(
+          (result: any) => {
+            if ((!result) || (result && result.length ==0)|| (result && result.length ==0 && result.ResultTotal && result.ResultTotal.length ==0)) {
+              this.TotalTrasladados = 0; 
+            }
+            else {        
+              this.TotalTrasladados = result.ResultTotal[0].Total;
+               
+            }
+          });
+
 
   }
 
