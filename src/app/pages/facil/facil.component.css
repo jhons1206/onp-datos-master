@@ -247,6 +247,10 @@ p {
 }
 
 /* >>>>>>>>>>>>>>> SITE <<<<<<<<<<<<<<<< */
+.onp-submenu-header {
+    display: none;
+}
+
 .banner {
     margin-top: 75px;
 }
@@ -686,7 +690,15 @@ p {
     display: none;
 }
 
+.banner {
+    margin-top: 0;
+}
+
 @media screen and (min-width: 1024px) {
+
+    .onp-submenu-header {
+        display: flex;
+    }
 
     .only-desktop {
         display: block;
