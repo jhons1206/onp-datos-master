@@ -1,0 +1,335 @@
+<aside class="top-menu-movil">
+    <div class="btn-toogle-menu" onclick="toogleMenuTop();">
+        <img class="img-arrow" src="../../../../assets/images/arrow-down.svg" alt="flecha abajo">
+    </div> 
+    <ul class="top-menu">
+        <li><a onclick="setPosition('jubilacion')">Jubilación Individual</a></li>
+        <li><a onclick="setPosition('alternativas')">Otras alternativas de jubilación</a></li>
+        <li><a onclick="setPosition('jubilate-65')">Jubilate antes de los 65 años</a></li>
+        <li><a onclick="setPosition('jubilacion-especial')">Jubilaciones especiales</a></li>
+    </ul>
+</aside>
+
+<div class="onp-submenu-header onp-bg-primary">
+    <div id="onp-submenu" class="onp-submenu">
+      <div class="onp-submenu-item">
+        <span
+          id="btn-ventajas"
+          onclick="setPosition('jubilacion')"
+          class="onp-color-tertiary"
+        >
+          Jubilación<br />
+          Individual
+        </span>
+      </div>
+      <div class="onp-submenu-item">
+        <span
+          id="btn-afiliarte"
+          onclick="setPosition('alternativas')"
+          class="onp-color-tertiary"
+          >Otras alternativas de jubilación</span
+        >
+      </div>
+      <div class="onp-submenu-item">
+        <span
+          id="btn-opciones"
+          onclick="setPosition('jubilate-65')"
+          class="onp-color-tertiary"
+        >
+        Jubilate antes de los 65 años
+        </span>
+      </div>
+      <div class="onp-submenu-item">
+        <span
+          id="btn-beneficios"
+          onclick="setPosition('jubilacion-especial')"
+          class="onp-color-tertiary"
+          >Jubilaciones especiales</span
+        >
+      </div>
+    </div>
+</div>
+
+<section class="banner">
+    <div class="banner__wrapper">
+        <picture>
+          <source media="(max-width: 768px)" srcset="../../../assets/images/facil/banner-asegura-tu-pension-movil.png">
+          <source media="(min-width: 1024px)" srcset="../../../assets/images/facil/banner-asegura-tu-pension.png">
+          <img loading="lazy" src="../../../assets/images/facil/banner-asegura-tu-pension.png">
+        </picture>
+        <div class="banner__detail container">
+            <h1 class="section-title animate__animated animate__fadeInDown">Tus años de esfuerzo aseguran tu pensión</h1>
+        </div>
+    </div>
+</section>
+
+<section class="retirement-pension" id="jubilacion">
+    <a href="#" class="btn-first">Pensión de jubilación individual</a>
+    <p>¿Eres afiliada o afiliado, has cumplido 65 años de edad y has aportado durante 20 o más años (240 unidades de aporte como mínimo)? Entonces te corresponde la pensión más conocida</p>
+    <p class="bold"><a href="#">Conoce más sobre el Régimen General de Pensión de Jubilación Individual >></a></p>
+</section>
+
+<section class="calc-pension">
+    <h2 class="section-title">Conoce cómo se calcula tu pensión</h2>
+    <p>Sigue estos tres simples pasos</p>
+    <div class="calc-pension__carrusel" id="pension-carrusel">
+        <img loading="lazy" src="../../../assets/images/facil/paso-1-calcular-sueldo.png">
+        <img loading="lazy" src="../../../assets/images/facil/paso-2-multiplica-sueldo.png">
+        <img loading="lazy" src="../../../assets/images/facil/paso-3-sumanos-sueldo.png">
+    </div>
+    <section class="tabs-pension">
+        <ng-container>
+            <div class="tab">
+              <nav class="nav-tab-container">
+                <ul
+                  class="nav nav-tabs flex-column flex-sm-row"
+                  id="pills-tab"
+                  role="tablist"
+                >
+                  <li class="nav-item" role="presentation">
+                    <a
+                      class="flex-sm-fill text-sm-center nav-link active"
+                      id="pills-viudez-tab"
+                      data-toggle="pill"
+                      href="#pills-viudez"
+                      role="tab"
+                      aria-controls="pills-viudez"
+                      aria-selected="true"
+                      onclick="openTabs(event, 'pills-viudez')"
+                      >Paso 1</a
+                    >
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a
+                      class="nav-link"
+                      id="pills-orfandad-tab"
+                      data-toggle="pill"
+                      href="#pills-orfandad"
+                      role="tab"
+                      aria-controls="pills-orfandad"
+                      aria-selected="false"
+                      onclick="openTabs(event, 'pills-orfandad')"
+                      >Paso 2</a
+                    >
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a
+                      class="nav-link"
+                      id="pills-ascendencia-tab"
+                      data-toggle="pill"
+                      href="#pills-ascendencia"
+                      role="tab"
+                      aria-controls="pills-ascendencia"
+                      aria-selected="false"
+                      onclick="openTabs(event, 'pills-ascendencia')"
+                      >Paso 3</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+              <div class="tab-content" id="pills-tabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="pills-viudez"
+                  role="tabpanel"
+                  aria-labelledby="pills-viudez-tab"
+                >
+                  <div class="tab-onp-content">
+                    <img src="../../../../assets/images/facil/paso1_pension-desktop.png" alt="Calculamos tu sueldo">
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade show active"
+                  id="pills-orfandad"
+                  role="tabpanel"
+                  aria-labelledby="pills-orfandad-tab"
+                >
+                  <div class="tab-onp-content">
+                    <img src="../../../../assets/images/facil/paso2-multiplicamos-sueldo-desktop.png" alt="Multiplicamos tu sueldo">                    
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade show active"
+                  id="pills-ascendencia"
+                  role="tabpanel"
+                  aria-labelledby="pills-ascendencia-tab"
+                >
+                  <div class="tab-onp-content">
+                    <img src="../../../../assets/images/facil/paso3-sumanos-tu-sueldo-desktop.png" alt="Calculamos tu sueldo"> 
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade show active"
+                  id="pills-defuncion"
+                  role="tabpanel"
+                  aria-labelledby="pills-defuncion-tab"
+                >
+                  <div class="tab-onp-content">
+                    <img
+                      src="../../../assets/images/onp-facil-defuncion.jpg"
+                      alt="onp-tabs-uno"
+                      width="300"
+                      height="300"
+                    />
+                    <div class="tab-onp-content-detail">
+                      <h4 class="onp-color-primary">Capital de defunción</h4>
+                      <p>
+                        Este es un pago único que se brinda en caso de no haber familiares
+                        beneficiarios de una pensión y se otorga al primer familiar de
+                        acuerdo al siguiente orden: <br />
+                        • La o el cónyuge o conviviente con declaración de unión de hecho.
+                        <br />
+                        • Las hijas y los hijos. <br />
+                        • La madre y/o el padre. <br />
+                        • Las hermanas y los hermanos menores de 18 años de edad. <br />
+                      </p>
+                      <a class="btn-first" href="#">Conoce más</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </ng-container>
+    </section>
+    <div class="two-p">
+        <p>Si es necesario, nivelamos tu cálculo.</p> 
+        <p>Recuerda que el monto de tu pensión no puede ser menor a S/ 500 ni mayor a S/ 893.</p>
+    </div>
+    <p>Veamos el caso de Claudia</p>
+    <a href="#" class="btn-first">Aquí</a>
+</section>
+
+<section class="retire" id="alternativas">
+    <picture>
+        <source media="(max-width: 768px)" srcset="../../../assets/images/facil/puedes-jubilarte-movil.png">
+        <source media="(min-width: 1024px)" srcset="../../../assets/images/facil/jubilate-conyuge.png">
+        <img loading="lazy" src="../../../assets/images/facil/jubilate-conyuge.png" alt="Puedes jubilarte con tu cónyuge o conviviente">
+    </picture>
+    <div class="retire__content">
+        <h2 class="section-title">Puedes jubilarte con tu cónyuge o conviviente</h2>
+        <p>Suma tus aportes a los de tu cónyuge o conviviente con declaración de unión de hecho.</p>
+        <p> Si juntos aportan el mínimo de 20 años (o 240 unidades de aporte) para obtener una pensión, la buena noticia es que les corresponde.</p>
+        <p class="bold">Conoce más sobre el Régimen General de Pensión de Jubilación para la sociedad conyugal y las uniones de hecho >></p>
+        <img loading="lazy" class="jubilate-ya" src="../../../assets/images/facil/jubilate-ya-boton.svg" alt="Jubilate Ya">
+    </div>
+</section>
+
+<section class="retire-65 section" id="jubilate-65">
+    <h2 class="section-title">También puedes jubilarte antes de los 65</h2>
+    <div class="retire-65__carrusel" id="retire65-carrusel">
+        <div class="retire-65__item">
+            <img loading="lazy" class="rounded-img" src="../../../assets/images/facil/link1-antes-de-65.jpg">
+            <div>
+                <p>Comprueba si esta pensión te corresponde. Si eres mujer, tienes 50 años de edad cumplidos y has aportado como mínimo 25 años (300 unidades de aporte); o si eres hombre, tienes 55 años de edad cumplidos y has aportado como mínimo 30 años (360 unidades de aporte).</p>
+                <p class="bold"><a href="#">Conoce más del Régimen de Pensión de Jubilación Adelantada General >></a></p>
+            </div>
+        </div>
+        <div class="retire-65__item">
+            <img loading="lazy" class="rounded-img" src="../../../assets/images/facil/link2-antes-de-65.jpg">
+            <div>
+                <p>Si tienes una discapacidad, puedes adelantar tu pensión sin reducir el monto que te corresponde cobrar. Este régimen va para ti si eres afiliada o afiliado, si tienes 55 años de edad cumplidos y aportaste 20 años (240 unidades de aporte).</p>
+                <p class="bold"><a href="#">Conoce más del Régimen de Pensión de Jubilación Adelantada para Personas con Discapacidad >></a></p>
+            </div>
+        </div>
+    </div>    
+</section>
+
+<section class="retire-especial section" id="jubilacion-especial">
+    <h2 class="section-title">Y hay jubilaciones especiales</h2>
+    <p>Atención a estas pensiones. Quizás te correspondan si eres afiliada o afiliado y trabajas en alguno de los siguientes rubros en condiciones penosas que ponen en riesgo tu vida o tu salud:</p>
+    <div class="retire-especial__carrusel" id="retire-especial-carrusel">
+        <div class="retire-especial__item">
+            <div>
+                <img loading="lazy" src="../../../assets/images/facil/s1_mineras-y-mineros.svg">
+                <div class="blue-box">
+                    <p>Ten en cuenta que, conforme a Ley, la ONP tiene que verificar si estuviste expuesta o expuesto al realizar tus labores en las modalidades de Tajo abierto y Centros Mineros, Metalúrgicos y Siderúrgicos.</p>
+                </div>
+            </div>
+            <div>
+                <h3>Mineras y mineros</h3>
+                <p class="p-left">¿Trabajas en socavón? Entonces puedes jubilarte con tan solo 45 años de edad y con 20 años de aporte (240 unidades de aporte); siempre que 10 de esos años (120 unidades de aporte) correspondan a tu trabajo en Socavón. <a href="#" class="text-link">Ver más</a></p>
+                <p class="p-left hide">2. Si trabajas en Tajo abierto puedes obtener una pensión a los 50 años de edad y haber aportado 25 años (300 unidades de aporte); siempre que 10 de esos años (120 unidades de aporte) correspondan a tu trabajo en Tajo abierto.</p>
+                <p class="p-left hide">También puedes acceder a una pensión proporcional a la misma edad pero con menos años de aporte. Para obtener la pensión solo necesitas 20 años de aporte (240 unidades de aporte), siempre y cuando, 10 de esos años (120 unidades de aporte) corresponden a tu trabajo en tajo abierto.</p>
+            </div>
+        </div>
+        <div class="retire-especial__item">
+            <div>
+                <img loading="lazy" src="../../../assets/images/facil/s2_trabajadores-construccion-civil.svg">
+            </div>
+            <div>
+                <h3>Trabajadoras y trabajadores Construcción Civil</h3>
+                <p class="p-left">¿Trabajas en construcción civil? Entonces puedes jubilarte a los  55 años de edad y con 20 años de aporte (240 unidades de aporte); siempre que 5 de los últimos 10 años (60 unidades de aporte) antes de que dejes de trabajar, correspondan a tus labores en Construcción Civil.</p>
+            </div>
+        </div>
+        <div class="retire-especial__item">
+            <div>
+                <img loading="lazy" src="../../../assets/images/facil/s3_trabajadores-maritimos.svg">
+            </div>
+            <div>
+                <h3>Trabajadoras y trabajadores marítimos</h3>
+                <p class="p-left">Si laboras como trabajadora o trabajador marítimo puedes jubilarte a los  55 años de edad y con 20 años de aporte (240 unidades de aporte); siempre que 5 de esos años (60 unidades de aporte) correspondan a tus labores como trabajadora o trabajador marítimo.</p>
+            </div>
+        </div>
+        <div class="retire-especial__item">
+            <div>
+                <img loading="lazy" src="../../../assets/images/facil/s4_periodistas.svg">
+            </div>
+            <div>
+                <h3>Periodistas</h3>
+                <p class="p-left">¿Eres periodista? Entonces puedes jubilarte a los 55 años si eres hombre o 50 años si eres mujer y con 20 años de aporte (240 unidades de aporte) en ambos casos; siempre que 5 de los últimos 10 años (60 unidades de aporte) antes de que dejes de trabajar, correspondan a tus labores en Periodismo.</p>
+            </div>
+        </div>
+        <div class="retire-especial__item">
+            <div>
+                <img loading="lazy" src="../../../assets/images/facil/s5_pilotos.svg">
+            </div>
+            <div>
+                <h3>Pilotas/os y copilotas/os</h3>
+                <p class="p-left">Si trabajas como pilota/o o copilota/o, puedes jubilarte desde los 55 años, considerando las siguientes precisiones:</p>
+                <p class="p-left">1. Si tienes 55 años de edad, necesitas 20 años de aporte (240 unidades de aporte); siempre que 5 de esos años (60 unidades de aporte) correspondan a tus labores en esta modalidad.</p>
+                <p class="p-left hide">2. Si tienes 56 años de edad, necesitas 20 años de aporte (240 unidades de aporte); siempre que 4 de esos años (48 unidades de aporte) correspondan a tus labores en esta modalidad.</p>
+                <p class="p-left hide">3. Si tienes 57 años de edad, necesitas 20 años de aporte (240 unidades de aporte); siempre que 3 de esos años (36 unidades de aporte) correspondan a tus labores en esta modalidad.</p>
+                <p class="p-left hide">4. Si tienes 58 años de edad, necesitas 20 años de aporte (240 unidades de aporte); siempre que 2 de esos años (24 unidades de aporte) correspondan a tus labores en esta modalidad.</p>
+                <p class="p-left hide">5. Si tienes 59 años de edad, necesitas 20 años de aporte (240 unidades de aporte); siempre que 1 de esos años (12 unidades de aporte) correspondan a tus labores en esta modalidad.</p>
+            </div>
+        </div>
+        <div class="retire-especial__item">
+            <div>
+                <img loading="lazy" src="../../../assets/images/facil/s6_cuereros.svg">
+            </div>
+            <div>
+                <h3>Cuereras y cuereros</h3>
+                <p class="p-left">¿Trabajas en la industria de cueros? Entonces puedes jubilarte a los  55 años de edad y con 20 años de aporte (240 unidades de aporte); siempre que 5 de esos años (60 unidades de aporte) correspondan a tus labores en esta modalidad.</p>
+            </div>
+        </div>
+        <div class="retire-especial__item">
+            <div>
+                <img loading="lazy" src="../../../assets/images/facil/s7_amas-de-casa.svg">
+            </div>
+            <div>
+                <h3>Ama de casa</h3>
+                <p class="p-left">¿Eres ama de casa? Entonces puedes jubilarte a los  55 años de edad y con 20 años de aporte (240 unidades de aporte); siempre que 5 de esos años (60 unidades de aporte) correspondan a tus labores en esta modalidad.</p>
+            </div>
+        </div>
+        <div class="retire-especial__item">
+            <div>
+                <img loading="lazy" src="../../../assets/images/facil/s8_trabajador-hogar.svg">
+            </div>
+            <div>
+                <h3>Trabajador o trabajadora del hogar</h3>
+                <p class="p-left">¿Eres trabajador o trabajadora del hogar? Entonces puedes jubilarte a los 65 años y con 20 años de aporte (240 unidades de aporte).</p>
+            </div>
+        </div>
+    </div>
+    
+</section>
+
+<section class="menu-columns">
+    <ul>
+        <li><a href="#">Tus ventajas y facilidades</a></li>
+        <li><a href="#">Afiliate al SNP</a></li>
+        <li><a href="#">Tus opciones de jubilación</a></li>
+        <li><a href="#">Tus beneficios</a></li>
+        <li><a href="#">Cifras del SNP</a></li>
+    </ul>
+</section>

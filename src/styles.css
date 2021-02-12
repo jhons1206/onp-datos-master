@@ -57,6 +57,10 @@ body {
   margin-top: 0;
 }
 
+.onp-navbar {
+  width: var(--max-width);
+}
+
 .onp-bg-primary {
   background-color: rgb(20, 27, 77);
 }

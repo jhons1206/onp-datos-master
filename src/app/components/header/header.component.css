@@ -10,7 +10,7 @@
 }
 
 .onp-navbar {
-  width: 77%;
+  width: var(--max-width);
   height: 100%;
   display: flex;
   flex-direction: row;

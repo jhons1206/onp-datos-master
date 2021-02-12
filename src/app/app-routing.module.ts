@@ -11,6 +11,7 @@ import { PensionistasComponent } from './pages/enterate/pensionistas/pensionista
 import { AfiliadosComponent } from './pages/enterate/afiliados/afiliados.component';
 import { ActuarialInformationComponent } from './pages/publicaciones/actuarial-information/actuarial-information.component';
 import { FacilComponent } from './pages/facil/facil.component';
+import { AseguraComponent } from './pages/facil/asegura/asegura.component';
 import { InformesInstitucionalesComponent } from './pages/publicaciones/informes-institucionales/informes-institucionales.component';
 import { PresentacionesComponent } from './pages/publicaciones/presentaciones/presentaciones.component';
 import { MemorialesAnualesComponent } from './pages/publicaciones/memoriales-anuales/memoriales-anuales.component';
@@ -31,6 +32,7 @@ const routes: Routes = [
   { path: 'Pensionistas', component: PensionistasComponent},
   { path: 'Afiliados', component: AfiliadosComponent},
   { path: 'Facil', component: FacilComponent},
+  { path: 'Asegura', component: AseguraComponent},
   // {
   //   path: 'OnpVirtual',
   //   component: OnpVirtualComponent,

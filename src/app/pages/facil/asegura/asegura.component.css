@@ -1,0 +1,732 @@
+/* >>>>>>>>>>> Custom Properties <<<<<<<<<<<< */
+/* Definidas de forma global en styles.css */
+
+/* >>>>>>>>>>>>>>> Reset <<<<<<<<<<<<<<< */
+a {
+    transition: all 0.5s;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+h3 {
+    font-size: 1.25rem;
+    margin: 0;
+}
+
+h4 {
+    font-size: 1rem;
+    margin: 0;
+}
+
+h5 {
+    font-size: 0.85rem;
+    margin: 0;
+}
+
+h6 {
+    font-size: 0.7rem;
+    margin: 0;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+p {
+    line-height: 1.6;
+}
+
+/* >>>>>>>>>>>>>>> Components <<<<<<<<<<<<<<<< */
+
+/* Menu Columns */
+.menu-columns {
+    padding: 1.5rem 1rem;
+}
+
+.menu-columns ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu-columns li {
+    padding: 0.8rem 1rem;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 33%;
+    height: 40px;
+    line-height: 0.9;
+    border-left: thin solid var(--second-color);
+    border-right: thin solid var(--second-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-columns li:nth-child(even) {
+    border-right: 0;
+}
+
+.menu-columns li:first-child {
+    border-right: 0;
+}
+
+.menu-columns li a {
+    color: var(--second-color);
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .menu-columns {
+        padding: 4rem 1rem 2rem;
+        width: var(--max-width);
+        margin: 0 auto;
+    }
+
+    .menu-columns ul {
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+    
+    .menu-columns ul li:nth-child(3) {
+        border-right: 0;
+    }
+
+}
+
+/* Top Menu Movil */
+.top-menu-movil {
+    position: fixed;
+    display: block;
+    width: 100%;
+    z-index: 999;
+ }
+ 
+ .onp__top-menu {
+     background-color: var(--second-color);
+ }
+ 
+ .btn-toogle-menu {
+     background-color: var(--second-color);
+     color: var(--white-color);
+     text-align: center;
+     padding: 0.7rem;
+     cursor: pointer;
+ }
+ 
+ .btn-toogle-menu img {
+     width: 1rem;
+ }
+ 
+ ul.top-menu {
+     margin: 0;
+     padding: 0;
+     list-style: none;
+     display: none;
+     z-index: 999;
+     position: absolute;
+     width: 100%;
+     background: var(--second-color);
+ }
+ 
+ ul.top-menu li a {
+     color: var(--white-color);
+     padding: 0.7rem;
+     display: block;
+     text-align: center;
+     text-decoration: none;
+ }
+ 
+ ul.top-menu li a:hover {
+     background-color: var(--third-alpha-color);
+ }
+ 
+ /* ************ Submenu Top desktop ************** */
+ .onp-submenu {
+     position: relative;
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     align-items: center;
+     padding-top: 1%;
+     padding-bottom: 1%;
+     width: 50%;
+   }
+   
+   .onp-submenu-header {
+     position: -webkit-sticky;
+     position: fixed;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     z-index: 5;
+     width: 100%;
+   }
+   
+   .onp-submenu-header .onp-submenu .onp-submenu-item {
+     flex: 0 1 15%;
+     text-align: center;
+     line-height: 1;
+   }
+   
+   .onp-submenu-header .onp-submenu .onp-submenu-item span {
+     font-family: Arial, Helvetica, sans-serif;
+     text-align: center;
+     margin-bottom: 0;
+     font-size: 0.8rem;
+     text-decoration: none;
+     cursor: pointer;
+   }
+   
+   .onp-submenu-header .onp-submenu .onp-submenu-item span:hover {
+     color: rgb(255, 184, 28);
+   }
+ 
+ /* ************ Tabs ************** */
+ .tab {
+     width: 40rem;
+     margin: 2rem auto;
+     border: 1px solid var(--second-color);
+     border-radius: 25px;
+ }
+ 
+ .nav-tabs .nav-link {
+     border: 0;
+     color: var(--white-color);
+     padding: 1.4rem 3.5rem;
+ }
+ 
+ .nav-tabs .nav-link.active {
+     background-color: rgb(255, 255, 255) !important;
+     color: rgb(20, 27, 77) !important;
+ }
+ 
+ .nav.nav-tabs {
+     background-color: rgb(20, 27, 77);
+     border-top-left-radius: 25px;
+     border-top-right-radius: 25px;
+ }
+ 
+ .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+     background-color: var(--second-color);
+     color: var(--white-color);
+     border-top-left-radius: 25px;
+     border-top-right-radius: 25px;
+     padding: 1.4rem 3.5rem;
+     font-weight: bold;
+ }
+ 
+ .tab-onp-content {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 3rem;
+ }
+ 
+ .tab-onp-content img {
+    width: 75%;
+ }
+ 
+ .tab-onp-content-detail h4 {
+     padding-bottom: 0.5rem;
+ }
+ 
+ .tab-onp-content-detail p {
+     font-size: 0.9rem;
+     line-height: 1.2;
+     margin: 0;
+     color: var(--second-color);
+ }
+ 
+ #pills-orfandad,
+ #pills-ascendencia,
+ #pills-defuncion {
+   display: none;
+ }
+ 
+ .onp-submenu-header {
+    display: none;
+}
+
+/* >>>>>>>>>>>>>>> Utilities <<<<<<<<<<<<<<<< */
+.blue-box {
+    background: var(--second-color);
+    border-radius: 5px;
+    padding: 0.5rem;
+    color: var(--white-color);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.box-shadow-1 {
+    box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25);
+}
+
+.section {
+    padding: 2rem;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: var(--max-width);
+}
+
+.btn-first {
+    display: inline-block;
+    padding: 0.3rem 1.5rem;
+    background-color: var(--first-color);
+    color: var(--white-color);
+    margin: 1.5rem 0 1rem;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.btn-first:hover {
+    background-color: var(--second-color);
+}
+
+.section-title {
+    color: var(--second-color);
+    font-size: 1.4rem;
+    line-height: 0.9;
+    font-weight: bold;
+    text-align: center;
+    padding: 1rem 2rem;
+}
+
+.rounded-img {
+    border-radius: 50%;
+}
+
+.p-left {
+    text-align: left;
+}
+
+.hide {
+    display: none;
+}
+
+/* >>>>>>>>>>>>>>> SITE <<<<<<<<<<<<<<<< */
+.banner {
+    padding-top: 46.38px;
+}
+
+.banner__wrapper {
+    position: relative;
+    background-color: var(--second-color);
+}
+
+.banner__detail {
+    position: absolute;
+    bottom: 18%;
+    padding: 0 4rem;
+}
+
+.banner__detail h1 {
+    padding: 0;
+}
+
+.retirement-pension {
+    background-color: var(--second-color);
+    color: var(--white-color);
+    text-align: center;
+    padding: 0.7rem 2rem;
+}
+
+.retirement-pension p {
+    line-height: 1.3;
+}
+
+.retirement-pension a {
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.calc-pension {
+    background-image: url(../../../../assets/images/facil/top-rounded-corners.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding: 2rem;
+    text-align: center;
+    color: var(--second-color);
+}
+
+.calc-pension h2 {
+    padding: 0.5rem 2rem 1rem;
+}
+
+.calc-pension p {
+    font-size: 0.9rem;
+    line-height: 1.2;
+}
+
+.calc-pension__carrusel {
+    margin: 1rem 0;
+}
+
+.tabs-pension {
+    display: none;
+}
+
+.calc-pension .btn-first {
+    margin: 0;
+}
+
+.retire {
+    background-color: var(--gray-color);
+    color: var(--white-color);
+    text-align: center;
+}
+
+.retire__content {
+    padding: 1rem 2rem 0;
+}
+
+.retire h2 {
+    color: var(--white-color);
+}
+
+.retire p {
+    font-size: 0.9rem;
+    line-height: 1.1;
+}
+
+.retire img.jubilate-ya {
+    width: 50%;
+}
+
+.retire-65 {
+    background-color: var(--second-color);
+    text-align: center;
+    color: var(--white-color);
+}
+
+.retire-65 img {
+    width: 50%;
+    margin: 0 auto 1.5rem;
+}
+
+.retire-65 h2 {
+    color: var(--white-color);
+    padding: 0 1rem 1rem;
+}
+
+.retire-65 p {
+    font-size: 0.9rem;
+    line-height: 1.1;
+}
+
+.retire-65 a {
+    color: var(--white-color);
+    text-decoration: none;
+}
+
+.retire-especial {
+    text-align: center;
+    margin: 0 0.5rem;
+    padding-bottom: 0;
+    color: var(--second-color);
+}
+
+.retire-especial img {
+    width: 40%;
+    margin: 0 auto;
+}
+
+.retire-especial .blue-box {
+    margin-top: 1rem;
+}
+
+.retire-especial .blue-box p {
+    font-size: 0.7rem;
+    line-height: 0.8rem;
+    margin: 0;
+}
+
+.retire-especial h3 {
+    color: var(--second-color);
+    padding: 1rem 0 0.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.retire-especial p {
+    font-size: 0.9rem;
+    line-height: 1.2;
+    margin-bottom: 0;
+}
+
+.retire-especial a {
+    color: var(--second-color);
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.retire-especial__item {
+    margin-top: 1rem;
+    padding: 1.2rem 1rem;
+    border-bottom: thin solid var(--second-color);
+    border-top: thin solid var(--second-color);
+}
+
+@media screen and (min-width: 1024px) {
+
+    .onp-submenu-header {
+        display: flex;
+    }
+
+    .top-menu-movil {
+        display: none;
+    }
+
+    .banner {
+        padding-top: 59.31px;
+    }
+    
+    .banner__detail {
+        top: 43%;
+        left: 17%;
+        padding: 0;
+    }
+    
+    .banner__detail h1 {
+        width: 25%;
+        font-size: 1.5rem;
+    }
+    
+    .retirement-pension {
+        padding: 3rem 22rem;
+    }
+
+    .retirement-pension .btn-first {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+    
+    .calc-pension {
+        background-image: url(../../../../assets/images/facil/top-rounded-corners.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding: 2rem;
+        text-align: center;
+        color: var(--second-color);
+    }
+    
+    .calc-pension h2 {
+        padding: 0.5rem 2rem 1rem;
+    }
+    
+    .calc-pension p {
+        font-size: 0.9rem;
+        line-height: 1.2;
+    }
+    
+    .calc-pension__carrusel {
+        display: none;
+    }
+    
+    .calc-pension .btn-first {
+        margin: 0;
+    }
+
+    .tabs-pension {
+        display: block;
+    }
+    
+    .retire {
+        position: relative;
+        text-align: left;
+    }
+    
+    .retire__content {
+        position: absolute;
+        padding: 4rem 2rem 4.5rem 4rem;
+        bottom: 0;
+        left: 21%;
+        width: 40%;
+    }
+    
+    .retire__content h2 {
+        text-align: left;
+        padding-left: 0;
+        font-size: 1rem;
+    }
+    
+    .retire__content img.jubilate-ya {
+        display: none;
+    }
+
+    .calc-pension {
+        padding: 4rem 2rem 2rem;
+    }
+    
+    .retire-65 {
+        background-color: var(--second-color);
+        text-align: center;
+        color: var(--white-color);
+        padding: 3rem 0;
+    }
+
+    .retire-65__carrusel {
+        display: flex;
+        justify-content: space-between;
+        margin: 0 6rem;
+    }
+
+    .retire-65__carrusel div:first-child {
+        border-right: 1px solid var(--white-color);
+    }
+    
+    .retire-65__carrusel img {
+        width: 11rem;
+        margin: 0;
+        margin-right: 1rem;
+    }
+    
+    .retire-65 h2 {
+        color: var(--white-color);
+        padding: 0 1rem 2rem;
+    }
+
+    .calc-pension .btn-first {
+        margin-top: 0;
+        font-size: 1rem;
+    }
+
+    .two-p {
+        margin-bottom: 1rem;
+    }
+
+    .two-p p {
+        margin-bottom: 0;
+    }
+
+    .retire-65__item {
+        display: flex;
+        justify-content: space-between;
+        align-content: center;
+        align-items: center;
+        padding: 0 2rem;
+    }
+
+    .retire-65__carrusel div:last-child {
+        flex-direction: row-reverse;
+    }
+
+    .retire-65__carrusel div:last-child img {
+        margin: 0 0 0 1rem;
+
+    }
+
+
+
+
+    .retire-especial {
+        text-align: center;
+        margin: 0 auto;
+        padding-bottom: 0;
+        width: var(--max-width);
+    }
+
+    .retire-especial > p {
+        padding: 0 11rem 1.5rem;
+    }
+    
+    .retire-especial img {
+        width: 40%;
+        margin: 0 auto;
+    }
+    
+    .retire-especial .blue-box p {
+        font-size: 0.7rem;
+        line-height: 0.8rem;
+        margin: 0;
+    }
+    
+    .retire-especial h3 {
+        color: var(--second-color);
+        padding: 1rem 0 0.5rem;
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    
+    .retire-especial p {
+        font-size: 0.9rem;
+        line-height: 1.2;
+        margin-bottom: 0;
+    }
+    
+    .retire-especial a {
+        color: var(--second-color);
+        text-decoration: underline;
+        font-weight: bold;
+    }
+
+    .retire-especial__carrusel > div:last-child {
+        border-bottom: thin solid var(--second-color);
+    }
+    
+    .retire-especial__item {
+        text-align: left;
+        margin-top: 0;
+        padding: 1.2rem 1rem;
+        border-top: thin solid var(--second-color);
+        border-bottom: 0;
+        display: grid;
+        grid-template-columns: 20% 80%;
+    }
+
+    .retire-especial__item img {
+        width: 60%;
+    }
+
+    .retire-especial__item div:last-child {
+        padding-left: 2rem;
+    }
+
+    .retire-especial__item div:first-child {
+        text-align: center;
+    }
+
+    .retire-especial__item div.blue-box {
+        padding-left: 0.5rem;
+        text-align: left;
+    }
+
+    .retire-especial__item p {
+        margin-bottom: 1rem;
+    }
+
+    .hide {
+        display: block;
+    }
+
+    .text-link {
+        display: none;
+    }
+
+}
