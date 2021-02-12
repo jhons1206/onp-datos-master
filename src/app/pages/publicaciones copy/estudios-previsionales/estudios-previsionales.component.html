@@ -1,0 +1,51 @@
+<aside class="onp__top-menu">
+    <div class="btn-toogle-menu" onclick="toogleMenuTop();">
+        <img class="img-arrow" src="../../../../assets/images/arrow-down.svg" alt="flecha abajo">
+    </div>
+    <ul class="top-menu">
+        <li><a [routerLink]="['/MemorialesAnuales']">Memorias Anuales</a></li>
+        <li><a [routerLink]="['/Presentaciones']">Presentaciones</a></li>
+        <li><a [routerLink]="['/InformesInstitucionales/001']">Informes Institucionales</a></li>
+        <li><a [routerLink]="['/ActuarialInformation/001']">Información Actuarial</a></li>
+    </ul>
+</aside>
+<section class="header-page" >
+    <article class="header-page__wrapper" style="background: linear-gradient(90deg, #c6c6c6, #ffffff);">
+        <div class="header-page__content section">
+            <img src="../../../../assets/images/informes-icon.svg" alt="Gráfico de barras">
+            <h2 class="header-page__title" style="--hero-text-color: var(--white-color);">
+                Estudios Previsionales
+            </h2>
+        </div>
+    </article>
+</section>
+ 
+<section class="actuarial-info section section-personalice"  >   
+        <article class="card-download" *ngFor="let item of ListEstudiosPaginate" >
+            <div class="card-download__wrapper">
+                <div class="card-download__details">
+                    {{item.description}}
+                </div>
+                <div class="card-download__icon">
+                    <a href="{{this.urlFiles+item.url}}" target="_blank"><img src="../../../../assets/images/file-download-icon.svg" alt="Descargar"></a>
+                    {{item.urlTitle}}
+                </div>
+            </div>
+        </article>
+        
+
+        <section *ngIf="showPagination" class="onp__pagination">
+            <ul>
+                <li style="cursor: pointer;" (click)="anterior()" ><</li>
+                <ng-container *ngFor="let item of ListtotalItemsPage">
+                    <li  style="cursor: pointer;" (click)="paginar(item)">
+                        {{item}}
+                    </li>
+                  </ng-container>                                    
+                <li style="cursor: pointer;" (click)="siguiente()">></li>
+            </ul>
+        </section>
+</section> 
+ 
+
+

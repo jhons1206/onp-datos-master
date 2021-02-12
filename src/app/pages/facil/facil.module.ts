@@ -9,10 +9,11 @@ import { FacilComponent } from './facil.component';
 import { FacilRoutingModule } from './facil-routing.module';
 import { AseguraComponent } from './asegura/asegura.component';
 import { UneteComponent } from './unete/unete.component';
+import { BeneficiosComponent } from './beneficios/beneficios.component';
 
 
 @NgModule({
-  declarations: [FacilComponent, AseguraComponent, UneteComponent],
+  declarations: [FacilComponent, AseguraComponent, UneteComponent, BeneficiosComponent],
   imports: [
     CommonModule,
     FacilRoutingModule,
