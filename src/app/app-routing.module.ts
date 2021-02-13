@@ -13,6 +13,7 @@ import { ActuarialInformationComponent } from './pages/publicaciones/actuarial-i
 import { FacilComponent } from './pages/facil/facil.component';
 import { AseguraComponent } from './pages/facil/asegura/asegura.component';
 import {BeneficiosComponent } from './pages/facil/beneficios/beneficios.component';
+import {UneteComponent } from './pages/facil/unete/unete.component';
 import { InformesInstitucionalesComponent } from './pages/publicaciones/informes-institucionales/informes-institucionales.component';
 import { PresentacionesComponent } from './pages/publicaciones/presentaciones/presentaciones.component';
 import { MemorialesAnualesComponent } from './pages/publicaciones/memoriales-anuales/memoriales-anuales.component';
@@ -35,6 +36,7 @@ const routes: Routes = [
   { path: 'Facil', component: FacilComponent},
   { path: 'Asegura', component: AseguraComponent},
   { path: 'Beneficios', component: BeneficiosComponent},
+  { path: 'Unete', component: UneteComponent},
   // {
   //   path: 'OnpVirtual',
   //   component: OnpVirtualComponent,

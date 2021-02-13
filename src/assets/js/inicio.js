@@ -270,3 +270,15 @@ function showCarrusel2() {
   $('#carrusel-afiliados').hide();
   $("#carrusel-pensionistas").show();
 }
+
+function mostrar(elemento) {
+  this.elemento = elemento;
+  $(`.${this.elemento}`).show();
+  $("span.mostrar").hide();
+}
+
+function cerrar(elemento) {
+  this.elemento = elemento;
+  $(`.${this.elemento}`).hide();
+  $("span.mostrar").show();
+}
