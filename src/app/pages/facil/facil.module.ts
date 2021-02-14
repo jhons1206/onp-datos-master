@@ -11,10 +11,11 @@ import { AseguraComponent } from './asegura/asegura.component';
 import { UneteComponent } from './unete/unete.component';
 import { BeneficiosComponent } from './beneficios/beneficios.component';
 import { AfpComponent } from './afp/afp.component';
+import { FinanciamientoComponent } from './financiamiento/financiamiento.component';
 
 
 @NgModule({
-  declarations: [FacilComponent, AseguraComponent, UneteComponent, BeneficiosComponent, AfpComponent],
+  declarations: [FacilComponent, AseguraComponent, UneteComponent, BeneficiosComponent, AfpComponent, FinanciamientoComponent],
   imports: [
     CommonModule,
     FacilRoutingModule,
