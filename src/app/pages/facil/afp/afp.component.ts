@@ -12,6 +12,8 @@ export class AfpComponent implements OnInit {
 
   ngOnInit(): void {
 
+    (($) => { 
+
     if (window.matchMedia("(max-width: 768px)").matches) {
 
       $("#bonus-carrusel").slick({
@@ -57,10 +59,11 @@ export class AfpComponent implements OnInit {
               slidesToShow: 1
           }
           }
-      ]
-  });
-
-  }
+        ]
+    });
   }
 
+  })(jQuery);
+
+  }
 }
