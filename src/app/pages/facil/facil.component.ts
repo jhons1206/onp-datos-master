@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Params } from '@angular/router';
 import { AfiliadosServices } from 'src/app/services/afiliados.services';
 import { PensionistasServices } from 'src/app/services/pensionistas.services';
 declare var jQuery: any;
@@ -12,16 +13,130 @@ export class FacilComponent implements OnInit {
   TotalPensionista:number =0;
   TotalAfiliados:number =0;
   TotalTrasladados:number =0;
+  id:string="";
   // gallery: any[] = [];
   // gallery2: any[] = [];
   // gallery3: any[] = [];
 
   constructor(private afiliadosServices: AfiliadosServices,
     private pensionistaServices: PensionistasServices,
+    private activateRoute: ActivatedRoute,
     ) { }
 
   ngOnInit(): void {
+    this.activateRoute.params.subscribe((params: Params) => {
+      this.id = params['id'];
+      
 
+      (($) => {      
+        $(document).ready(() => {
+          if(this.id!=""){
+            //setPosition(this.id);
+            console.log(this.id);
+            $('#btn-'+this.id+'').click();
+          }  
+          $("#carrusel-afiliados").slick({
+            dots: false,
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            arrows: true,
+            autoplay: false,
+            responsive: [
+                {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                }
+                },
+                {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1
+                }
+                }
+              ]
+          });
+  
+          $("#carrusel-pensionistas").slick({
+            dots: false,
+            slidesToShow: 5,
+            slidesToScroll: 1,
+            arrows: true,
+            autoplay: false,
+            responsive: [
+                {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                }
+                },
+                {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1
+                }
+                }
+              ]
+          });
+  
+        });
+  
+          if (window.matchMedia("(max-width: 768px)").matches) {
+  
+            $("#carrusel-benefit").slick({
+              dots: false,
+              slidesToShow: 5,
+              slidesToScroll: 1,
+              arrows: true,
+              autoplay: false,
+              responsive: [
+                  {
+                  breakpoint: 1024,
+                  settings: {
+                      slidesToShow: 2,
+                      slidesToScroll: 2,
+                  }
+                  },
+                  {
+                  breakpoint: 768,
+                  settings: {
+                      slidesToShow: 1
+                  }
+                  }
+              ]
+          });
+  
+          $("#carrusel-family").slick({
+            dots: false,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            arrows: true,
+            autoplay: false,
+            responsive: [
+                {
+                breakpoint: 1024,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 2,
+                }
+                },
+                {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                }
+                }
+            ]
+        });
+  
+        }
+  
+      })(jQuery);
+
+
+    });
     // this.gallery = [
     //   {
     //     id: 1,
@@ -119,108 +234,7 @@ export class FacilComponent implements OnInit {
     //   },
     // ];
 
-    (($) => {      
-      $(document).ready(() => {
 
-        $("#carrusel-afiliados").slick({
-          dots: false,
-          slidesToShow: 5,
-          slidesToScroll: 1,
-          arrows: true,
-          autoplay: false,
-          responsive: [
-              {
-              breakpoint: 1024,
-              settings: {
-                  slidesToShow: 2,
-                  slidesToScroll: 2,
-              }
-              },
-              {
-              breakpoint: 768,
-              settings: {
-                  slidesToShow: 1
-              }
-              }
-            ]
-        });
-
-        $("#carrusel-pensionistas").slick({
-          dots: false,
-          slidesToShow: 5,
-          slidesToScroll: 1,
-          arrows: true,
-          autoplay: false,
-          responsive: [
-              {
-              breakpoint: 1024,
-              settings: {
-                  slidesToShow: 2,
-                  slidesToScroll: 2,
-              }
-              },
-              {
-              breakpoint: 768,
-              settings: {
-                  slidesToShow: 1
-              }
-              }
-            ]
-        });
-
-      });
-
-        if (window.matchMedia("(max-width: 768px)").matches) {
-
-          $("#carrusel-benefit").slick({
-            dots: false,
-            slidesToShow: 5,
-            slidesToScroll: 1,
-            arrows: true,
-            autoplay: false,
-            responsive: [
-                {
-                breakpoint: 1024,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 2,
-                }
-                },
-                {
-                breakpoint: 768,
-                settings: {
-                    slidesToShow: 1
-                }
-                }
-            ]
-        });
-
-        $("#carrusel-family").slick({
-          dots: false,
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          arrows: true,
-          autoplay: false,
-          responsive: [
-              {
-              breakpoint: 1024,
-              settings: {
-                  slidesToShow: 2,
-                  slidesToScroll: 2,
-              }
-              },
-              {
-              breakpoint: 768,
-              settings: {
-                  slidesToShow: 1,
-              }
-              }
-          ]
-      });
-
-      }
-
-    })(jQuery);
 
 
     

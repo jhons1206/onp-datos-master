@@ -324,12 +324,13 @@
     
 </section>
 
+ 
 <section class="menu-columns">
-    <ul>
-      <li><a onclick="setPosition('ventajas')">Tus ventajas y facilidades</a></li>
-      <li><a onclick="setPosition('afiliarte')">Afiliate al SNP</a></li>
-      <li><a onclick="setPosition('opciones')">Tus opciones de jubilación</a></li>
-      <li><a onclick="setPosition('beneficios')">Tus beneficios</a></li>
-      <li><a onclick="setPosition('cifras')">Cifras del SNP</a></li>
-    </ul>
+  <ul> 
+    <li><a [routerLink]="['/Facil','ventajas']">Tus ventajas y facilidades</a></li>
+    <li><a [routerLink]="['/Facil','afiliarte']">Afiliate al SNP</a></li>
+    <li><a [routerLink]="['/Facil','opciones']">Tus opciones de jubilación</a></li>
+    <li><a [routerLink]="['/Facil','beneficios']">Tus beneficios</a></li>
+    <li><a [routerLink]="['/Facil','cifras']">Cifras del SNP</a></li>
+  </ul>
 </section>

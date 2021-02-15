@@ -36,9 +36,11 @@ const routes: Routes = [
   { path: 'Pensionistas', component: PensionistasComponent},
   { path: 'Afiliados', component: AfiliadosComponent},
   { path: 'Facil', component: FacilComponent},
+  { path: 'Facil/:id', component: FacilComponent,canActivate: []},
   { path: 'Asegura', component: AseguraComponent},
   { path: 'Beneficios', component: BeneficiosComponent},
   { path: 'Unete', component: UneteComponent},
+  //{ path: 'Unete', loadChildren:()=>import('./pages/facil/unete/unete.component').then(m=>m.UneteComponent)},
   { path: 'Afp', component: AfpComponent},
   { path: 'Financiamiento', component: FinanciamientoComponent},
   // {
