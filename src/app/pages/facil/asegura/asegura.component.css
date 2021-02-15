@@ -369,7 +369,7 @@ p {
 
 .calc-pension {
     background-image: url(../../../../assets/images/facil/top-rounded-corners.svg);
-    background-size: contain;
+    background-size: 100%;
     background-repeat: no-repeat;
     padding: 2rem;
     text-align: center;
@@ -530,7 +530,7 @@ p {
     
     .calc-pension {
         background-image: url(../../../../assets/images/facil/top-rounded-corners.svg);
-        background-size: contain;
+        background-size: 100%;
         background-repeat: no-repeat;
         padding: 2rem;
         text-align: center;

@@ -100,7 +100,7 @@ p {
 @media screen and (min-width: 1024px) {
 
     .menu-columns {
-        padding: 4rem 1rem 2rem;
+        padding: 0 2.6rem 2.5rem;
         width: var(--max-width);
         margin: 0 auto;
     }
@@ -273,7 +273,7 @@ p {
     color: var(--white-color);
     text-align: center;
     padding: 0 0 2rem;
-    margin: 0 1rem 3rem;
+    margin: 0 1rem 1rem;
 }
 
 .complementary__content {

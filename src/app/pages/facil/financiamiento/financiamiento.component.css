@@ -49,6 +49,73 @@ p {
     line-height: 1.6;
 }
 
+/* >>>>>>>>>>>>>>> Components <<<<<<<<<<<<<<<< */
+
+/* Menu Columns */
+.menu-columns {
+    padding: 1.5rem 1rem;
+}
+
+.menu-columns ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu-columns li {
+    padding: 0.8rem 1rem;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 33%;
+    height: 40px;
+    line-height: 0.9;
+    border-left: thin solid var(--second-color);
+    border-right: thin solid var(--second-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu-columns li:nth-child(even) {
+    border-right: 0;
+}
+
+.menu-columns li:first-child {
+    border-right: 0;
+}
+
+.menu-columns li a {
+    color: var(--second-color);
+    text-decoration: none;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .menu-columns {
+        padding: 4rem 2.5rem 3rem;
+        width: var(--max-width);
+        margin: 0 auto;
+    }
+
+    .menu-columns ul {
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+    
+    .menu-columns ul li:nth-child(3) {
+        border-right: 0;
+    }
+
+}
+
 /* >>>>>>>>>>>>>>> Utilities <<<<<<<<<<<<<<<< */
 .bold {
     font-weight: bold;
@@ -207,7 +274,7 @@ a.first-link :hover {
 .quantity {
     background-color: var(--second-color);
     padding: 2rem 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 0;
     color: var(--white-color);
     text-align: center;
 }
@@ -253,6 +320,10 @@ a.first-link :hover {
 
 .quantity__pensions img {
     width: 85%;
+ }
+
+ .rounded-footer {
+     margin-top: -1px;
  }
 
  @media screen and (min-width: 1024px) {
@@ -342,8 +413,8 @@ a.first-link :hover {
     
     .quantity {
         background-color: var(--second-color);
-        padding: 2rem 1rem;
-        margin-bottom: 2rem;
+        padding: 2rem 1rem 0;
+        margin-bottom: 0;
         color: var(--white-color);
         text-align: center;
     }
@@ -362,7 +433,7 @@ a.first-link :hover {
     .quantity h4 {
         font-size: 1.2rem;
         font-weight: bold;
-        padding: 3rem 1rem 1rem;
+        padding: 3rem 1rem 0;
         line-height: 1.1;
         width: 40%;
         margin: 0 auto;
