@@ -58,6 +58,9 @@ export class AfiliadosComponent implements OnInit {
         
         if(id==""){
           (($) => {
+            $(document).ready(() => {
+              $("html, body").stop().animate({scrollTop: 0,},0);
+            });
             Map= AmCharts.makeChart("chartdiv", {
               "type": "map",
               "theme": "dark",

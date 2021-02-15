@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { InfotecaService } from 'src/app/services/infoteca.service'; 
 import { NgxSpinnerService } from "ngx-spinner";
 import { environment } from '../../../../environments/environment';
+declare var jQuery: any;
 @Component({
   selector: 'app-presentaciones',
   templateUrl: './presentaciones.component.html',
@@ -47,6 +48,11 @@ export class PresentacionesComponent implements OnInit {
       }
     );
     this.spinnerService.hide();
+    (($) => {   
+      $(document).ready(() => {
+        $("html, body").stop().animate({scrollTop: 0,},0);
+      });
+    })(jQuery);   
   }
   paginar(paginacion: any) { 
     let actual = this.cantidadPorPagina * (paginacion-1);

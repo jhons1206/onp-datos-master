@@ -3,6 +3,7 @@ import { InfotecaService } from 'src/app/services/infoteca.service';
 import { Router, ActivatedRoute, Params } from '@angular/router';
 import { NgxSpinnerService } from "ngx-spinner";
 import { environment } from '../../../../environments/environment';
+declare var jQuery: any;
 @Component({
   selector: 'app-estudios-previsionales',
   templateUrl: './estudios-previsionales.component.html',
@@ -55,7 +56,12 @@ export class EstudiosPrevisionalesComponent implements OnInit {
         }
       );
       this.spinnerService.hide();
-    });    
+    });
+    (($) => {   
+      $(document).ready(() => {
+        $("html, body").stop().animate({scrollTop: 0,},0);
+      });
+    })(jQuery);    
   }
   paginar(paginacion: any) { 
     let actual = this.cantidadPorPagina * (paginacion-1);
