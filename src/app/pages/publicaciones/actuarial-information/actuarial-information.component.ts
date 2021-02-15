@@ -44,8 +44,6 @@ export class ActuarialInformationComponent implements OnInit {
             this.ListResult=result.filter((x: { typeCode: string; })=>x.typeCode==this.id);
             this.Title=this.ListResult[0].type;
             var subtitle=(((this.Title.replace(' ','-')).replace('á','a')).replace('í','i')).replace('é','e').replace(' ','-');
-            console.log(this.Title);
-            console.log(subtitle);
             this.urlFiles=environment.baseUrlFiles+'Informacion-actuarial/'+subtitle+'/';
             this.ListActuarial = this.ListResult[0].data;
             this.totalItems = this.ListActuarial.length;

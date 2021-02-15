@@ -13,7 +13,9 @@ export class AfpComponent implements OnInit {
   ngOnInit(): void {
 
     (($) => { 
-
+      $(document).ready(() => {
+        $("html, body").stop().animate({scrollTop: 0,},0);
+      });
     if (window.matchMedia("(max-width: 768px)").matches) {
 
       $("#bonus-carrusel").slick({

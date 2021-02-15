@@ -267,8 +267,10 @@ function showCarrusel1() {
 }
 
 function showCarrusel2() {
+  $("#carrusel-pensionistas .slick-next").click();
   $('#carrusel-afiliados').hide();
   $("#carrusel-pensionistas").show();
+  
 }
 
 function mostrar(elemento) {

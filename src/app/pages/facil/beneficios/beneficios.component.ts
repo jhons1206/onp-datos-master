@@ -14,7 +14,7 @@ export class BeneficiosComponent implements OnInit {
 
     (($) => {   
 
-      if (window.matchMedia("(max-width: 768px)").matches) {
+    if (window.matchMedia("(max-width: 768px)").matches) {
 
         $("#increases-carrusel").slick({
           dots: false,
@@ -60,12 +60,12 @@ export class BeneficiosComponent implements OnInit {
             }
             }
         ]
+    });         
+    }
+    $(document).ready(() => {
+      $("html, body").stop().animate({scrollTop: 0,},0);
     });
 
-
-
-    }
-    
     })(jQuery);
 
   }

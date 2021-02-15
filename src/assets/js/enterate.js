@@ -24,19 +24,23 @@ function openTabs(evt, cityName) {
 
 function interval() {
   //setInterval(document.getElementById("defaultOpen").click(), 5000);
-}
-
-function setPosition(item) {
-  var position = document.getElementById(item).offsetTop;
+} 
+function setPosition(item) { 
+  var position = document.getElementById(item).offsetTop; 
+  console.log(document.getElementById(item));
+  console.log(position);
+  var poss = $("#"+item).position();
+  console.log(poss.left);
+  console.log(poss.top); 
   var off = 100;
   if (item == "cifras") {
     off = 590;
-  }
+  } 
   $("html, body")
     .stop()
     .animate(
       {
-        scrollTop: position - off,
+        scrollTop: parseInt(position) - off,
       },
       1500
     );

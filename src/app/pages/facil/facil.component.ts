@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Inject, OnInit,OnDestroy  } from '@angular/core';
 import { ActivatedRoute, Params } from '@angular/router';
 import { AfiliadosServices } from 'src/app/services/afiliados.services';
-import { PensionistasServices } from 'src/app/services/pensionistas.services';
+import { PensionistasServices } from 'src/app/services/pensionistas.services'; 
 declare var jQuery: any;
+//declare function setPosition(id:any):any;
 @Component({
   selector: 'app-facil',
   templateUrl: './facil.component.html',
   styleUrls: ['./facil.component.css']
 })
 
-export class FacilComponent implements OnInit {
+export class FacilComponent implements OnInit,OnDestroy  {
   TotalPensionista:number =0;
   TotalAfiliados:number =0;
   TotalTrasladados:number =0;
@@ -17,24 +18,22 @@ export class FacilComponent implements OnInit {
   // gallery: any[] = [];
   // gallery2: any[] = [];
   // gallery3: any[] = [];
-
+  interval: any;
+  confirmRender:boolean=false;
   constructor(private afiliadosServices: AfiliadosServices,
     private pensionistaServices: PensionistasServices,
-    private activateRoute: ActivatedRoute,
-    ) { }
-
+    private activateRoute: ActivatedRoute, 
+    ) {  }
+     
+    
   ngOnInit(): void {
     this.activateRoute.params.subscribe((params: Params) => {
       this.id = params['id'];
-      
+      console.log(this.id);
 
       (($) => {      
         $(document).ready(() => {
-          if(this.id!=""){
-            //setPosition(this.id);
-            console.log(this.id);
-            $('#btn-'+this.id+'').click();
-          }  
+          //$("html, body").stop().animate({scrollTop: 0,},0);
           $("#carrusel-afiliados").slick({
             dots: false,
             slidesToShow: 5,
@@ -80,10 +79,24 @@ export class FacilComponent implements OnInit {
                 }
               ]
           });
-  
+          
         });
-  
-          if (window.matchMedia("(max-width: 768px)").matches) {
+        if(this.id!=""){
+          //setPosition(this.id);
+          this.interval = setInterval(() => {
+            if(!this.confirmRender){
+            console.log('fffffffff');
+            $('#btn-'+this.id+'').click(); 
+            this.confirmRender=true;
+            }
+          }, 1000);
+          
+          //window.attachEvent('onload',$('#btn-'+this.id+'').click());
+          //window.onload = $('#btn-'+this.id+'').click();
+          //$("body").attr("onload", "$('#btn-"+this.id+"').click()");
+          //$("body").attr("onload", "alert('gggg')");
+        } 
+        if (window.matchMedia("(max-width: 768px)").matches) {
   
             $("#carrusel-benefit").slick({
               dots: false,
@@ -272,5 +285,7 @@ export class FacilComponent implements OnInit {
 
 
   }
-
+  ngOnDestroy() { 
+    clearInterval(this.interval);
+  }
 }

@@ -14,7 +14,7 @@ export class AseguraComponent implements OnInit {
 
     (($) => {      
       $(document).ready(() => {
-
+        $("html, body").stop().animate({scrollTop: 0,},0);
         $("#carrusel-afiliados").slick({
           dots: false,
           slidesToShow: 5,
