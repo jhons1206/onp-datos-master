@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { AfiliadosServices } from 'src/app/services/afiliados.services';  
 import { NgxSpinnerService } from "ngx-spinner";
+import { Router } from '@angular/router';
 declare var jQuery: any;
 declare var AmCharts: any; 
 var Map: any; 
@@ -24,7 +25,8 @@ export class AfiliadosComponent implements OnInit {
   PorcentajeIndependientes:number =0;
   subTitle:string="A nivel nacional";
   constructor(private afiliadosServices: AfiliadosServices, 
-    private spinnerService: NgxSpinnerService
+    private spinnerService: NgxSpinnerService,
+    private router: Router
     ) { }
 
   ngOnInit(): void {
@@ -131,6 +133,9 @@ export class AfiliadosComponent implements OnInit {
       this.subTitle="A nivel nacional";
     }
   } 
+  onChangeCifras(){ 
+    this.router.navigate(['/Pensionistas']);
+  }
   onChangeDepartametPersonality(){
     var country = Map.getObjectById("DPTO_"+this.iddepartament); 
     Map.selectObject(country);

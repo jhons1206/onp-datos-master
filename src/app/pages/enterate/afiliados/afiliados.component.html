@@ -13,6 +13,13 @@
     <article class="map-region spacing-y pb-0">
         <div id="chartdiv" style="height: 550px; overflow: hidden; text-align: left;">
         </div>
+        <h3 class="section-title">Cifras</h3>
+        <select    
+            name="IdddlCifras" id="IdddlCifras" (change)='onChangeCifras()' >
+            <option   selected >Afiliados</option>
+            <option   >Pensionistas y Beneficiarios</option>
+            
+          </select>
         <h3 class="section-title">Departamento</h3>
         <select   (change)='onChangeDepartametPersonality()' [(ngModel)]="iddepartament" name="IdddlDepartamet" id="IdddlDepartamet" >
             <option value="" selected>--Todos--</option>
