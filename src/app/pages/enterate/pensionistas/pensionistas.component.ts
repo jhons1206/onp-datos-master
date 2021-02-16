@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { PensionistasServices } from 'src/app/services/pensionistas.services';
 import { NgxSpinnerService } from "ngx-spinner";
+import { Router } from '@angular/router';
 declare var jQuery: any; 
 declare var AmCharts: any; 
 var Map: any; 
@@ -36,7 +37,8 @@ export class PensionistasComponent implements OnInit {
   showTitle:boolean=true;
   static iddepartament: any;
   constructor(private pensionistaServices: PensionistasServices,
-  private spinnerService: NgxSpinnerService) { }
+  private spinnerService: NgxSpinnerService,
+  private router: Router,) { }
 
   ngOnInit(): void {
     this.spinnerService.show();
@@ -144,7 +146,9 @@ export class PensionistasComponent implements OnInit {
       });
       
   }
-   
+  onChangeCifras(){
+    this.router.navigate(['/Afiliados']);
+  }
   onChangeDepartamet() { 
         
     this.spinnerService.show();

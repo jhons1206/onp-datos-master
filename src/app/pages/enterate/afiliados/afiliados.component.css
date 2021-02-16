@@ -225,7 +225,7 @@ p {
     cursor: pointer;
     transition: all 0.5s;
 }
-.map-region > svg {
+.map-region > #chartdiv {
     display: none;
 }
 
@@ -366,7 +366,7 @@ p {
         padding: 0 1.5rem 0 0;
     }
 
-    .map-region > svg {
+    .map-region > #chartdiv {
         display: block;
     }
 
