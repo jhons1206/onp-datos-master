@@ -328,6 +328,10 @@ a.first-link :hover {
 
  @media screen and (min-width: 1024px) {
 
+    .rounded-footer {
+        margin-top: 0;
+    }
+
     .banner__detail {
         flex-direction: row;
         justify-content: flex-start;

@@ -28,7 +28,7 @@ function showletter1() {
   t4.style.visibility = "hidden";
 
   parrafo.innerHTML =
-    "Conoce los conceptos, ventajas y beneficios del Sistema Nacional de Pensiones de forma clara y sencilla.";
+    "Conoce las ventajas y beneficios del Sistema Nacional de Pensiones.";
 }
 
 function showletter2() {
@@ -55,7 +55,7 @@ function showletter2() {
   t4.style.visibility = "hidden";
 
   parrafo.innerHTML =
-    "Protege tu futuro y el de tus familiares en caso de accidentes de trabajo o enfermedades adquiridas en tu centro de labores.";
+    "Protege tu futuro y el de tus familiares en caso de accidente de trabajo o enfermedad adquirida en tu centro de labores.";
 }
 
 function showletter3() {
@@ -82,7 +82,7 @@ function showletter3() {
   t4.style.visibility = "hidden";
 
   parrafo.innerHTML =
-    "Las y los ex y actuales trabajadoras/es pesqueras y pesqueros tienen derecho a una pensión que también puede beneficiar a sus familiares.";
+    "Si eres o fuiste trabajadora pesquera o trabajador pesquero, tienes derecho a una pensión que también puede beneficiar a tus familiares.";
 }
 
 function showletter4() {
@@ -109,7 +109,7 @@ function showletter4() {
   t4.style.visibility = "visible";
 
   parrafo.innerHTML =
-    "Garantizamos el pago de pensiones; por esta razón, el Estado nos encarga gestionar pagos y pensiones de otras instituciones públicas.";
+    "Garantizamos el pago de pensiones.<br>Por ello, el Estado nos encarga gestionar los pagos y las pensiones de otras instituciones públicas.";
 }
 
 function showCard1() {

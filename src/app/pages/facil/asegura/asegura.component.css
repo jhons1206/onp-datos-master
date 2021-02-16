@@ -358,6 +358,12 @@ p {
     padding: 0.7rem 2rem;
 }
 
+.retirement-pension h2 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 0.5rem 0 1rem;
+}
+
 .retirement-pension p {
     line-height: 1.3;
 }
@@ -569,6 +575,13 @@ p {
         bottom: 0;
         left: 21%;
         width: 40%;
+    }
+
+    .retire__content a {
+        color: var(--white-color);
+        line-height: 0.5;
+        font-size: 0.9rem;
+        font-weight: bold;
     }
     
     .retire__content h2 {
