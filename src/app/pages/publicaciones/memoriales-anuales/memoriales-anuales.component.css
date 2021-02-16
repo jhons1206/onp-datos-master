@@ -64,7 +64,12 @@ p {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1.2rem 0;
+    padding: 1.2rem 0;   
+}
+
+.header-page__wrapper {
+    background-image: url(../../../../assets/images/facil/bg-top-infoteca.png);
+    background-repeat: repeat-y;
 }
 
 .header-page__content img {
@@ -216,18 +221,19 @@ ul.top-menu li a:hover {
 
 .card-download__wrapper {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    border-bottom: 1.5px solid var(--second-color);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-bottom: 2px solid var(--second-color);
     padding-bottom: 0.5rem;
 }
 
 .card-download__details {
     font-weight: 400;
+    padding-bottom: 2rem;
 }
 
 .card-download__icon {
-    padding-left: 1rem;
     text-align: center;
     display: flex;
     flex-direction: column;
