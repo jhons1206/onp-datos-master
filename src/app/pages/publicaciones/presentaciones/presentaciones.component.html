@@ -5,8 +5,24 @@
     <ul class="top-menu">
         <li><a [routerLink]="['/MemorialesAnuales']">Memorias Anuales</a></li>
         <li><a [routerLink]="['/Presentaciones']">Presentaciones</a></li>
-        <li><a [routerLink]="['/InformesInstitucionales/001']">Informes Institucionales</a></li>
-        <li><a [routerLink]="['/ActuarialInformation/001']">Información Actuarial</a></li>
+        <li class="dropdown">
+            <a [routerLink]="['/InformesInstitucionales/001']">Informes Institucionales <small>▼</small></a>
+            <div class="dropdown__content">
+                <a [routerLink]="['/InformesInstitucionales/001']">SNP</a>
+                <a [routerLink]="['/InformesInstitucionales/002']">Regímenes pesqueros</a>
+                <a [routerLink]="['/InformesInstitucionales/003']">Pagos por encargo</a>
+                <a [routerLink]="['/InformesInstitucionales/004']">Reforma previsional</a>
+                <a [routerLink]="['/InformesInstitucionales/005']">Otros temas</a>
+            </div>
+        </li>
+        <li class="dropdown">
+            <a [routerLink]="['/ActuarialInformation/001']">Información Actuarial <small>▼</small></a>
+            <div class="dropdown__content">
+                <a [routerLink]="['/ActuarialInformation/001']">Cálculos DL 19990</a>
+                <a [routerLink]="['/ActuarialInformation/002']">Cálculo Ley 30003</a>
+                <a [routerLink]="['/ActuarialInformation/003']">Guía Técnica</a>
+            </div>
+        </li>
     </ul>
 </aside>
 <section class="header-page" >
