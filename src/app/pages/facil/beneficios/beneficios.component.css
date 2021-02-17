@@ -181,6 +181,10 @@ p {
 }
 
 /* >>>>>>>>>>>>>>> SITE <<<<<<<<<<<<<<<< */
+.banner {
+    padding-top: 46.38px;
+}
+
 .banner__wrapper {
     position: relative;
     background-color: var(--bg-color-banner);

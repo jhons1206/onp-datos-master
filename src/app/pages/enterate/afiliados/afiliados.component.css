@@ -5,7 +5,6 @@
 
 /* >>>>>>>>>>>>>>> Reset <<<<<<<<<<<<<<< */
 a {
-    color: var(--link-color);
     transition: all 0.5s ease-out;
 }
 
@@ -122,6 +121,7 @@ p {
 
 /* *********** -> Hero Image *********** */
 .hero-image {
+    padding-top: 46.38px;
     background-image: var(--hero-image);
     background-repeat: no-repeat;
     background-size: cover;
@@ -329,6 +329,10 @@ p {
  
 @media screen and (min-width: 768px) {
 
+    .hero-image {
+        padding-top: 53.59px;
+    }
+
     .hero-image-title {
         font-size: 4.5vw;
     }
@@ -347,6 +351,10 @@ p {
 }
 
 @media screen and (min-width: 1024px) { 
+
+    .hero-image {
+        padding-top: 53.59px;
+    }
 
     .hero-image-opacity {
         min-height: 22vh;
