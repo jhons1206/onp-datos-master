@@ -264,13 +264,16 @@ function toogleMenu2() {
 function showCarrusel1() {
   $('#carrusel-afiliados').show();
   $("#carrusel-pensionistas").hide();
+  $('.title-afiliado').show();
+  $('.title-pensionista').hide();
 }
 
 function showCarrusel2() {
   $("#carrusel-pensionistas .slick-next").click();
   $('#carrusel-afiliados').hide();
   $("#carrusel-pensionistas").show();
-  
+  $('.title-afiliado').hide();
+  $('.title-pensionista').show();
 }
 
 function mostrar(elemento,elemostrar) {

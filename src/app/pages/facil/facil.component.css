@@ -873,7 +873,7 @@ ul.top-menu li a:hover {
     }
 
     .advantage__p2 {
-        display: none;
+        display: none !important;
     }
 
     .advantage__carrusel {

@@ -24,7 +24,7 @@ import { EstudiosPrevisionalesComponent } from './pages/publicaciones/estudios-p
 const routes: Routes = [
   { path: '', redirectTo: '/Inicio', pathMatch: 'full' },
   { path: 'Inicio',component: InicioComponent,},
-  { path: 'Enterate',component: EnterateComponent, },
+  //{ path: 'Enterate',component: EnterateComponent, },
   { path: 'DatosAbiertos', component: DatosAbiertosComponent, },
   { path: 'Publicaciones',component: PublicacionesComponent,},
   { path: 'ActuarialInformation/:id',component: ActuarialInformationComponent,canActivate: []},

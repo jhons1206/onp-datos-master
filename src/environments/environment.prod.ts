@@ -1,6 +1,6 @@
 export const environment = {
   production: true,
-  baseUrlApi:'http://appvirtualqa.onp.gob.pe/wsEntereateONP/api/',
+  baseUrlApi:'https://onpdatos.pe/wsOnpdatos/api/',
   baseUrlJson:'../../../../assets/resources/',
-  baseUrlFiles:'http://172.31.31.140/onpfiles/'
+  baseUrlFiles:'https://onpdatos.pe/onpfiles/'
 };
