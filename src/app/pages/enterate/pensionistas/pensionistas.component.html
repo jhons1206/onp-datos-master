@@ -43,8 +43,8 @@
         <h3 class="section-title">Cifras</h3>
         <select    
             name="IdddlCifras" id="IdddlCifras"  (change)='onChangeCifras()' >
-            <option selected>Pensionistas y Beneficiarios</option>
-            <option >Afiliados</option>
+            <option selected>Pensionistas y Beneficiarias/os</option>
+            <option >Afiliadas y afiliados</option>
           </select>
         <h3 class="section-title">Departamento</h3>        
         <select   (change)='onChangeDepartametPersonality()' [(ngModel)]="iddepartament" name="IdddlDepartamet" id="IdddlDepartamet" >
@@ -56,10 +56,10 @@
     <article class="pensioners-details">
         <h2 class="section-title pb-0">{{TitleDepartemento}}</h2>
         <div class="total-pensioners spacing-y">                                     
-            <h3 *ngIf="showTitle">A nivel nacional</h3>
+            <h3 *ngIf="showTitle" >A nivel nacional</h3>
             <div class="">
                 <img src="../../../../assets/images/pensionistas.svg" alt="Pensionistas">                
-                <h4 class="total-indicator">{{TotalGeneral | number:'1.0-0'}}</h4>    
+                <h4 class="total-indicator" data-content="A nivel nacional" >{{TotalGeneral | number:'1.0-0'}}</h4>    
             </div>
         </div>
         <div class="indicator-details spacing-y pb-0">
@@ -138,6 +138,16 @@
             <div>
                 <p>Pensión de Ascendencia</p>
             </div>
+        </div>
+        <br/>
+        <div class="advantage__p1 pt-0" style="margin-top: 15px;">
+            <div>
+                <p style="color: var(--second-color);font-size: 13px;">* {{FechaCorte}}</p>
+            </div>
+            <div>
+                <p style="color: var(--second-color);font-size: 13px;" >* Estadísticas calculadas sobre los datos válidos.</p>
+            </div>
+            
         </div>
     </article>
 </section>

@@ -36,6 +36,7 @@ export class PensionistasComponent implements OnInit {
   TotalAscendencia:number =0;
   showTitle:boolean=true;
   static iddepartament: any;
+  FechaCorte: string = "";
   constructor(private pensionistaServices: PensionistasServices,
   private spinnerService: NgxSpinnerService,
   private router: Router,) { }
@@ -59,6 +60,7 @@ export class PensionistasComponent implements OnInit {
         else {        
           this.dataTotalpensionitas = result.ResultTotal;
           this.TotalGeneral=this.dataTotalpensionitas[0].Total;
+          this.FechaCorte=this.dataTotalpensionitas[0].FechaCorte;
           this.TotalPensionista=this.dataTotalpensionitas[0].TotalPensionista;
           this.TotalBeneficiario=this.dataTotalpensionitas[0].TotalBeneficiario;
 
@@ -162,6 +164,16 @@ export class PensionistasComponent implements OnInit {
       this.showTitle=true;
     }
      
+  (($) => {   
+    $(document).ready(() => {
+      if(this.TitleDepartemento=="PENSIONISTAS Y BENEFICIARIAS/OS"){
+      $(".total-pensioners .total-indicator").attr('data-content','A nivel nacional');
+      }
+      else {
+        $(".total-pensioners .total-indicator").attr('data-content','');
+      }
+    });
+  })(jQuery);
   }
   onChangeDepartametPersonality(){
     var country = Map.getObjectById("DPTO_"+this.iddepartament); 

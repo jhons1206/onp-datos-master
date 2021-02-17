@@ -43,8 +43,8 @@
         <h3 class="section-title">Cifras</h3>
         <select    
             name="IdddlCifras" id="IdddlCifras" (change)='onChangeCifras()' >
-            <option   selected >Afiliados</option>
-            <option   >Pensionistas y Beneficiarios</option>
+            <option   selected >Afiliados y Afiliados</option>
+            <option   >Pensionistas y Beneficiarias/os</option>
             
           </select>
         <h3 class="section-title">Departamento</h3>
@@ -60,7 +60,7 @@
             <h3>{{subTitle}}</h3>
             <div>
                 <img src="../../../../assets/images/pensionistas.svg" alt="Afiliados">                
-                <h4 class="total-indicator">{{TotalGeneral | number:'1.0-0'}}</h4>    
+                <h4 class="total-indicator" data-content="A nivel nacional">{{TotalGeneral | number:'1.0-0'}}</h4>    
             </div>
         </div>
         <div class="indicator-details spacing-y pb-0">
@@ -109,6 +109,15 @@
                 <div class="progres-bar second-bar" style="--width-second-bar: {{PorcentajeIndependientes| number:'1.0-2'}}%; --image-progres-bar: url(../../../../assets/images/independientes.svg); --bottom-image-position: -0.2rem;">{{PorcentajeIndependientes| number:'1.0-2'}}%</div>
             </div>
         </div>  
+        <div class="advantage__p1 pt-0" style="margin-top: 30px;">
+            <div>
+                <p style="color: var(--second-color);font-size: 13px;">* {{FechaCorte}}</p>
+            </div>
+            <div>
+                <p style="color: var(--second-color);font-size: 13px;" >* Estadísticas calculadas sobre los datos válidos.</p>
+            </div>
+            
+        </div>
     </article>
 </section>
 
