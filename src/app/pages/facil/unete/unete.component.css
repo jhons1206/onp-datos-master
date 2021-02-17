@@ -2,6 +2,10 @@
 /* Definidas de forma global en styles.css */
 
 /* >>>>>>>>>>>>>>> Reset <<<<<<<<<<<<<<< */
+.menu-top-header  .active {
+    background-color: var(--second-color);
+    color: var(--white-color);
+}
 a {
     transition: all 0.5s;
 }
