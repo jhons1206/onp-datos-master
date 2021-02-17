@@ -8,6 +8,7 @@
         <li><a onclick="setPosition('opciones')">Tus opciones de jubilación</a></li>
         <li><a onclick="setPosition('beneficios')">Tus beneficios</a></li>
         <li><a onclick="setPosition('cifras')">Cifras del SNP</a></li>
+        <li><a onclick="setPosition('financiamiento')">Financiamiento</a></li>
          
     </ul>
 </aside>
@@ -54,9 +55,14 @@
           id="btn-cifras"
           onclick="setPosition('cifras')"
           class="onp-color-tertiary"
-          >Cifras del SNP</span
-          
-        > 
+          >Cifras del SNP</span> 
+      </div>
+      <div class="onp-submenu-item">         
+        <span
+          id="btn-financiamiento"
+          onclick="setPosition('financiamiento')"
+          class="onp-color-tertiary"
+          >Financiamiento</span> 
       </div>
     </div>
 </div>
@@ -471,7 +477,7 @@
     </div>
 </section>
 
-<section class="bonus text-center">
+<section class="bonus text-center" id="afp">
     <picture>
         <source media="(max-width: 768px)" srcset="../../../assets/images/facil/bonos-snp.png">
         <source media="(min-width: 1024px)" srcset="../../../assets/images/facil/bonos-desktop.png">
@@ -526,7 +532,7 @@
     </div>
 </section>
 
-<section class="financing section" >
+<section class="financing section" id="financiamiento">
     <img loading="lazy" src="../../../assets/images/facil/financiamiento-snp.png" alt="Financiamiento SNP">
     <div id="cifras">
         <h3>Financiamiento del SNP</h3>
