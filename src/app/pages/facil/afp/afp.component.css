@@ -262,6 +262,7 @@ a.first-link :hover {
 .bonus__content a {
     font-weight: bold;
     color: var(--second-color);
+    font-size: 0.9rem;
 }
 
 @media screen and (min-width: 1024px) {

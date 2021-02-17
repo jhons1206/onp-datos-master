@@ -38,9 +38,12 @@
  
 <section class="actuarial-info section"  >   
         <article class="card-download" *ngFor="let item of ListPresentacionesPaginate" >
+            <h4 class="onp-info-title onp-color-primary">Situación actual de la Oficina de Normalización Previsional (ONP) y perspectivas ante la <span class="texto-oculto">reforma del sistema de pensiones del país</span><span class="texto-oculto ver-menos" onclick="cerrar('texto-oculto');"> ver menos</span><span class="mostrar ver-menos" onclick="mostrar('texto-oculto');"> ...ver más</span></h4><br>
             <h4 class="onp-info-title onp-color-primary" style="margin-bottom: 10px;">{{item.title}}</h4>
             <div class="card-download__wrapper">               
                 <div class="card-download__details">
+                    <p>Esta presentación se expuso ante la comisión Especial Multipartidaria del Congreso de la República, encargada de evaluar, <span class="texto-oculto">diseñar y proponer el proyecto de ley para la reforma integral del Sistema de Pensiones Peruano. Aquí se explican las condiciones y sostenibilidad que debería tomar en cuenta la reforma de pensiones.</span><span class="texto-oculto ver-menos" onclick="cerrar('texto-oculto');"> ver menos</span><span class="mostrar ver-menos" onclick="mostrar('texto-oculto');"> ...ver más</span>
+                    </p>
                     {{item.description}}
                 </div>                
                 <div class="card-download__details card-date">

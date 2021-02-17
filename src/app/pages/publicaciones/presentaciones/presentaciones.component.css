@@ -237,6 +237,15 @@ ul.top-menu li a:hover {
     max-width: var(--max-width);
 }
 
+.texto-oculto {
+    display: none;
+}
+
+.ver-menos, .ver-mas {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
 /* *********** Site Styles *********** */
 .actuarial-info {
     padding: 1rem;
