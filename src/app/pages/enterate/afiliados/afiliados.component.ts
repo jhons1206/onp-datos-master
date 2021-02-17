@@ -24,6 +24,7 @@ export class AfiliadosComponent implements OnInit {
   PorcentajeDependientes:number =0;
   PorcentajeIndependientes:number =0;
   subTitle:string="A nivel nacional";
+  FechaCorte:string="";
   constructor(private afiliadosServices: AfiliadosServices, 
     private spinnerService: NgxSpinnerService,
     private router: Router
@@ -47,7 +48,7 @@ export class AfiliadosComponent implements OnInit {
         else {
           this.dataTotalAfiliados = result.ResultTotal;
         this.TotalGeneral=this.dataTotalAfiliados[0].Total;
-
+        this.FechaCorte=this.dataTotalAfiliados[0].FechaCorte;
         this.PorcentajeMujer=result.ResultGeneroTotal.filter((x: { Genero: string; })=>x.Genero=='Mujeres')[0].TotalPorcentaje;
         this.PorcentajeHombre=result.ResultGeneroTotal.filter((x: { Genero: string; })=>x.Genero=='Hombres')[0].TotalPorcentaje;
  
