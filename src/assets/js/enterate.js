@@ -27,8 +27,6 @@ function interval() {
 } 
 function setPosition(item) { 
   var position = document.getElementById(item).offsetTop; 
-  console.log(document.getElementById(item));
-  console.log(position);
    
   var off = 100;
   if (item == "cifras") {

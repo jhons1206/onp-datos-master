@@ -37,11 +37,19 @@
 </section>
  
 <section class="actuarial-info section"  >   
-        <article class="card-download" *ngFor="let item of ListPresentacionesPaginate" >
-            <h4 class="onp-info-title onp-color-primary" style="margin-bottom: 10px;">{{item.title}}</h4>
+        <article class="card-download" *ngFor="let item of ListPresentacionesPaginate" >            
+            <h4 class="onp-info-title onp-color-primary" style="margin-bottom: 10px;">{{item.title | slice:0:55}} 
+                <span class="texto-oculto texto-oculto{{item.id}}">{{item.title | slice:55: item.title.length}}</span>
+                <span class="texto-oculto texto-oculto{{item.id}} ver-menos" (click)="cerrarTs('texto-oculto'+item.id,'mostrar'+item.id);"> {{(item.title.length>55)?'ver menos':''}}</span>
+                <span class="mostrar{{item.id}} ver-menos" (click)="mostrarTs('texto-oculto'+item.id,'mostrar'+item.id);"> {{(item.title.length>55)?'...ver más':''}}</span></h4>            
             <div class="card-download__wrapper">               
                 <div class="card-download__details">
-                    {{item.description}}
+                    
+                     {{item.description| slice:0:80}}
+                        <span class="texto-oculto texto-oculto-det{{item.id}}">{{item.description | slice:80: item.description.length}} </span>
+                        <span class="texto-oculto texto-oculto-det{{item.id}} ver-menos" (click)="cerrarTs('texto-oculto-det'+item.id,'mostrar-det'+item.id);"> {{(item.description.length>80)?'ver menos':''}}</span>
+                        <span class="mostrar-det{{item.id}} ver-menos" (click)="mostrarTs('texto-oculto-det'+item.id,'mostrar-det'+item.id);"> {{(item.description.length>80)?'...ver más':''}}</span>
+                       
                 </div>                
                 <div class="card-download__details card-date">
                     Fecha: {{item.date}}

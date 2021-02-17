@@ -3,6 +3,8 @@ import { InfotecaService } from 'src/app/services/infoteca.service';
 import { NgxSpinnerService } from "ngx-spinner";
 import { environment } from '../../../../environments/environment';
 declare var jQuery: any;
+declare function mostrar(id:any,elemostrar:any):any;
+declare function cerrar(id:any,elemostrar:any):any;
 @Component({
   selector: 'app-presentaciones',
   templateUrl: './presentaciones.component.html',
@@ -75,5 +77,18 @@ export class PresentacionesComponent implements OnInit {
     }
     console.log(this.page);
   }
-
+  mostrarTs(id:any,elemostrar:any) {
+    (($) => {   
+      $(document).ready(() => {
+        mostrar(id,elemostrar); 
+      });
+    })(jQuery); 
+  }
+  cerrarTs(id:any,elemostrar:any) {
+    (($) => {   
+      $(document).ready(() => {
+        cerrar(id,elemostrar); 
+      });
+    })(jQuery); 
+  }
 }

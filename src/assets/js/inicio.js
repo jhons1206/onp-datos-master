@@ -273,14 +273,14 @@ function showCarrusel2() {
   
 }
 
-function mostrar(elemento) {
+function mostrar(elemento,elemostrar) {
   this.elemento = elemento;
   $(`.${this.elemento}`).show();
-  $("span.mostrar").hide();
+  $("span."+elemostrar).hide();
 }
 
-function cerrar(elemento) {
+function cerrar(elemento,elemostrar) {
   this.elemento = elemento;
   $(`.${this.elemento}`).hide();
-  $("span.mostrar").show();
+  $("span."+elemostrar).show();
 }
