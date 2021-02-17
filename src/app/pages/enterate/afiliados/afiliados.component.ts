@@ -133,6 +133,11 @@ export class AfiliadosComponent implements OnInit {
       this.TitleDepartemento="";
       this.subTitle="A nivel nacional";
     }
+    (($) => {   
+      $(document).ready(() => {
+        $(".total-pensioners .total-indicator").attr('data-content',this.subTitle);
+      });
+    })(jQuery);
   } 
   onChangeCifras(){ 
     this.router.navigate(['/Pensionistas']);

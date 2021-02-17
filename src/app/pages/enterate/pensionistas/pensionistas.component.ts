@@ -164,6 +164,16 @@ export class PensionistasComponent implements OnInit {
       this.showTitle=true;
     }
      
+  (($) => {   
+    $(document).ready(() => {
+      if(this.TitleDepartemento=="PENSIONISTAS Y BENEFICIARIAS/OS"){
+      $(".total-pensioners .total-indicator").attr('data-content','A nivel nacional');
+      }
+      else {
+        $(".total-pensioners .total-indicator").attr('data-content','');
+      }
+    });
+  })(jQuery);
   }
   onChangeDepartametPersonality(){
     var country = Map.getObjectById("DPTO_"+this.iddepartament); 

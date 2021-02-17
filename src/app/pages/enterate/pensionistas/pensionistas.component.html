@@ -30,10 +30,10 @@
     <article class="pensioners-details">
         <h2 class="section-title pb-0">{{TitleDepartemento}}</h2>
         <div class="total-pensioners spacing-y">                                     
-            <h3 *ngIf="showTitle">A nivel nacional</h3>
+            <h3 *ngIf="showTitle" >A nivel nacional</h3>
             <div class="">
                 <img src="../../../../assets/images/pensionistas.svg" alt="Pensionistas">                
-                <h4 class="total-indicator">{{TotalGeneral | number:'1.0-0'}}</h4>    
+                <h4 class="total-indicator" data-content="A nivel nacional" >{{TotalGeneral | number:'1.0-0'}}</h4>    
             </div>
         </div>
         <div class="indicator-details spacing-y pb-0">
