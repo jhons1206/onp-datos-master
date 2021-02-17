@@ -106,3 +106,72 @@ body {
 .onp-bg-size {
   position: relative;
 }
+
+@media screen and (min-width: 1024px) {
+
+  /* Main submenu top header */
+  .wrapper__menu {
+    /* background-color: var(--white-color); */
+    background-color: var(--white-color);
+    border: thin solid var(--second-color);
+    border-left: 0;
+    border-right: 0;
+    margin-top: 80px;
+    z-index:1000;
+    top:0;
+    position: fixed;
+    width: 100%;
+}
+
+.menu-top-header {
+    padding: 0;
+    background-color: var(--white-color);
+    margin: 0 auto;
+    width: 925px;  
+}
+
+.menu-top-header ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-top-header li {
+    padding: 0.8rem 2rem;
+    line-height: 0.9;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    border-left: thin solid var(--second-color);
+}
+
+.menu-top-header li:nth-child(odd) {
+    border-right: 0;
+}
+
+.menu-top-header li:first-child {
+    border-right: 0;
+} 
+
+.menu-top-header li:last-child {
+    border-right: thin solid var(--second-color);;
+} 
+
+.menu-top-header li a {
+    color: var(--second-color);
+    text-decoration: none;
+    font-size: 0.8rem;
+    cursor: pointer;
+}
+
+.menu-top-header ul li:nth-child(2) {
+    border-right: 0;
+}
+
+.banner {
+    padding-top: 50px;
+}
+
+}

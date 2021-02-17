@@ -1,3 +1,4 @@
+
 <aside class="top-menu-movil">
     <div class="btn-toogle-menu" onclick="toogleMenuTop();">
         <img class="img-arrow" src="../../../../assets/images/arrow-down.svg" alt="flecha abajo">
@@ -10,7 +11,20 @@
     </ul>
 </aside>
 
-<div class="onp-submenu-header onp-bg-primary">
+<section class="wrapper__menu">
+  <div class="menu-top-header">
+      <ul> 
+        <li><a [routerLink]="['/Facil','ventajas']">Tus ventajas y facilidades</a></li>
+        <li><a [routerLink]="['/Facil','afiliarte']">Afiliate al SNP</a></li>
+        <li><a [routerLink]="['/Facil','opciones']">Tus opciones de jubilación</a></li>
+        <li><a [routerLink]="['/Facil','beneficios']">Tus beneficios</a></li>
+        <li><a [routerLink]="['/Facil','cifras']">Cifras del SNP</a></li>
+        <li><a [routerLink]="['/Facil','financiamiento']">Financiamiento</a></li>
+      </ul>
+  </div>
+</section>
+
+<!-- <div class="onp-submenu-header onp-bg-primary">
     <div id="onp-submenu" class="onp-submenu">
       <div class="onp-submenu-item">
         <span
@@ -48,7 +62,7 @@
         >
       </div>
     </div>
-</div>
+</div> -->
 
 <section class="banner">
     <div class="banner__wrapper">
