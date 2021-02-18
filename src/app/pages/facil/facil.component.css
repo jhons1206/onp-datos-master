@@ -1224,13 +1224,6 @@ ul.top-menu li a:hover {
 
 
 }
-/*@media screen and (min-width: 1600px) {
-    .family {
-        padding: 1.5rem 0;
-        position: relative;
-        min-height: 420px;
-    }
-}*/
 
 @media screen and (min-width: 1600px) and (max-width: 1920px) {
    
