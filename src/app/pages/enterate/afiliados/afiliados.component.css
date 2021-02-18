@@ -155,6 +155,7 @@ p {
     color: var(--white-color);
     font-size: 1.5rem;
     text-align: center;
+    z-index: 2;
 }
 
 .first-bar {
@@ -169,6 +170,54 @@ p {
     background-color: var(--five-color);
     border-top-right-radius: var(--border-radius-progressbar);
     border-bottom-right-radius: var(--border-radius-progressbar);
+}
+
+.percent-text {
+    position: absolute;
+    margin: 0;
+    right: 2rem;
+}
+
+.user-text {
+    position: absolute;
+    margin: 0;
+    right: 2rem;
+}
+
+
+@media screen and (min-width: 1024px) {
+
+    .img-left-progres,
+    .img-right-progres {
+        position: absolute;
+        width: 90px;
+        height: 55px;
+        bottom: -0.4rem;
+    }
+
+    .img-left-progres {
+        left: -45px;
+    }
+
+    .img-right-progres {
+        right: -45px;
+    }
+
+    .indicator-details img {
+        display: none;
+    }
+
+    .percent-text {
+        position: absolute;
+        margin: 0;
+        right: 0;
+    }
+
+    .user-text {
+        position: relative;
+        margin: 0;
+        right: inherit;
+    }
 }
 
 /* >>>>>>>>>>>>>>> Utilities <<<<<<<<<<<<<<<< */
@@ -326,6 +375,11 @@ p {
 .beneficiaries {
     text-align: center;
 }
+
+.img-left-progres,
+.img-right-progres {
+    display: none;
+}
  
 @media screen and (min-width: 768px) {
 
@@ -351,6 +405,11 @@ p {
 }
 
 @media screen and (min-width: 1024px) { 
+
+    .img-left-progres,
+    .img-right-progres {
+        display: block;
+    }
 
     .hero-image {
         padding-top: 53.59px;
@@ -409,20 +468,21 @@ p {
         font-size: 3vw;
     }
 
-    .indicators-progres-bar {
-        position: relative;
+    .indicator-details {
+        align-items: flex-end;
     }
 
-    .indicator-details img {
-        display: none;
+    .indicators-progres-bar {
+        position: relative;
     }
 
     .first-bar::before {
         content: '';
         background-image: var(--image-progres-bar);
-        background-size: cover;
-        width: 3rem;
-        height: 3rem;
+        /* background-size: cover; */
+        background-repeat: no-repeat;
+        width: 90px;
+        height: 55px;
         position: absolute;
         left: -1.5rem;
         bottom: var(--bottom-image-position);
@@ -431,9 +491,10 @@ p {
     .second-bar::after {
         content: '';
         background-image: var(--image-progres-bar);
-        background-size: cover;
-        width: 3rem;
-        height: 3rem;
+        /* background-size: cover; */
+        background-repeat: no-repeat;
+        width: 90px;
+        height: 55px;
         position: absolute;
         right: -1.5rem;
         bottom: var(--bottom-image-position);

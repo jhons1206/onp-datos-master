@@ -101,13 +101,15 @@
                     <p>Jubilación</p>
                 </div>
                 <div class="indicator-description" style="--width-indicator-description: {{PorcentajeDiscapacidad | number:'1.0-2'}}%;">
-                    <img src="../../../../assets/images/discapacidad.svg" alt="Discapacidad">
-                    <p>Discapacidad para el trabajo</p>
+                    <p class="user-text"><img src="../../../../assets/images/discapacidad.svg" alt="Discapacidad"><br>
+                    Discapacidad <span class="hide-text">para el trabajo</span></p>
                 </div>
             </div>
             <div class="indicators-progres-bar">
-                <div class="progres-bar first-bar" style="--width-first-bar: {{PorcentajeJubilacion | number:'1.0-2'}}%; --image-progres-bar: url(../../../../assets/images/jubilacion.svg); --bottom-image-position: -0.2rem;">{{PorcentajeJubilacion | number:'1.0-2'}}%</div>
-                <div class="progres-bar second-bar" style="--width-second-bar: {{PorcentajeDiscapacidad | number:'1.0-2'}}%; --image-progres-bar: url(../../../../assets/images/discapacidad.svg); --bottom-image-position: -0.2rem;">{{PorcentajeDiscapacidad | number:'1.0-2'}}%</div>
+                <img src="../../../../assets/images/jubilacion2.svg" class="img-left-progres">
+                <div class="progres-bar first-bar" style="--width-first-bar: {{PorcentajeJubilacion | number:'1.0-2'}}%; --image-progres-bar: url(../../../../assets/images/jubilacion22.svg); --bottom-image-position: -0.2rem;">{{PorcentajeJubilacion | number:'1.0-2'}}%</div>
+                <div class="progres-bar second-bar" style="--width-second-bar: {{PorcentajeDiscapacidad | number:'1.0-2'}}%; --image-progres-bar: url(../../../../assets/images/discapacidad22.svg); --bottom-image-position: -0.2rem;"><p class="percent-text">{{PorcentajeDiscapacidad | number:'1.0-2'}}%</p></div>
+                <img src="../../../../assets/images/discapacidad2.svg" class="img-right-progres">
             </div>
         </div>
         <div class="beneficiaries spacing-y">
@@ -147,7 +149,6 @@
             <div>
                 <p style="color: var(--second-color);font-size: 13px;" >* Estadísticas calculadas sobre los datos válidos.</p>
             </div>
-            
         </div>
     </article>
 </section>

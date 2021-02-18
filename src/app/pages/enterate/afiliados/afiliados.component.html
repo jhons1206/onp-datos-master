@@ -100,13 +100,16 @@
                     <p>Dependientes</p>
                 </div>
                 <div class="indicator-description" style="--width-indicator-description: {{PorcentajeIndependientes| number:'1.0-2'}}%;">
-                    <img src="../../../../assets/images/independientes.svg" alt="Independientes">
-                    <p>Independientes</p>
+                    <p class="user-text">
+                        <img src="../../../../assets/images/independientes.svg" alt="Independientes"><br>
+                    Independientes</p>
                 </div>
             </div>
             <div class="indicators-progres-bar">
-                <div class="progres-bar first-bar" style="--width-first-bar: {{PorcentajeDependientes| number:'1.0-2'}}%; --image-progres-bar: url(../../../../assets/images/dependientes.svg); --bottom-image-position: -0.2rem;">{{PorcentajeDependientes| number:'1.0-2'}}%</div>
-                <div class="progres-bar second-bar" style="--width-second-bar: {{PorcentajeIndependientes| number:'1.0-2'}}%; --image-progres-bar: url(../../../../assets/images/independientes.svg); --bottom-image-position: -0.2rem;">{{PorcentajeIndependientes| number:'1.0-2'}}%</div>
+                <img src="../../../../assets/images/dependientes2.svg" class="img-left-progres">
+                <div class="progres-bar first-bar" style="--width-first-bar: {{PorcentajeDependientes| number:'1.0-2'}}%; --image-progres-bar: url(../../../../assets/images/dependientes22.svg); --bottom-image-position: -0.3rem;">{{PorcentajeDependientes| number:'1.0-2'}}%</div>
+                <div class="progres-bar second-bar" style="--width-second-bar: {{PorcentajeIndependientes| number:'1.0-2'}}%; --image-progres-bar: url(../../../../assets/images/independientes22.svg); --bottom-image-position: -0.3rem;"><p class="percent-text">{{PorcentajeIndependientes| number:'1.0-2'}}%</p></div>
+                <img src="../../../../assets/images/independientes2.svg" class="img-right-progres">
             </div>
         </div>  
         <div class="advantage__p1 pt-0" style="margin-top: 30px;">

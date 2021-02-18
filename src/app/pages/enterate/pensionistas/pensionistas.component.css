@@ -139,6 +139,7 @@ p {
     color: var(--white-color);
     font-size: 1.5rem;
     text-align: center;
+    z-index: 2;
 }
 
 .first-bar {
@@ -155,7 +156,24 @@ p {
     border-bottom-right-radius: var(--border-radius-progressbar);
 }
 
+.percent-text {
+    position: absolute;
+    margin: 0;
+    right: 2rem;
+}
+
+.user-text {
+    position: absolute;
+    margin: 0;
+    right: 2rem;
+}
+
 /* >>>>>>>>>>>>>>> Utilities <<<<<<<<<<<<<<<< */
+
+.hide-text {
+    display: none;
+}
+
 .section {
     margin-left: auto;
     margin-right: auto;
@@ -334,6 +352,11 @@ p {
     text-align: center;
 }
 
+.img-left-progres,
+.img-right-progres {
+    display: none;
+}
+
 @media screen and (min-width: 768px) {
 
     .hero-image {
@@ -358,6 +381,45 @@ p {
 }
 
 @media screen and (min-width: 1024px) { 
+
+    .hide-text {
+        display: block;
+    }
+
+    .img-left-progres,
+    .img-right-progres {
+        display: block;
+        position: absolute;
+        width: 90px;
+        height: 55px;
+        bottom: -0.4rem;
+    }
+
+    .img-left-progres {
+        left: -45px;
+    }
+
+    .img-right-progres {
+        right: -45px;
+    }
+
+    .indicator-details img {
+        display: none;
+    }
+
+    .percent-text {
+        position: absolute;
+        margin: 0;
+        right: 0;
+    }
+
+    .user-text {
+        position: relative;
+        margin: 0;
+        right: inherit;
+        width: 100px;
+        line-height: 1.2;
+    }
 
     .hero-image {
         padding-top: 53.59px;
@@ -414,6 +476,10 @@ p {
     
     .total-indicator {
         font-size: 3vw;
+    }
+
+    .indicator-details {
+        align-items: flex-end;
     }
 
     .indicators-progres-bar {
