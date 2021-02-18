@@ -1223,7 +1223,7 @@ ul.top-menu li a:hover {
     }
 }
 
-@media screen and (min-width: 1650px) and (max-width: 1920px) {
+@media screen and (min-width: 1600px) and (max-width: 1920px) {
    
     .family {
         min-height: 380px;
@@ -1238,10 +1238,6 @@ ul.top-menu li a:hover {
         margin-top: -181px;
         left: 28%;
         width: 850px;
-    }
-
-    .joinup__detail {
-        rights: 0;
     }
 
     .joinup__info1 {
