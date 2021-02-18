@@ -176,12 +176,13 @@ export class PensionistasComponent implements OnInit {
   })(jQuery);
   }
   onChangeDepartametPersonality(){
+    this.onChangeDepartamet();
     var country = Map.getObjectById("DPTO_"+this.iddepartament); 
     Map.selectObject(country);
     if(this.iddepartament!=""){
     country.validate();
     }
-    this.onChangeDepartamet();
+    
   }
   
 }

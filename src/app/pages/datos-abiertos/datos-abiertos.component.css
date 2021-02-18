@@ -137,7 +137,7 @@
 @media screen and (min-width: 1760px) {
   .onp-banner .onp-title {
     font-size: 2.5rem;
-    left: 200%;
+    left: 150%;
     line-height: 45px;
   }
   .onp-content > a {
@@ -148,7 +148,7 @@
     font-size: 1.7rem !important;
   }
   .onp-content .onp-content-text {
-    font-size: 2rem;
+    font-size: 1.6rem;
     line-height: 40px;
   }
 }

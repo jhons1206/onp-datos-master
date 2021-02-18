@@ -2,9 +2,16 @@ import { Component, OnInit } from '@angular/core';
 import { InfotecaService } from 'src/app/services/infoteca.service'; 
 import { NgxSpinnerService } from "ngx-spinner";
 import { environment } from '../../../../environments/environment';
+import { PipeTransform,Pipe } from '@angular/core'; 
 declare var jQuery: any;
 declare function mostrar(id:any,elemostrar:any):any;
 declare function cerrar(id:any,elemostrar:any):any;
+@Pipe({name: 'trim'})
+export class TrimPipe implements PipeTransform {
+  transform(value: string): string {
+    return value.trim();
+  }
+}
 @Component({
   selector: 'app-presentaciones',
   templateUrl: './presentaciones.component.html',
