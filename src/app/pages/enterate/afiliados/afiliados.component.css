@@ -346,6 +346,10 @@ p {
     grid-column: span 2;
 }
 
+.age-distribution > div:last-child {
+    border-right: thin solid var(--second-color);
+}
+
 .item-age {
     background-color: var(--gray-light-color);
     border-left: thin solid var(--second-color);
@@ -520,9 +524,9 @@ p {
         color: var(--black-color);
     }
 
-    .item-age:nth-child(3n) {
+    /* .item-age:nth-child(3n) {
         border-right: 0;
-    }
+    } */
 
     .bar-graphic {
         padding: 1rem var(--padding-bar-graphic) 0;

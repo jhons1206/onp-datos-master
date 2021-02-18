@@ -305,6 +305,10 @@ p {
     grid-column: span 2;
 }
 
+.age-distribution > div:last-child {
+    border-right: thin solid var(--second-color);
+}
+
 .item-age {
     background-color: var(--gray-light-color);
     border-left: thin solid var(--second-color);
@@ -316,7 +320,7 @@ p {
 .item-age-estado-civil {
     background-color: var(--third-color);
     border-left: thin solid var(--second-color);
-    /*border-right: thin solid var(--second-color);*/
+    border-right: thin solid var(--second-color);
     padding: 1rem;
     margin-bottom: 0.25rem;
     text-align: center;
