@@ -1221,6 +1221,41 @@ ul.top-menu li a:hover {
     .btn-first {
         font-size: 1.1rem;
     }
+}
 
+@media screen and (min-width: 1650px) and (max-width: 1920px) {
+   
+    .family {
+        min-height: 380px;
+        top: -20px;
+    }
 
+    .family__header {
+        top: -120px;
+    }
+
+    .tab {
+        margin-top: -181px;
+        left: 28%;
+        width: 850px;
+    }
+
+    .joinup__detail {
+        rights: 0;
+    }
+
+    .joinup__info1 {
+        padding: 0 5rem;
+    }
+
+    .joinup__info2 .p-detail {
+        font-size: 1.1rem;
+        width: 70%;
+        padding: 0.5rem 2rem;
+    }
+
+    .joinup__info2 .btn-first {
+        margin: 0.8rem 0 0 -250px;
+        font-size: 1rem;
+    }
 }
