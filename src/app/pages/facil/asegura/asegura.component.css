@@ -414,7 +414,14 @@ p {
 }
 
 .retire__content {
-    padding: 1rem 2rem 0;
+    padding: 1rem 2rem;
+}
+
+.retire__content a {
+    color: var(--white-color);
+    line-height: 0.5;
+    font-size: 0.9rem;
+    font-weight: bold;
 }
 
 .retire h2 {
