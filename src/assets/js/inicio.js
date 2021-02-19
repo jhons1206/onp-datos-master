@@ -188,8 +188,8 @@ function showImage1() {
   var text2 = document.getElementById("text-b-dos");
 
   if (text1 != null || text2 != null) {
-    text1.innerHTML = "Conoce cómo administramos el Sistema";
-    text2.innerHTML = "Nacional de Pensiones";
+    text1.innerHTML = "Hemos cambiado. Tenemos para ti un nuevo Sistema";
+    text2.innerHTML = "Nacional de Pensiones.";
   }
   // $(".text-m-dos").css({
   //   display: "none",
@@ -216,8 +216,8 @@ function showImage2() {
   var text2 = document.getElementById("text-b-dos");
 
   if (text1 != null || text2 != null) {
-    text1.innerHTML = "Entérate más obre la propuesta de";
-    text2.innerHTML = "reforma del Sistema Previsional";
+    text1.innerHTML = "Conoce cómo administramos tu futuro.";
+    text2.innerHTML = "";
   }
 
   // $(".text-m-uno").css({

@@ -4,72 +4,65 @@
 	"typeCode":"001",
 	"data": [
 	  {
-		"id":1,
-		"title": "2010 Informes de Reservas Actuariales DL 19990",
-		"description":"2010 Informes de Reservas Actuariales DL 19990",
+		"id":1,		
+		"description":"2010 Informes de Reservas Actuariales DL 19990.",
 		"url": "ACT_D001.pdf",
 		 "urlTitle": "Descargar"
 	  },
 	{
-		"id":2,
-		"title": "2011 Informes de Reservas Actuariales DL 19990",
-		"description":"2011 Informes de Reservas Actuariales DL 19990",
+		"id":2,		
+		"description":"2011 Informes de Reservas Actuariales DL 19990.",
 		"url": "ACT_D002.pdf",
 		 "urlTitle": "Descargar"
 	  },
 	{
-		"id":3,
-		"title": "2012 Informes de Reservas Actuariales DL 19990",
-		"description":"2012 Informes de Reservas Actuariales DL 19990",
+		"id":3,		
+		"description":"2012 Informes de Reservas Actuariales DL 19990.",
 		"url": "ACT_D003.pdf",
 		"urlTitle": "Descargar"
 	  },
 	{
 		"id":4,
-		"title": "2013 Informes de Reservas Actuariales DL 19990",
-		"description":"2013 Informes de Reservas Actuariales DL 19990",
+		"description":"2013 Informes de Reservas Actuariales DL 19990.",
 		"url": "ACT_D004.pdf",
 		"urlTitle": "Descargar"
 	  },
 	{
-		"id":5,
-		"title": "2014 Informes de Reservas Actuariales DL 19990",
-		"description":"2014 Informes de Reservas Actuariales DL 19990",
+		"id":5,		
+		"description":"2014 Informes de Reservas Actuariales DL 19990.",
 		"url": "ACT_D005.pdf",
 		"urlTitle": "Descargar"
 	  },
 	{
-		"id":6,
-		  "title": "2015 Informes de Reservas Actuariales DL 19990",
-		"description":"2015 Informes de Reservas Actuariales DL 19990",
+		"id":6,		  
+		"description":"2015 Informes de Reservas Actuariales DL 19990.",
 		"url": "ACT_D006.pdf",
 		 "urlTitle": "Descargar"
 	  },
 	{
 		"id":7,
-		  "title": "2016 Informes de Reservas Actuariales DL 19990",
-		"description":"2016 Informes de Reservas Actuariales DL 19990",
+		"title": "",
+		"description":"2016 Informes de Reservas Actuariales DL 19990.",
 		"url": "ACT_D007.pdf",
 		 "urlTitle": "Descargar"
 	  },
 	{
-		"id":8,
-		  "title": "2017 Informes de Reservas Actuariales DL 19990",
-		"description":"2017 Informes de Reservas Actuariales DL 19990",
+		"id":8,		
+		"description":"2017 Informes de Reservas Actuariales DL 19990.",
 		"url": "ACT_D008.pdf",
 		 "urlTitle": "Descargar"
 	  },
 	{
 		"id":9,
-		  "title": "2018 Informes de Reservas Actuariales DL 19990",
-		"description":"2018 Informes de Reservas Actuariales DL 19990",
+		"title": "",
+		"description":"2018 Informes de Reservas Actuariales DL 19990.",
 		"url": "ACT_D009.pdf",
 		 "urlTitle": "Descargar"
 	  },
 	{
 		"id":10,
-		  "title": "2019 Informes de Reservas Actuariales DL 19990",
-		"description":"2019 Informes de Reservas Actuariales DL 19990",
+		"title": "",
+		"description":"2019 Informes de Reservas Actuariales DL 19990.",
 		"url": "ACT_D010.pdf",
 		 "urlTitle": "Descargar"
 	  }
@@ -81,29 +74,29 @@
 	"data":[
 	  {
 		"id":11,
-		  "title": "2016 Reporte de Reservas Actuariales Ley 30003",
-		"description":"2016 Reporte de Reservas Actuariales Ley 30003",
+		  "title": "",
+		"description":"2016 Reporte de Reservas Actuariales Ley 30003.",
 		"url": "ACT_L001.pdf",
 		 "urlTitle": "Descargar"
 	  },
 	{
 		"id":12,
-		  "title": "2017 Reporte de Reservas Actuariales Ley 30003",
-		"description":"2017 Reporte de Reservas Actuariales Ley 30003",
+		  "title": "",
+		"description":"2017 Reporte de Reservas Actuariales Ley 30003.",
 		"url": "ACT_L002.pdf",
 		 "urlTitle": "Descargar"
 	  },
 	{
 		"id":13,
-		  "title": "2018 Reporte de Reservas Actuariales Ley 30003",
-		"description":"2018 Reporte de Reservas Actuariales Ley 30003",
+		  "title": "",
+		"description":"2018 Reporte de Reservas Actuariales Ley 30003.",
 		"url": "ACT_L003.pdf",
 		 "urlTitle": "Descargar"
 	  },
 	{
 		"id":14,
-		  "title": "2019 Reporte de Reservas Actuariales Ley 30003",
-		"description":"2019 Reporte de Reservas Actuariales Ley 30003",
+		  "title": "",
+		"description":"2019 Reporte de Reservas Actuariales Ley 30003.",
 		"url": "ACT_L004.pdf",
 		 "urlTitle": "Descargar"
 	  }
@@ -115,15 +108,15 @@
 	"data": [
 	  {
 		"id":15,
-		"title": "Guía Técnica cálculo Actuarial SCTR",
-		"description":"Guía Técnica cálculo Actuarial SCTR",
+		"title": "",
+		"description":"Guía Técnica cálculo Actuarial SCTR.",
 		"url": "ACT_G001.pdf",
 		"urlTitle": "Descargar"
 	  },
 	{
 		"id":16,
-		  "title": "Guía Técnica cálculo Actuarial ANP y otros regímenes previsionales",
-		"description":"Guía Técnica cálculo Actuarial ANP y otros regímenes previsionales",
+		  "title": "",
+		"description":"Guía Técnica cálculo Actuarial ANP y otros regímenes previsionales.",
 		"url": "ACT_G002.pdf",
 		 "urlTitle": "Descargar"
 	}
