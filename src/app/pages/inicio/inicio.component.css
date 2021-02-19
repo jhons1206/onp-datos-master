@@ -636,6 +636,15 @@
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+  .card-content .card-img2,
+  .card-content .card-img3 {
+    width: 6% !important;
+  }
+
+}
+
 @media only screen and (min-width: 1760px) {
   .banner-text > p {
     color: white;
