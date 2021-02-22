@@ -1,6 +1,6 @@
 <aside class="top-menu-movil">
     <div class="btn-toogle-menu" onclick="toogleMenuTop();">
-        <img class="img-arrow" src="../../../../assets/images/arrow-down.svg" alt="flecha abajo">
+        <img class="img-arrow" src="~/../assets/images/arrow-down.svg" alt="flecha abajo">
     </div> 
     <ul class="top-menu">
         <li><a [routerLink]="['/Facil','afiliarte']">Afiliate al SNP</a></li>
@@ -26,7 +26,7 @@
 </section>
 
 <section class="page-header">
-<article class="hero-image" style="--hero-image: url('../../../../assets/images/bg_hero_image1.png'); --hero-attachment: scroll;">
+<article class="hero-image" style="--hero-image: url('~/../assets/images/bg_hero_image1.png'); --hero-attachment: scroll;">
     <aside class="hero-image-opacity">
         <div class="hero-image-content">
             <h2 class="hero-image-title" style="--hero-text-color: var(--white-color);">
@@ -58,23 +58,23 @@
         <div class="total-pensioners spacing-y">                                     
             <h3 *ngIf="showTitle" >A nivel nacional</h3>
             <div class="">
-                <img src="../../../../assets/images/pensionistas.svg" alt="Pensionistas">                
+                <img src="~/../assets/images/pensionistas.svg" alt="Pensionistas">                
                 <h4 class="total-indicator" data-content="A nivel nacional" >{{TotalGeneral | number:'1.0-0'}}</h4>    
             </div>
         </div>
         <div class="indicator-details spacing-y pb-0">
             <div class="indicator-description" style="--width-indicator-description: {{PorcentajeMujer| number:'1.0-2'}}%;">
-                <img src="../../../../assets/images/mujeres.svg" alt="Mujeres">
+                <img src="~/../assets/images/mujeres.svg" alt="Mujeres">
                 <p>Mujeres</p>
             </div>
             <div class="indicator-description" style="--width-indicator-description: {{PorcentajeHombre | number:'1.0-2'}}%;">
-                <img src="../../../../assets/images/hombres.svg" alt="Hombres">
+                <img src="~/../assets/images/hombres.svg" alt="Hombres">
                 <p>Hombres</p>
             </div>
         </div>
         <div class="indicators-progres-bar">
-            <div class="progres-bar first-bar" style="--width-first-bar: {{PorcentajeMujer| number:'1.0-2'}}%; --image-progres-bar: url(../../../../assets/images/mujeres.svg); --bottom-image-position: 0;">{{PorcentajeMujer| number:'1.0-2'}}%</div>
-            <div class="progres-bar second-bar" style="--width-second-bar: {{PorcentajeHombre| number:'1.0-2'}}%; --image-progres-bar: url(../../../../assets/images/hombres.svg); --bottom-image-position: 0;">{{PorcentajeHombre | number:'1.0-2'}}%</div>
+            <div class="progres-bar first-bar" style="--width-first-bar: {{PorcentajeMujer| number:'1.0-2'}}%; --image-progres-bar: url(~/../assets/images/mujeres.svg); --bottom-image-position: 0;">{{PorcentajeMujer| number:'1.0-2'}}%</div>
+            <div class="progres-bar second-bar" style="--width-second-bar: {{PorcentajeHombre| number:'1.0-2'}}%; --image-progres-bar: url(~/../assets/images/hombres.svg); --bottom-image-position: 0;">{{PorcentajeHombre | number:'1.0-2'}}%</div>
         </div>
 
         <div class="age-distribution spacing-y">
@@ -97,19 +97,19 @@
             <h4 class="total-indicator">{{TotalPensionista | number:'1.0-0'}}</h4>
             <div class="indicator-details spacing-y pb-0">
                 <div class="indicator-description" style="--width-indicator-description: {{PorcentajeJubilacion | number:'1.0-2'}}%;">
-                    <img src="../../../../assets/images/jubilacion.svg" alt="Jubilación">
+                    <img src="~/../assets/images/jubilacion.svg" alt="Jubilación">
                     <p>Jubilación</p>
                 </div>
                 <div class="indicator-description" style="--width-indicator-description: {{PorcentajeDiscapacidad | number:'1.0-2'}}%;">
-                    <p class="user-text"><img src="../../../../assets/images/discapacidad.svg" alt="Discapacidad"><br>
+                    <p class="user-text"><img src="~/../assets/images/discapacidad.svg" alt="Discapacidad"><br>
                     Discapacidad <span class="hide-text">para el trabajo</span></p>
                 </div>
             </div>
             <div class="indicators-progres-bar">
-                <img src="../../../../assets/images/jubilacion2.svg" class="img-left-progres">
+                <img src="~/../assets/images/jubilacion2.svg" class="img-left-progres">
                 <div class="progres-bar first-bar" style="--width-first-bar: {{PorcentajeJubilacion | number:'1.0-2'}}%; --bottom-image-position: -0.2rem;">{{PorcentajeJubilacion | number:'1.0-2'}}%</div>
                 <div class="progres-bar second-bar" style="--width-second-bar: {{PorcentajeDiscapacidad | number:'1.0-2'}}%; --bottom-image-position: -0.2rem;"><p class="percent-text">{{PorcentajeDiscapacidad | number:'1.0-2'}}%</p></div>
-                <img src="../../../../assets/images/discapacidad2.svg" class="img-right-progres">
+                <img src="~/../assets/images/discapacidad2.svg" class="img-right-progres">
             </div>
         </div>
         <div class="beneficiaries spacing-y">

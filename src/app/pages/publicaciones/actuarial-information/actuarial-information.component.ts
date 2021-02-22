@@ -53,8 +53,7 @@ export class ActuarialInformationComponent implements OnInit {
             this.ListtotalItemsPage=[];
             for (var _i = 0; _i < this.totalItemsPage; _i++) {
               this.ListtotalItemsPage.push(_i+1);
-            }
-            console.log(this.totalItemsPage);
+            } 
           }
           this.ListActuarialPaginate=this.ListActuarial.slice(0, this.cantidadPorPagina);
         }
@@ -77,16 +76,14 @@ export class ActuarialInformationComponent implements OnInit {
     this.page -=1; 
     let actual = this.cantidadPorPagina * (this.page-1); 
     this.ListActuarialPaginate = this.ListActuarial.slice(actual,this.page*this.cantidadPorPagina);   
-    }
-    console.log(this.page);
+    } 
   }
   siguiente() {
     if(this.page+1<=this.totalItemsPage){
     this.page +=1; 
     let actual = this.cantidadPorPagina * (this.page-1); 
     this.ListActuarialPaginate = this.ListActuarial.slice(actual,this.page*this.cantidadPorPagina);    
-    }
-    console.log(this.page);
+    } 
   }
 
 

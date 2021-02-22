@@ -43,8 +43,7 @@ export class MemorialesAnualesComponent implements OnInit {
           this.totalItemsPage=Math.ceil(this.totalItems/this.cantidadPorPagina);
           for (var _i = 0; _i < this.totalItemsPage; _i++) {
             this.ListtotalItemsPage.push(_i+1);
-          }
-          console.log(this.totalItemsPage);
+          } 
         }
         this.ListMemorialesPaginate=this.ListMemoriales.slice(0, this.cantidadPorPagina);
       }
@@ -66,15 +65,13 @@ export class MemorialesAnualesComponent implements OnInit {
     this.page -=1; 
     let actual = this.cantidadPorPagina * (this.page-1); 
     this.ListMemorialesPaginate = this.ListMemoriales.slice(actual,this.page*this.cantidadPorPagina);   
-    }
-    console.log(this.page);
+    } 
   }
   siguiente() {
     if(this.page+1<=this.totalItemsPage){
     this.page +=1; 
     let actual = this.cantidadPorPagina * (this.page-1); 
     this.ListMemorialesPaginate = this.ListMemoriales.slice(actual,this.page*this.cantidadPorPagina);    
-    }
-    console.log(this.page);
+    } 
   }
 }
