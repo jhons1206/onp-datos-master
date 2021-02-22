@@ -14,8 +14,12 @@
   /* border: 2px solid  #888888; */
 }
 
+.onp-banner a {
+  text-decoration: none;
+}
+
 .onp-banner1 {
-  background: url("../../../assets/images/opn-inicio-banner-uno.jpg") no-repeat;
+  background: url("../../../assets/images/opn-inicio-banner-dos.jpg") no-repeat;
   background-size: cover;
   background-position: top;
   position: relative;
@@ -63,7 +67,7 @@
 
 .banner-text {
   position: relative;
-  top: 33%;
+  top: 42%;
   left: 28.2%;
   width: 100%;
   display: flex;
