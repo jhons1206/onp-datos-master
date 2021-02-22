@@ -239,13 +239,13 @@ function showImage2() {
   });
 }
 
-function switchImg() {
-  if (img_num === 1) {
-    showImage2();
-  } else {
-    showImage1();
-  }
-}
+// function switchImg() {
+//   if (img_num === 1) {
+//     showImage2();
+//   } else {
+//     showImage1();
+//   }
+// }
 
 function interval() {
   inter = setInterval(switchImg, 5000);
