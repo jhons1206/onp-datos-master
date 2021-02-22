@@ -363,3 +363,17 @@
     margin-top: 1rem;
   }
 }
+@media only screen and (min-width: 680px) {
+  .item-footer{
+      width: 55%;
+      border: 0;
+      text-align: center;
+  }
+}
+@media only screen and (min-width: 480px) {
+  .item-footer{
+      width: 40%;
+      border: 0;
+      text-align: center;
+  }
+}
