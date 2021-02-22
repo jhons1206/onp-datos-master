@@ -266,7 +266,7 @@ a.first-link :hover {
 .join {
     background: linear-gradient(0deg, var(--third-color) 50%, var(--white-color) 50%);
     color: var(--second-color);
-    padding: 2.5rem 2.5rem;
+    padding: 2.5rem;
     text-align: center;
     position: relative;
 }
@@ -300,6 +300,7 @@ a.first-link :hover {
     background-color: var(--gray-color);
     text-align: center;
     color: var(--white-color);
+    margin-bottom: 3rem;
 }
 
 .contribution__wrapper {

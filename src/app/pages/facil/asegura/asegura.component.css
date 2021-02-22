@@ -407,6 +407,67 @@ p {
     margin: 0;
 }
 
+.calc-pension__carrusel .tab1-detail,
+.calc-pension__carrusel .tab2-detail,
+.calc-pension__carrusel .tab3-detail {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--second-color);
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+.calc-pension__carrusel .tab1-detail p,
+.calc-pension__carrusel .tab2-detail p {
+    font-size: 0.9rem;
+    margin: 0; 
+    line-height: 1.1;
+}
+
+.calc-pension__carrusel .tab1-detail img,
+.calc-pension__carrusel .tab3-detail img {
+    width: 40%;
+    margin-right: 0;
+    margin: 0 auto 1.5rem;          
+}
+
+.calc-pension__carrusel .tab3-detail img {
+    width: 35%;          
+}
+
+.tab3-detail p {
+    margin-bottom: 1rem;
+}
+
+.text-large,
+.text-medium {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 0.9;
+}
+
+.text-medium {
+    font-size: 1.5rem;
+}
+
+.calc-pension__carrusel .tab2-detail .tab2-table {
+    display: flex;
+    justify-content: center;
+}
+
+.calc-pension__carrusel .tab2-detail .tab2-table > div {
+    padding: 1.5rem 0.5rem 0;
+}
+.calc-pension__carrusel .tab2-detail .tab2-table .first-color {
+    color: #cb6c6c;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.calc-pension__carrusel .tab2-detail .tab2-table p {
+    line-height: 1.5;
+}
+
 .retire {
     background-color: var(--gray-color);
     color: var(--white-color);
@@ -441,6 +502,7 @@ p {
     background-color: var(--second-color);
     text-align: center;
     color: var(--white-color);
+    position: relative;
 }
 
 .retire-65 img {
@@ -463,9 +525,32 @@ p {
     text-decoration: none;
 }
 
+.arrow-previus1, 
+.arrow-previus2,
+.arrow-next1, 
+.arrow-next2 {
+    width: 16px;
+    height: 16px;
+    background-repeat: no-repeat;
+    top: var(--top);
+    position: absolute;
+}
+
+.arrow-previus1, 
+.arrow-previus2  {
+    background-image: var(--background-image);
+    left: var(--left);
+}
+
+.arrow-next1, 
+.arrow-next2 {
+    right: var(--right);
+    background-image: var(--background-image);
+}
+
 .retire-especial {
     text-align: center;
-    margin: 0 0.5rem;
+    margin: 0 0.5rem 3rem;
     padding-bottom: 0;
     color: var(--second-color);
 }
@@ -515,6 +600,10 @@ p {
 
     .onp-submenu-header {
         display: flex;
+    }
+
+    .retire-65 .carrusel-arrows {
+        display: none;
     }
 
     .top-menu-movil {
@@ -573,6 +662,66 @@ p {
 
     .tabs-pension {
         display: block;
+    }
+
+    .tabs-pension .tab1-detail,
+    .tabs-pension .tab2-detail,
+    .tabs-pension .tab3-detail {
+        padding: 4rem 5rem;
+    }
+
+    .tabs-pension .tab2-detail {
+        padding: 2rem 5rem;
+    }
+
+    .tabs-pension .tab1-detail p,
+    .tabs-pension .tab2-detail p {
+        font-size: 0.9rem;
+        margin: 0; 
+        line-height: 1.1;
+    }
+
+    .tabs-pension .tab1-detail img,
+    .tabs-pension .tab3-detail img {
+        width: 30%;
+        margin-right: 2rem;            
+    }
+
+    .tabs-pension .tab3-detail img {
+        width: 25%;          
+    }
+
+    .tab3-detail p {
+        margin-bottom: 1rem;
+    }
+
+    .text-large,
+    .text-medium {
+        font-size: 2rem;
+        font-weight: bold;
+        line-height: 0.9;
+    }
+
+    .text-medium {
+        font-size: 1.5rem;
+    }
+
+    .tabs-pension .tab2-detail .tab2-table {
+        display: flex;
+        justify-content: center;
+    }
+
+    .tabs-pension .tab2-detail .tab2-table > div {
+        padding: 1.5rem 1rem 0;
+    }
+    .tabs-pension .tab2-detail .tab2-table .first-color {
+        color: #cb6c6c;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+    }
+
+    .tabs-pension .tab2-detail .tab2-table p {
+        line-height: 1.5;
     }
     
     .retire {
@@ -669,7 +818,7 @@ p {
 
     .retire-especial {
         text-align: center;
-        margin: 0 auto;
+        margin: 0 auto 3rem;
         padding-bottom: 0;
         width: var(--max-width);
     }

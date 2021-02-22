@@ -71,6 +71,8 @@ export class AseguraComponent implements OnInit {
             slidesToScroll: 1,
             arrows: true,
             autoplay: false,
+            prevArrow: '.arrow-previus1',
+            nextArrow: '.arrow-next1',
             responsive: [
                 {
                 breakpoint: 1024,

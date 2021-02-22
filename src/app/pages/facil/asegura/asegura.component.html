@@ -17,12 +17,12 @@
       <img class="img-arrow" src="../../../../assets/images/arrow-down.svg" alt="flecha abajo">
   </div> 
   <ul class="top-menu">
-        <li><a [routerLink]="['/Unete']">Afíliate al SNP</a></li>
-        <li><a [routerLink]="['/Beneficios']">Tus beneficios</a></li>
-        <li><a [routerLink]="['/Asegura']">Tus opciones de jubilación</a></li>
-        <li><a [routerLink]="['/Afp']">Si estás en una AFP</a></li>
-        <li><a [routerLink]="['/Facil','cifras']">Cifras del SNP</a></li>
-        <li><a [routerLink]="['/Financiamiento']">Financiamiento</a></li>
+      <li><a [routerLink]="['/Unete']">Afíliate al SNP</a></li>
+      <li><a [routerLink]="['/Beneficios']">Tus beneficios</a></li>
+      <li><a [routerLink]="['/Asegura']">Tus opciones de jubilación</a></li>
+      <li><a [routerLink]="['/Afp']">Si estás en una AFP</a></li>
+      <li><a [routerLink]="['/Facil','cifras']">Cifras del SNP</a></li>
+      <li><a [routerLink]="['/Financiamiento']">Financiamiento</a></li>
   </ul>
 </aside>
 
@@ -32,9 +32,9 @@
         <li><a [routerLink]="['/Unete']">Afíliate al SNP</a></li>
         <li><a [routerLink]="['/Beneficios']">Tus beneficios</a></li>
         <li class="active"><a [routerLink]="['/Asegura']">Tus opciones de jubilación</a></li>
-        <li ><a  [routerLink]="['/Afp']">Si estás en una AFP</a></li>
+        <li ><a [routerLink]="['/Afp']">Si estás en una AFP</a></li>
         <li><a [routerLink]="['/Facil','cifras']">Cifras del SNP</a></li>
-        <li><a  [routerLink]="['/Financiamiento']">Financiamiento</a></li>
+        <li><a [routerLink]="['/Financiamiento']">Financiamiento</a></li>
       </ul>
   </div>
 </section>
@@ -102,9 +102,46 @@
     <h2 class="section-title">Conoce cómo se calcula tu pensión</h2>
     <p>Sigue estos tres simples pasos</p>
     <div class="calc-pension__carrusel" id="pension-carrusel">
-        <img loading="lazy" src="../../../assets/images/facil/paso-1-calcular-sueldo.png">
-        <img loading="lazy" src="../../../assets/images/facil/paso-2-multiplica-sueldo.png">
-        <img loading="lazy" src="../../../assets/images/facil/paso-3-sumamos-sueldo.png">
+      <div class="tab1-detail">     
+        <img src="../../../../assets/images/facil/icon-calcular-sueldo-tab1.svg" alt="Calculamos tu sueldo">
+        <div>
+          <p class="bold">Calculamos tu sueldo promedio.</p>
+          <p>Para ello tomamos como base tus<br> <span class="text-large">últimos<br>60 sueldos</span> o<br>ingresos sin contar el último mes<br>que aportaste.</p>
+        </div>
+      </div>
+      <div class="tab2-detail">
+        <div>
+          <p class="bold">Multiplicamos tu sueldo promedio por un porcentaje.</p>
+          <p>Como puedes ver en el siguiente cuadro, ese porcentaje depende de la edad que tenías el 2 de enero de 2002.</p>
+          <div class="tab2-table">
+            <div>
+              <p class="first-color">Rango de edad al 02/01/2002</p>
+              <p>
+                Hasta 29 años de edad<br> 
+                De 30 a 39 años de edad<br>
+                De 40 a 49 años de edad<br>
+                De 50 a 54 años de edad
+              </p>
+            </div>
+            <div>
+              <p class="first-color">%</p>
+              <p>
+                30%<br> 
+                35%<br>
+                40%<br>
+                45%
+              </p>
+            </div>
+          </div>
+        </div>                  
+      </div>
+      <div class="tab3-detail">
+        <img src="../../../../assets/images/facil/icon-sumamos-sueldo-tab3.svg" alt="Sumamos tu sueldo"> 
+        <div>
+          <p><span class="text-medium">Sumamos a tu sueldo<br>promedio el 2%</span><br>por cada año adicional.</p>
+          <p>Este incremento te corresponde por cada año adicional a los 20 años (240 unidades de aporte).</p>
+        </div>
+      </div>
     </div>
     <section class="tabs-pension">
         <ng-container>
@@ -163,8 +200,13 @@
                   role="tabpanel"
                   aria-labelledby="pills-viudez-tab"
                 >
-                  <div class="tab-onp-content">
-                    <img src="../../../../assets/images/facil/paso1_pension-desktop.png" alt="Calculamos tu sueldo">
+                  <div class="tab-onp-content tab1-detail">
+                    
+                    <img src="../../../../assets/images/facil/icon-calcular-sueldo-tab1.svg" alt="Calculamos tu sueldo">
+                    <div>
+                      <p class="bold">Calculamos tu sueldo promedio.</p>
+                      <p>Para ello tomamos como base tus<br> <span class="text-large">últimos<br>60 sueldos</span> o<br>ingresos sin contar el último mes<br>que aportaste.</p>
+                    </div>
                   </div>
                 </div>
                 <div
@@ -173,8 +215,31 @@
                   role="tabpanel"
                   aria-labelledby="pills-orfandad-tab"
                 >
-                  <div class="tab-onp-content">
-                    <img src="../../../../assets/images/facil/paso2-multiplicamos-sueldo-desktop.png" alt="Multiplicamos tu sueldo">                    
+                  <div class="tab-onp-content tab2-detail">
+                    <div>
+                      <p class="bold">Multiplicamos tu sueldo promedio por un porcentaje.</p>
+                      <p>Como puedes ver en el siguiente cuadro, ese porcentaje depende de la edad que tenías el 2 de enero de 2002.</p>
+                      <div class="tab2-table">
+                        <div>
+                          <p class="first-color">Rango de edad al 02/01/2002</p>
+                          <p>
+                            Hasta 29 años de edad<br> 
+                            De 30 a 39 años de edad<br>
+                            De 40 a 49 años de edad<br>
+                            De 50 a 54 años de edad
+                          </p>
+                        </div>
+                        <div>
+                          <p class="first-color">%</p>
+                          <p>
+                            30%<br> 
+                            35%<br>
+                            40%<br>
+                            45%
+                          </p>
+                        </div>
+                      </div>
+                    </div>                  
                   </div>
                 </div>
                 <div
@@ -183,8 +248,12 @@
                   role="tabpanel"
                   aria-labelledby="pills-ascendencia-tab"
                 >
-                  <div class="tab-onp-content">
-                    <img src="../../../../assets/images/facil/paso3-sumanos-tu-sueldo-desktop.png" alt="Calculamos tu sueldo"> 
+                  <div class="tab-onp-content tab3-detail">
+                    <img src="../../../../assets/images/facil/icon-sumamos-sueldo-tab3.svg" alt="Sumamos tu sueldo"> 
+                    <div>
+                      <p><span class="text-medium">Sumamos a tu sueldo<br>promedio el 2%</span><br>por cada año adicional.</p>
+                      <p>Este incremento te corresponde por cada año adicional a los 20 años (240 unidades de aporte).</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -230,6 +299,10 @@
                 <p class="bold"><a href="https://www.gob.pe/12446-solicitar-pension-de-jubilacion-adelantada-para-personas-con-discapacidad-d-l-n-19990" target="_blank" rel="noopener">Conoce más del Régimen de Pensión de Jubilación Adelantada para Personas con Discapacidad >></a></p>
             </div>
         </div>
+    </div>
+    <div class="carrusel-arrows">
+      <span class="arrow-previus1" style="--top: 10rem; --left: 1rem; --background-image: url(../../../../assets/images/facil/left-arrow-white.svg);"></span>
+      <span class="arrow-next1" style="--top: 10rem; --right: 1rem; --background-image: url(../../../../assets/images/facil/right-arrow-white.svg);"></span>
     </div>    
 </section>
 

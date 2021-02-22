@@ -21,7 +21,6 @@
             <li ><a  [routerLink]="['/Afp']">Si estás en una AFP</a></li>
             <li><a [routerLink]="['/Facil','cifras']">Cifras del SNP</a></li>
             <li class="active"><a  [routerLink]="['/Financiamiento']">Financiamiento</a></li>
-
         </ul>
     </div>
 </section>
@@ -75,19 +74,68 @@
     <div class="quantity__income">
         <h5>Ingresos</h5>
         <div class="quantity__rounded">
-            <img loading="lazy" src="../../../assets/images/facil/formula-ingresos-financiamiento.svg">
+            <div class="quantity__icons">
+                <div>
+                    <p class="text-large">50%</p>
+                    <img loading="lazy" src="../../../assets/images/facil/afiliados_finc.svg">
+                    <p>Afiliada / Afiliado</p>
+                </div>
+                <div>
+                    <p class="text-large">+</p>
+                </div>
+                <div>
+                    <p class="text-large">31%</p>
+                    <img loading="lazy" src="../../../assets/images/facil/tesoro_publico.svg">
+                    <p>Tesoro Público</p>
+                </div>
+                <div>
+                    <p class="text-large">+</p>
+                </div>
+                <div>
+                    <p class="text-large">19%</p>
+                    <img loading="lazy" src="../../../assets/images/facil/FCR_white.svg">
+                    <p>FCR</p>
+                </div>
+                <div>
+                    <p class="text-large">=</p>
+                </div>
+                <div>
+                    <p class="text-large">100%</p>
+                    <img loading="lazy" src="../../../assets/images/facil/pensiones_money.svg">
+                    <p>Pensiones</p>
+                </div>
+            </div>
         </div>
     </div>
     <div class="quantity__pensions">
         <h5>Pensión para pensionistas, beneficiarias y beneficiarios</h5>
         <div class="quantity__rounded">
-            <img loading="lazy" src="../../../assets/images/facil/beneficiarios_onp.svg">
+            <div class="quantity__icons">
+                <div>
+                    <img loading="lazy" src="../../../assets/images/facil/pensiones_money.svg">
+                    <p>Pensiones</p>
+                </div>
+                <div class="flecha-sm">
+                    <img loading="lazy" src="../../../assets/images/facil/flecha-derecha.svg">
+                </div>
+                <div>
+                    <img loading="lazy" src="../../../assets/images/facil/pensionistas_finc.svg">
+                    <p>Pensionistas</p>
+                </div>
+                <div>
+                    <p class="text-large">/</p>
+                </div>
+                <div>
+                    <img loading="lazy" src="../../../assets/images/facil/beneficiarios_finc.svg">
+                    <p>Beneficiarias /<br>beneficiarios</p>
+                </div>
+            </div>
         </div>
     </div>
-    <!--<h4>Gracias por colaborar hoy. <br>Alguien colaborará para ti y tus familiares mañana.</h4>-->
     <br/>
     <h5>(1) Información a agosto 2020</h5>
 </section>
 <img class="rounded-footer" loading="lazy" src="../../../assets/images/facil/top-rounded-header.svg">
-<section class="collaboration"><h3><b>Gracias por colaborar hoy.<br/>
-    Alguien colaborará para ti y tus familiares mañana.</b></h3></section>
+<section class="collaboration">
+    <h3><b>Gracias por colaborar hoy.<br/>Alguien colaborará para ti y tus familiares mañana.</b></h3>
+</section>
