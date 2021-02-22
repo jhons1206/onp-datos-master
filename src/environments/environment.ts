@@ -6,7 +6,7 @@ export const environment = {
   production: false,
   //baseUrlApi:'http://localhost:56535/api/'
   //baseUrlApi:'https://appvirtualqa.onp.gob.pe/wsEntereateONP/api/',
-   baseUrlApi:'http://172.31.31.140/wsEnterateOnpDatos/api/',
+  baseUrlApi:'http://172.31.31.140/wsEnterateOnpDatos/api/',
   baseUrlJson:'~/../assets/resources/',
   baseUrlFiles:'http://172.31.31.140/onpfiles/'
 };

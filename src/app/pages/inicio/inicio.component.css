@@ -26,7 +26,7 @@
   z-index: 3;
   width: 100%;
   height: 100%;
-  border-radius: 0 0 50% 50%;
+  /*border-radius: 0 0 50% 50%;*/
   opacity: 1;
   transition: all 1s;
   overflow-x: hidden;
@@ -494,7 +494,7 @@
     height: 72%;
     opacity: 1;
     transition: all 1s;
-    border-radius: 0 0 50% 50%;
+    /*border-radius: 0 0 50% 50%;*/
     /* margin-top: 3rem; */
   }
 
@@ -537,7 +537,8 @@
   }
 
   .container-banner-text-m {
-    position: relative;
+    /*position: relative;*/
+    padding-top: 30px;
     z-index: 5;
     top: -92%;
     display: flex;

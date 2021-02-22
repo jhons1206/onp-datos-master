@@ -14,9 +14,11 @@ import { AfpComponent } from './afp/afp.component';
 import { FinanciamientoComponent } from './financiamiento/financiamiento.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
+import { MenuMovilComponent } from './components/menu-movil/menu-movil.component';
+import { MenuComponent } from './components/menu/menu.component';
 
 @NgModule({
-  declarations: [FacilComponent, AseguraComponent, UneteComponent, BeneficiosComponent, AfpComponent, FinanciamientoComponent],
+  declarations: [FacilComponent, AseguraComponent, UneteComponent, BeneficiosComponent, AfpComponent, FinanciamientoComponent, MenuMovilComponent, MenuComponent],
   imports: [
     //BrowserModule,
     CommonModule,

@@ -179,8 +179,7 @@ function hideCard3() {
     //imgcrd3.style.opacity = "0";
     datacrd3.style.opacity = "0";
   });
-}
-
+} 
 function showImage1() {
   img_num = 1;
 
@@ -188,7 +187,7 @@ function showImage1() {
   var text2 = document.getElementById("text-b-dos");
 
   if (text1 != null || text2 != null) {
-    text1.innerHTML = "Hemos cambiado. Tenemos para ti un nuevo Sistema";
+    text1.innerHTML = "Tenemos para ti un nuevo Sistema";
     text2.innerHTML = "Nacional de Pensiones.";
   }
   // $(".text-m-dos").css({
@@ -248,7 +247,7 @@ function showImage2() {
 // }
 
 function interval() {
-  inter = setInterval(switchImg, 5000);
+  //inter = setInterval(switchImg, 5000);
 }
 
 // Menu toogle subpages
