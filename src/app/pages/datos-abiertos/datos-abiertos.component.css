@@ -87,32 +87,43 @@
   background-position: 0;
 }
 @media screen and (max-width: 768px) {
+
   .onp-background {
     position: relative;
     background: url("../../../assets/images/onp-datos-abierto-banner-movile.jpg")
       no-repeat;
     background-size: cover;
     background-position: center;
-    width: 121%;
-    height: 60vh;
-    display: flex;
-    flex-direction: row;
-    left: -11%;
-    box-shadow: 0px 1px 10px #888888;
-    -webkit-border-radius: 0% 0% 50% 50%;
-    -moz-border-radius: 0% 0% 50% 50%;
-    border-radius: 0% 0% 50% 50%;
+    max-width: 100%;
+    padding-top: 280px;
+    height: auto;
+    display: block;
+    left: 0;
+    box-shadow: inherit;
+    border-radius: 0;
+  }
+  .onp-content {
+    padding: 2rem 1rem 1.7rem;
+    background-color: #141B4D;
+    border-radius: 0% 0% 60% 60%;
+    margin-top: 0;
   }
   .onp-content > p  {
     font-size: 1.15rem;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 25px;
-    color: black;
-    margin-bottom: 3%;
+    color: white;
+    margin-bottom: 5%;
     width: 90vw;
 }
-.onp-content-btn{
+
+.btn-datos {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+.onp-content-btn {
   font-family: Arial, Helvetica, sans-serif;
   background-color: rgb(255, 109, 106);
   border-radius: 25px 25px 25px 25px;
@@ -123,10 +134,9 @@
   font-size: 1.3rem;
   position: relative;
   text-align: center;
-  height: 5rem;
-  padding-top: 20px;
 }
 }
+
 @media screen and (min-width: 768px) {
   .onp-banner p {
     font-size: 1.5rem;
