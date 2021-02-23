@@ -26,7 +26,7 @@ export class PensionistasComponent implements OnInit {
   PorcentajeOrfandad:number =0;
   PorcentajeAscendencia:number =0;
   iddepartament: string = "";  
-  TitleDepartemento:string="PENSIONISTAS Y BENEFICIARIAS/OS";
+  TitleDepartemento:string="PENSIONISTAS,BENEFICIARIAS Y BENEFICIARIOS";
   TotalMujer:number =0;
   TotalHombre:number =0;
   TotalJubilacion:number =0;
