@@ -5,7 +5,7 @@
   width: 100%;
   padding: 0 14%;
   top: 0;
-  z-index: 10;
+ z-index: 10;
   box-shadow: 0px 1px 5px #888888;
 }
 
@@ -155,7 +155,8 @@
     height: 80px;
     width: 100%; 
     top: 0;
-    z-index: 10;
+    /*z-index: 10;*/
+    z-index: 9999;
     box-shadow: 0px 1px 5px #888888;
   }
   
@@ -167,7 +168,8 @@
     position: sticky;
     height: 80px;
     width: 100%;
-    padding: 0 0;
+    padding: 0 0;    
+ z-index: 9999;
   }
   .onp-navbar {
     width: 100%;
@@ -503,7 +505,7 @@
     position: sticky;
     height: 80px;
     width: 100%;
-    padding: 0 0;
+    padding: 0 0;  
   }
   .onp-navbar {
     width: 100%;
