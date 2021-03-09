@@ -187,7 +187,7 @@ function showImage1() {
   var text2 = document.getElementById("text-b-dos");
 
   if (text1 != null || text2 != null) {
-    text1.innerHTML = "Tenemos para ti un nuevo Sistema";
+    text1.innerHTML = "Cómo funciona el Sistema";
     text2.innerHTML = "Nacional de Pensiones.";
   }
   // $(".text-m-dos").css({
