@@ -13,10 +13,12 @@ export class UneteComponent implements OnInit {
   ngOnInit(): void {
     
 
-    (($) => {   
+    (($) => {  
+
       $(document).ready(() => {
         $("html, body").stop().animate({scrollTop: 0,},0);
       });
+
       $("#contribution-carrusel").slick({
         dots: false,
         slidesToShow: 1,
